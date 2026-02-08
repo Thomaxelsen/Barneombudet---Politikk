@@ -66,12 +66,14 @@ body.menu-open {
 }
 
 .global-banner {
-    width: 100%;
+    width: 100vw;
     border-radius: 18px;
     overflow: hidden;
     aspect-ratio: 1368 / 289;
     max-height: clamp(120px, 22vw, 260px);
     margin-bottom: 1.75rem;
+    margin-left: calc(50% - 50vw);
+    max-width: none;
     box-shadow: 0 8px 20px rgba(0,0,0,0.12);
     position: relative;
     z-index: 0;
@@ -81,7 +83,7 @@ body.menu-open {
 .global-banner img {
     display: block;
     width: 100%;
-    height: 100%;
+    height: auto;
 }
 
 .global-banner img {
