@@ -44,9 +44,12 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 2px solid #eee;
-    padding-bottom: 1rem;
+    background-color: var(--brand-peach-dark);
+    border-bottom: 2px solid rgba(0,0,0,0.12);
+    padding: 0.9rem 1.2rem;
     margin-bottom: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 8px 18px rgba(0,0,0,0.12);
 }
 .quiz-header h3 {
     margin: 0;

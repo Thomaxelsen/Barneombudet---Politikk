@@ -228,7 +228,8 @@
     justify-content: space-between;
     align-items: center;
     padding: 15px 25px;
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid rgba(0,0,0,0.12);
+    background-color: var(--brand-peach-dark);
     flex-shrink: 0; /* Header skal ikke krympe */
 }
 .panel-header h3 {
@@ -241,7 +242,7 @@
     border: none;
     font-size: 2.5rem;
     line-height: 1;
-    color: #aaa;
+    color: #666;
     cursor: pointer;
     padding: 0 5px;
     transition: color 0.2s;
