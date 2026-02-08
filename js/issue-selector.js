@@ -56,6 +56,13 @@ function isTouchDevice() {
         return false; // Anta ikke-touch hvis sjekken feiler
     }
 }
+function supportsHover() {
+    try {
+        return window.matchMedia('(hover: hover) and (pointer: fine)').matches;
+    } catch (e) {
+        return false;
+    }
+}
 let currentIssueId = null;
 let hoverTimer = null;
 let currentHoveredParty = null;
@@ -131,12 +138,11 @@ function setupModalInteraction() {
 
     // Hover over popup (desktop)
     const modalContent = modal.querySelector('.quote-modal-content');
-     if (modalContent && !isTouchDevice()) {
-         modalContent.removeEventListener('mouseleave', modalMouseLeaveHandler); // Fjern gammel
-         modalContent.addEventListener('mouseleave', modalMouseLeaveHandler);
-         modalContent.addEventListener('mouseenter', () => {
-            if (hoverTimer) clearTimeout(hoverTimer); // Stopp eventuell lukketime
-         });
+     if (modalContent && supportsHover()) {
+         modalContent.removeEventListener('pointerleave', modalMouseLeaveHandler); // Fjern gammel
+         modalContent.addEventListener('pointerleave', modalMouseLeaveHandler);
+         modalContent.removeEventListener('pointerenter', modalPointerEnterHandler);
+         modalContent.addEventListener('pointerenter', modalPointerEnterHandler);
      }
 
      // Event delegation for klikk på partielementer (Touch)
@@ -150,6 +156,7 @@ function setupModalInteraction() {
 function closeModalHandler() { document.getElementById('quoteModal').style.display = 'none'; }
 function closeClickHandler(event) { if (event.target === document.getElementById('quoteModal')) { closeModalHandler(); } }
 function modalMouseLeaveHandler() { closeModalHandler(); currentHoveredParty = null; }
+function modalPointerEnterHandler() { if (hoverTimer) clearTimeout(hoverTimer); }
 
 // Håndterer klikk på body for å fange klikk på partielementer (touch)
 function partyElementClickHandler(e) {
@@ -169,18 +176,18 @@ function partyElementClickHandler(e) {
 // Setup hover listeners (uendret logikk, men kalt fra initialize)
 function setupInitialHoverListeners() { setTimeout(setupHoverListeners, 500); }
 function setupHoverListeners() {
-    if (isTouchDevice()) return; // Ikke sett opp hover på touch
+    if (!supportsHover()) return; // Ikke sett opp hover uten hover-støtte
     const partyElements = document.querySelectorAll('.hoverable-party[data-party][data-has-quote="true"]'); // Bare de med sitat
     // console.log(`Issue Selector: Setting up hover for ${partyElements.length} elements`);
     partyElements.forEach(element => {
-        element.removeEventListener('mouseenter', handlePartyHover);
-        element.removeEventListener('mouseleave', handlePartyLeave);
-        element.addEventListener('mouseenter', handlePartyHover);
-        element.addEventListener('mouseleave', handlePartyLeave);
+        element.removeEventListener('pointerenter', handlePartyHover);
+        element.removeEventListener('pointerleave', handlePartyLeave);
+        element.addEventListener('pointerenter', handlePartyHover);
+        element.addEventListener('pointerleave', handlePartyLeave);
     });
 }
 function handlePartyLeave(e) {
-    if (isTouchDevice()) return;
+    if (!supportsHover()) return;
     // console.log("Mouse leave:", e.currentTarget.dataset.party);
     if (hoverTimer) {
         clearTimeout(hoverTimer);
@@ -503,7 +510,7 @@ function showPartyQuoteHoverPosition(modal, targetElement) {
 
 // Kall showPartyQuote fra hover handler
 function handlePartyHover(e) {
-    if (isTouchDevice()) return;
+    if (!supportsHover()) return;
     const partyElement = e.currentTarget;
     const partyCode = partyElement.dataset.party;
     // console.log("Mouse enter:", partyCode);
