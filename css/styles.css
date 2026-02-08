@@ -159,10 +159,10 @@ header h1 strong {
 .introduction {
     margin-bottom: 2rem;
     padding: 1.8rem;
-    background-color: white;
+    background-color: var(--brand-peach-light);
     border-radius: 12px;
-    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
-    border: 1px solid rgba(0,0,0,0.05);
+    box-shadow: 0 6px 18px rgba(47, 62, 173, 0.12);
+    border: 1px solid rgba(47, 62, 173, 0.12);
     border-left: 5px solid var(--kf-dark-blue);
     transition: box-shadow 0.3s ease;
 }
@@ -184,7 +184,7 @@ header h1 strong {
 
 .description:hover,
 .introduction:hover {
-    box-shadow: 0 8px 22px rgba(0,0,0,0.1);
+    box-shadow: 0 8px 22px rgba(47, 62, 173, 0.18);
 }
 
 .info-text {
@@ -200,11 +200,11 @@ header h1 strong {
 
 /* === Partivelger (index.html) - MODIFISERT SEKSJON === */
 .party-section {
-    background-color: white;
+    background-color: var(--brand-peach-dark);
     padding: 25px;
     border-radius: 12px;
-    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
-    border: 1px solid rgba(0,0,0,0.05);
+    box-shadow: 0 6px 18px rgba(47, 62, 173, 0.12);
+    border: 1px solid rgba(47, 62, 173, 0.12);
     margin-bottom: 30px;
 }
 
@@ -223,26 +223,27 @@ header h1 strong {
     align-items: center;
     justify-content: center;
     padding: 1rem 0.5rem;
-    border: 2px solid #e0e0e0;
+    border: 2px solid rgba(47, 62, 173, 0.15);
     border-radius: 8px;
-    background-color: #ffffff;
+    background-color: var(--brand-peach-light);
     cursor: pointer;
     transition: all 0.2s ease-in-out;
     text-align: center;
     user-select: none;
+    box-shadow: 0 4px 10px rgba(47, 62, 173, 0.08);
 }
 
 .party-card:hover {
     transform: translateY(-4px);
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
-    border-color: #c0c0c0;
+    box-shadow: 0 8px 20px rgba(47, 62, 173, 0.18);
+    border-color: var(--kf-dark-blue);
 }
 
 /* MODIFISERT: .selected stil for nye kort */
 .party-card.selected {
-    border-color: var(--kf-pink); /* Bruker rosa for index.html for konsistens med resten av siden */
-    box-shadow: 0 4px 15px rgba(230, 60, 140, 0.25);
-    background-color: rgba(230, 60, 140, 0.05);
+    border-color: var(--kf-dark-blue);
+    box-shadow: 0 6px 18px rgba(47, 62, 173, 0.25);
+    background-color: rgba(252, 227, 206, 0.9);
 }
 
 /* NY: Stil for logoer i kortene */
