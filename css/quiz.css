@@ -44,19 +44,23 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 2px solid #eee;
-    padding-bottom: 1rem;
+    background-color: var(--brand-peach-dark);
+    border-bottom: 2px solid rgba(255,255,255,0.35);
+    padding: 0.9rem 1.2rem;
     margin-bottom: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 10px 24px rgba(0,0,0,0.18);
 }
 .quiz-header h3 {
     margin: 0;
-    color: var(--kf-blue);
+    color: #fff;
     font-size: 1.5rem;
 }
 .quiz-score {
     font-size: 1.2rem;
     font-weight: bold;
-    color: var(--kf-purple);
+    color: rgba(255,255,255,0.9);
+    text-shadow: 0 1px 2px rgba(0,0,0,0.25);
 }
 
 /* Generelt for quiz-innhold */
