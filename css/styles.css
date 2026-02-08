@@ -103,9 +103,9 @@ header {
 }
 
 header h1 {
-    color: var(--text-primary);
+    color: var(--kf-blue);
     font-size: 2rem;
-    font-weight: 600;
+    font-weight: 700;
     margin: 0;
     line-height: 1.2;
 }
