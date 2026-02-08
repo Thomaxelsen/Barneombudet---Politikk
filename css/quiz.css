@@ -6,7 +6,8 @@
     background-color: white;
     padding: 2rem;
     border-radius: 12px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+    border: 1px solid rgba(0,0,0,0.05);
     min-height: 60vh;
 }
 
@@ -44,19 +45,23 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 2px solid #eee;
-    padding-bottom: 1rem;
+    background-color: var(--brand-peach-dark);
+    border-bottom: 2px solid rgba(0,0,0,0.12);
+    padding: 0.9rem 1.2rem;
     margin-bottom: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 8px 18px rgba(0,0,0,0.12);
 }
 .quiz-header h3 {
     margin: 0;
-    color: var(--kf-blue);
+    color: var(--brand-blue-dark);
     font-size: 1.5rem;
 }
 .quiz-score {
     font-size: 1.2rem;
     font-weight: bold;
-    color: var(--kf-purple);
+    color: var(--brand-blue-dark);
+    text-shadow: none;
 }
 
 /* Generelt for quiz-innhold */
@@ -170,7 +175,7 @@
 }
 .party-option-btn span {
     font-weight: 600;
-    color: #333;
+    color: var(--text-primary);
 }
 /* Stiler for tilbakemelding på partiknapper */
 .party-option-btn.correct {

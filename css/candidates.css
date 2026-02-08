@@ -1,16 +1,16 @@
 /* css/candidates.css (Version 8 - 3-kolonne layout med sidepanel) */
 
 /* Filterseksjon (uendret) */
-.candidate-filters { display: flex; flex-wrap: wrap; gap: 20px; margin-bottom: 30px; background-color: white; border-radius: 12px; padding: 20px 25px; box-shadow: 0 4px 15px rgba(0,0,0,0.06); align-items: flex-end; }
+.candidate-filters { display: flex; flex-wrap: wrap; gap: 20px; margin-bottom: 30px; background-color: white; border-radius: 12px; padding: 20px 25px; box-shadow: 0 6px 18px rgba(0,0,0,0.08); border: 1px solid rgba(0,0,0,0.05); align-items: flex-end; }
 .candidate-filters .filter-group { flex: 1; min-width: 180px; }
 .candidate-filters .filter-group:has(#view-mode-select) { min-width: 200px; }
-.candidate-filters .filter-group label { display: block; margin-bottom: 8px; font-weight: 500; color: #444; font-size: 0.9rem; }
+.candidate-filters .filter-group label { display: block; margin-bottom: 8px; font-weight: 500; color: var(--text-secondary); font-size: 0.9rem; }
 .filter-dropdown { width: 100%; padding: 10px 12px; border-radius: 8px; border: 1px solid var(--border-color); font-size: 0.95rem; background-color: white; cursor: pointer; }
 .toggle-group { padding-bottom: 10px; }
 .toggle-label input[type="checkbox"] { margin-right: 8px; }
 .search-group { flex: 1.5; min-width: 220px; }
 .search-input { width: 100%; padding: 10px 12px; border-radius: 8px; border: 1px solid var(--border-color); font-size: 0.95rem; }
-.count-group { flex-basis: 100%; text-align: right; color: #555; font-size: 0.9rem; padding-top: 10px; min-width: 150px; flex-grow: 0; }
+.count-group { flex-basis: 100%; text-align: right; color: var(--text-secondary); font-size: 0.9rem; padding-top: 10px; min-width: 150px; flex-grow: 0; }
 @media (min-width: 768px) { .count-group { flex-basis: auto; padding-bottom: 10px; } }
 #candidate-count { font-weight: bold; }
 
@@ -28,10 +28,10 @@
 /* --- Styling for Detaljpanel (Desktop) --- */
 .candidate-detail-panel {
     display: none; /* Skjult som standard (mobil) */
-    background-color: #fdfdff; /* Litt lysere enn body */
-    border: 1px solid #e0e5ec;
+    background-color: #fff; /* Hvit panelbakgrunn mot fersken-body */
+    border: 1px solid rgba(0,0,0,0.07);
     border-radius: 12px;
-    box-shadow: 0 5px 20px rgba(0, 50, 135, 0.07);
+    box-shadow: 0 8px 22px rgba(0,0,0,0.12);
     /* Høyde og scrolling: */
     overflow-y: auto;
     /* Posisjonering for sticky: */
@@ -46,7 +46,7 @@
 .candidate-detail-panel .placeholder-text {
     text-align: center;
     padding: 40px 20px;
-    color: #777;
+    color: var(--text-secondary);
 }
 .candidate-detail-panel .placeholder-text h3 {
     color: var(--kf-blue);
@@ -86,15 +86,18 @@
     align-items: center;
     gap: 12px;
     margin-bottom: 15px;
-    padding-bottom: 10px;
-    border-bottom: 1px solid #eee;
+    padding: 10px 12px;
+    border-bottom: 1px solid rgba(0,0,0,0.12);
+    background-color: var(--brand-peach-dark);
+    border-radius: 10px;
+    box-shadow: 0 6px 14px rgba(0,0,0,0.12);
 }
 
 .candidate-detail-panel .detail-header h3 {
     flex-grow: 1;
     margin: 0;
     font-size: 1.4rem;
-    color: var(--kf-blue);
+    color: var(--brand-blue-dark);
     line-height: 1.3;
 }
 .candidate-detail-panel .detail-header .party-icon {
@@ -105,26 +108,27 @@
     margin-bottom: 10px;
     font-size: 0.95rem;
     line-height: 1.5;
-    color: #444;
+    color: var(--text-secondary);
 }
 .candidate-detail-panel .detail-info strong {
     display: inline-block;
     min-width: 90px; /* Gir litt justering */
-    color: #222;
+    color: var(--text-primary);
     font-weight: 600;
     margin-right: 5px;
 }
 .candidate-detail-panel .detail-info a {
-    color: var(--kf-blue);
+    color: var(--link-color);
     text-decoration: none;
 }
 .candidate-detail-panel .detail-info a:hover {
+    color: var(--link-hover);
     text-decoration: underline;
 }
 
 .candidate-detail-panel .privacy-notice-panel {
     font-size: 0.8rem;
-    color: #888;
+    color: var(--text-muted);
     margin-top: 20px;
     text-align: center;
     border-top: 1px dashed #ddd;
@@ -163,18 +167,18 @@
 #candidate-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 18px; /* Litt mindre gap/min */ margin-top: 10px; position: relative; } /* min-height fjernet */
 #featured-candidates-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 20px; /* Økt gap for bilder */ position: relative; margin-top: 10px; } /* min-height fjernet */
 
-#candidate-grid .loader, #featured-candidates-grid .loader { position: absolute; top: 50px; left: 50%; transform: translateX(-50%); font-size: 1.1rem; color: #777; } /* Litt mindre */
-#candidate-grid .no-results, #featured-candidates-grid .no-results { grid-column: 1 / -1; text-align: center; padding: 30px 20px; color: #888; font-style: italic; font-size: 1rem;}
+#candidate-grid .loader, #featured-candidates-grid .loader { position: absolute; top: 50px; left: 50%; transform: translateX(-50%); font-size: 1.1rem; color: var(--text-secondary); } /* Litt mindre */
+#candidate-grid .no-results, #featured-candidates-grid .no-results { grid-column: 1 / -1; text-align: center; padding: 30px 20px; color: var(--text-muted); font-style: italic; font-size: 1rem;}
 
-.interaction-hint { font-size: 0.9rem; color: #666; margin-top: -5px; margin-bottom: 15px; font-style: italic; } /* Styling for hint-tekst */
+.interaction-hint { font-size: 0.9rem; color: var(--text-secondary); margin-top: -5px; margin-bottom: 15px; font-style: italic; } /* Styling for hint-tekst */
 
 /* Valgkrets-separator (som før) */
 .constituency-separator { grid-column: 1 / -1; display: flex; justify-content: space-between; align-items: baseline; font-size: 1.3rem; font-weight: bold; color: var(--kf-blue); padding: 15px 5px 10px 5px; margin-top: 25px; margin-bottom: 5px; border-bottom: 2px solid var(--kf-purple); }
-.constituency-separator .mandate-count { font-size: 0.9rem; font-weight: normal; color: #555; }
+.constituency-separator .mandate-count { font-size: 0.9rem; font-weight: normal; color: var(--text-secondary); }
 #candidate-grid .constituency-separator:first-of-type, #featured-candidates-grid .constituency-separator:first-of-type { margin-top: 5px; }
 
 /* Standard kandidatkort (som før) */
-.candidate-card { background-color: white; border-radius: 10px; padding: 0; box-shadow: 0 3px 10px rgba(0,0,0,0.07); border: 1px solid #eee; transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease; display: flex; flex-direction: column; min-height: 150px; overflow: hidden; position: relative; --party-color: #ccc; cursor: pointer; }
+.candidate-card { background-color: white; border-radius: 10px; padding: 0; box-shadow: 0 5px 16px rgba(0,0,0,0.09); border: 1px solid rgba(0,0,0,0.06); transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease; display: flex; flex-direction: column; min-height: 150px; overflow: hidden; position: relative; --party-color: #ccc; cursor: pointer; }
 .candidate-card::before { content: ''; display: block; height: 6px; background-color: var(--party-color); background-image: none; margin-bottom: 10px; }
 .candidate-card.party-sv::before { background-image: linear-gradient(to right, #439539, #eb2e2d); background-color: transparent; }
 .candidate-card:hover { transform: translateY(-4px); box-shadow: 0 6px 15px rgba(0,0,0,0.1); border-color: #bbb; }
@@ -183,11 +187,11 @@
 .candidate-card .candidate-rank { font-size: 1.6rem; font-weight: bold; color: var(--party-color); line-height: 1.2; padding-top: 2px; min-width: 30px; text-align: center; }
 .candidate-card .candidate-header-info { flex-grow: 1; display: flex; flex-direction: column; }
 .candidate-card .candidate-name { font-size: 1.1rem; font-weight: 600; color: #333; line-height: 1.3; margin-bottom: 2px; }
-.candidate-card .party-name-header { font-size: 0.85rem; color: #666; font-weight: 500; }
+.candidate-card .party-name-header { font-size: 0.85rem; color: var(--text-secondary); font-weight: 500; }
 .candidate-card .party-icon { width: 32px; height: 32px; font-size: 16px; flex-shrink: 0; /* Basisstil i styles.css */ }
-.candidate-card .card-body { font-size: 0.9rem; color: #555; flex-grow: 1; padding: 10px 15px; }
-.candidate-card .candidate-meta { margin-top: 8px; color: #777; font-size: 0.85rem; display: flex; flex-wrap: wrap; gap: 5px; }
-.candidate-card .card-footer { margin-top: auto; padding: 5px 15px 10px 15px; font-size: 0.8rem; color: #888; text-align: right; }
+.candidate-card .card-body { font-size: 0.9rem; color: var(--text-secondary); flex-grow: 1; padding: 10px 15px; }
+.candidate-card .candidate-meta { margin-top: 8px; color: var(--text-muted); font-size: 0.85rem; display: flex; flex-wrap: wrap; gap: 5px; }
+.candidate-card .card-footer { margin-top: auto; padding: 5px 15px 10px 15px; font-size: 0.8rem; color: var(--text-muted); text-align: right; }
 .candidate-card .realistic-badge { display: inline-block; background-color: var(--kf-green); color: white; padding: 2px 6px; border-radius: 10px; font-size: 0.7rem; font-weight: bold; }
 
 /* --- NY Stil for valgt kort --- */
@@ -208,7 +212,7 @@
 .featured-candidate-card.party-sv { border-image-source: linear-gradient(to right, #439539, #eb2e2d); border-image-slice: 1; border-width: 3px; border-style: solid; border-color: var(--card-party-color); }
 .featured-candidate-card:hover { transform: scale(1.03); box-shadow: 0 7px 15px rgba(0, 0, 0, 0.18); border-color: var(--kf-pink); } /* Endret hover border */
 .featured-candidate-card img { display: block; width: 100%; height: 100%; object-fit: contain; background-color: #f8f9fa; }
-.featured-candidate-card .image-placeholder { display: flex; align-items: center; justify-content: center; width: 100%; height: 100%; color: #888; font-size: 0.9rem; text-align: center; padding: 10px; box-sizing: border-box; }
+.featured-candidate-card .image-placeholder { display: flex; align-items: center; justify-content: center; width: 100%; height: 100%; color: var(--text-muted); font-size: 0.9rem; text-align: center; padding: 10px; box-sizing: border-box; }
 
 
 /* Responsivitet for mobil/nettbrett (beholder modal) */
@@ -235,16 +239,16 @@
 /* css/candidates.css (Version 9 - Logoer i stedet for ikoner) */
 
 /* Filterseksjon (uendret) */
-.candidate-filters { display: flex; flex-wrap: wrap; gap: 20px; margin-bottom: 30px; background-color: white; border-radius: 12px; padding: 20px 25px; box-shadow: 0 4px 15px rgba(0,0,0,0.06); align-items: flex-end; }
+.candidate-filters { display: flex; flex-wrap: wrap; gap: 20px; margin-bottom: 30px; background-color: white; border-radius: 12px; padding: 20px 25px; box-shadow: 0 6px 18px rgba(0,0,0,0.08); border: 1px solid rgba(0,0,0,0.05); align-items: flex-end; }
 .candidate-filters .filter-group { flex: 1; min-width: 180px; }
 .candidate-filters .filter-group:has(#view-mode-select) { min-width: 200px; }
-.candidate-filters .filter-group label { display: block; margin-bottom: 8px; font-weight: 500; color: #444; font-size: 0.9rem; }
+.candidate-filters .filter-group label { display: block; margin-bottom: 8px; font-weight: 500; color: var(--text-secondary); font-size: 0.9rem; }
 .filter-dropdown { width: 100%; padding: 10px 12px; border-radius: 8px; border: 1px solid var(--border-color); font-size: 0.95rem; background-color: white; cursor: pointer; }
 .toggle-group { padding-bottom: 10px; }
 .toggle-label input[type="checkbox"] { margin-right: 8px; }
 .search-group { flex: 1.5; min-width: 220px; }
 .search-input { width: 100%; padding: 10px 12px; border-radius: 8px; border: 1px solid var(--border-color); font-size: 0.95rem; }
-.count-group { flex-basis: 100%; text-align: right; color: #555; font-size: 0.9rem; padding-top: 10px; min-width: 150px; flex-grow: 0; }
+.count-group { flex-basis: 100%; text-align: right; color: var(--text-secondary); font-size: 0.9rem; padding-top: 10px; min-width: 150px; flex-grow: 0; }
 @media (min-width: 768px) { .count-group { flex-basis: auto; padding-bottom: 10px; } }
 #candidate-count { font-weight: bold; }
 
@@ -253,9 +257,9 @@
 .main-content-area { width: 100%; }
 
 /* --- Detaljpanel (Desktop) --- */
-.candidate-detail-panel { display: none; background-color: #fdfdff; border: 1px solid #e0e5ec; border-radius: 12px; box-shadow: 0 5px 20px rgba(0, 50, 135, 0.07); overflow-y: auto; position: sticky; top: 20px; }
+.candidate-detail-panel { display: none; background-color: #fff; border: 1px solid rgba(0,0,0,0.07); border-radius: 12px; box-shadow: 0 8px 22px rgba(0,0,0,0.12); overflow-y: auto; position: sticky; top: 20px; }
 .candidate-detail-panel .panel-content { padding: 25px; }
-.candidate-detail-panel .placeholder-text { text-align: center; padding: 40px 20px; color: #777; }
+.candidate-detail-panel .placeholder-text { text-align: center; padding: 40px 20px; color: var(--text-secondary); }
 .candidate-detail-panel .placeholder-text h3 { color: var(--kf-blue); margin-bottom: 10px; }
 .candidate-detail-panel .detail-image-container { text-align: center; margin-bottom: 20px; }
 .candidate-detail-panel .detail-image { max-width: 180px; height: auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); border: 3px solid white; }
@@ -276,11 +280,11 @@
 /* === SLUTT ENDRING === */
 
 
-.candidate-detail-panel .detail-info p { margin-bottom: 10px; font-size: 0.95rem; line-height: 1.5; color: #444; }
-.candidate-detail-panel .detail-info strong { display: inline-block; min-width: 90px; color: #222; font-weight: 600; margin-right: 5px; }
-.candidate-detail-panel .detail-info a { color: var(--kf-blue); text-decoration: none; }
-.candidate-detail-panel .detail-info a:hover { text-decoration: underline; }
-.candidate-detail-panel .privacy-notice-panel { font-size: 0.8rem; color: #888; margin-top: 20px; text-align: center; border-top: 1px dashed #ddd; padding-top: 10px; }
+.candidate-detail-panel .detail-info p { margin-bottom: 10px; font-size: 0.95rem; line-height: 1.5; color: var(--text-secondary); }
+.candidate-detail-panel .detail-info strong { display: inline-block; min-width: 90px; color: var(--text-primary); font-weight: 600; margin-right: 5px; }
+.candidate-detail-panel .detail-info a { color: var(--link-color); text-decoration: none; }
+.candidate-detail-panel .detail-info a:hover { color: var(--link-hover); text-decoration: underline; }
+.candidate-detail-panel .privacy-notice-panel { font-size: 0.8rem; color: var(--text-muted); margin-top: 20px; text-align: center; border-top: 1px dashed #ddd; padding-top: 10px; }
 
 /* --- Desktop Layout --- */
 @media (min-width: 1024px) {
@@ -293,17 +297,17 @@
 /* Liste/Grid Views */
 #candidate-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 18px; margin-top: 10px; position: relative; }
 #featured-candidates-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 20px; position: relative; margin-top: 10px; }
-#candidate-grid .loader, #featured-candidates-grid .loader { position: absolute; top: 50px; left: 50%; transform: translateX(-50%); font-size: 1.1rem; color: #777; }
-#candidate-grid .no-results, #featured-candidates-grid .no-results { grid-column: 1 / -1; text-align: center; padding: 30px 20px; color: #888; font-style: italic; font-size: 1rem;}
-.interaction-hint { font-size: 0.9rem; color: #666; margin-top: -5px; margin-bottom: 15px; font-style: italic; }
+#candidate-grid .loader, #featured-candidates-grid .loader { position: absolute; top: 50px; left: 50%; transform: translateX(-50%); font-size: 1.1rem; color: var(--text-secondary); }
+#candidate-grid .no-results, #featured-candidates-grid .no-results { grid-column: 1 / -1; text-align: center; padding: 30px 20px; color: var(--text-muted); font-style: italic; font-size: 1rem;}
+.interaction-hint { font-size: 0.9rem; color: var(--text-secondary); margin-top: -5px; margin-bottom: 15px; font-style: italic; }
 
 /* Valgkrets-separator */
 .constituency-separator { grid-column: 1 / -1; display: flex; justify-content: space-between; align-items: baseline; font-size: 1.3rem; font-weight: bold; color: var(--kf-blue); padding: 15px 5px 10px 5px; margin-top: 25px; margin-bottom: 5px; border-bottom: 2px solid var(--kf-purple); }
-.constituency-separator .mandate-count { font-size: 0.9rem; font-weight: normal; color: #555; }
+.constituency-separator .mandate-count { font-size: 0.9rem; font-weight: normal; color: var(--text-secondary); }
 #candidate-grid .constituency-separator:first-of-type, #featured-candidates-grid .constituency-separator:first-of-type { margin-top: 5px; }
 
 /* Kandidatkort */
-.candidate-card { background-color: white; border-radius: 10px; padding: 0; box-shadow: 0 3px 10px rgba(0,0,0,0.07); border: 1px solid #eee; transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease; display: flex; flex-direction: column; min-height: 150px; overflow: hidden; position: relative; --party-color: #ccc; cursor: pointer; }
+.candidate-card { background-color: white; border-radius: 10px; padding: 0; box-shadow: 0 5px 16px rgba(0,0,0,0.09); border: 1px solid rgba(0,0,0,0.06); transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease; display: flex; flex-direction: column; min-height: 150px; overflow: hidden; position: relative; --party-color: #ccc; cursor: pointer; }
 .candidate-card::before { content: ''; display: block; height: 6px; background-color: var(--party-color); background-image: none; margin-bottom: 10px; }
 .candidate-card.party-sv::before { background-image: linear-gradient(to right, #439539, #eb2e2d); background-color: transparent; }
 .candidate-card:hover { transform: translateY(-4px); box-shadow: 0 6px 15px rgba(0,0,0,0.1); border-color: #bbb; }
@@ -311,7 +315,7 @@
 .candidate-card .candidate-rank { font-size: 1.6rem; font-weight: bold; color: var(--party-color); line-height: 1.2; padding-top: 2px; min-width: 30px; text-align: center; }
 .candidate-card .candidate-header-info { flex-grow: 1; display: flex; flex-direction: column; }
 .candidate-card .candidate-name { font-size: 1.1rem; font-weight: 600; color: #333; line-height: 1.3; margin-bottom: 2px; }
-.candidate-card .party-name-header { font-size: 0.85rem; color: #666; font-weight: 500; }
+.candidate-card .party-name-header { font-size: 0.85rem; color: var(--text-secondary); font-weight: 500; }
 
 /* === ENDRING: Styler parti-ikonet (nå en <img>) på kandidatkortet === */
 .candidate-card .party-icon {
@@ -327,9 +331,9 @@
 /* === SLUTT ENDRING === */
 
 
-.candidate-card .card-body { font-size: 0.9rem; color: #555; flex-grow: 1; padding: 10px 15px; }
-.candidate-card .candidate-meta { margin-top: 8px; color: #777; font-size: 0.85rem; display: flex; flex-wrap: wrap; gap: 5px; }
-.candidate-card .card-footer { margin-top: auto; padding: 5px 15px 10px 15px; font-size: 0.8rem; color: #888; text-align: right; }
+.candidate-card .card-body { font-size: 0.9rem; color: var(--text-secondary); flex-grow: 1; padding: 10px 15px; }
+.candidate-card .candidate-meta { margin-top: 8px; color: var(--text-muted); font-size: 0.85rem; display: flex; flex-wrap: wrap; gap: 5px; }
+.candidate-card .card-footer { margin-top: auto; padding: 5px 15px 10px 15px; font-size: 0.8rem; color: var(--text-muted); text-align: right; }
 .candidate-card .realistic-badge { display: inline-block; background-color: var(--kf-green); color: white; padding: 2px 6px; border-radius: 10px; font-size: 0.7rem; font-weight: bold; }
 
 /* Stil for valgt kort */
@@ -342,7 +346,7 @@
 .featured-candidate-card.party-sv { border-image-source: linear-gradient(to right, #439539, #eb2e2d); border-image-slice: 1; border-width: 3px; border-style: solid; border-color: var(--card-party-color); }
 .featured-candidate-card:hover { transform: scale(1.03); box-shadow: 0 7px 15px rgba(0, 0, 0, 0.18); border-color: var(--kf-pink); }
 .featured-candidate-card img { display: block; width: 100%; height: 100%; object-fit: contain; background-color: #f8f9fa; }
-.featured-candidate-card .image-placeholder { display: flex; align-items: center; justify-content: center; width: 100%; height: 100%; color: #888; font-size: 0.9rem; text-align: center; padding: 10px; box-sizing: border-box; }
+.featured-candidate-card .image-placeholder { display: flex; align-items: center; justify-content: center; width: 100%; height: 100%; color: var(--text-muted); font-size: 0.9rem; text-align: center; padding: 10px; box-sizing: border-box; }
 
 
 /* Responsivitet for mobil/nettbrett */

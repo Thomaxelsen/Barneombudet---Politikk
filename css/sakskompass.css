@@ -36,7 +36,7 @@
      text-align: center;
      padding: 40px 20px;
      font-size: 1.1rem;
-     color: #777;
+     color: var(--text-secondary);
 }
 
 /* --- D3 Chart Styles (OPPDATERT) --- */
@@ -63,7 +63,7 @@
 }
 .sk-visualization-area .axis text {
     font-size: 0.85rem;
-    fill: #555;
+    fill: var(--text-secondary);
     cursor: default;
 }
 
@@ -228,26 +228,27 @@
     justify-content: space-between;
     align-items: center;
     padding: 15px 25px;
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid rgba(0,0,0,0.12);
+    background-color: var(--brand-peach-dark);
     flex-shrink: 0; /* Header skal ikke krympe */
 }
 .panel-header h3 {
     margin: 0;
     font-size: 1.3rem;
-    color: var(--kf-blue);
+    color: var(--brand-blue-dark);
 }
 .close-panel-btn {
     background: none;
     border: none;
     font-size: 2.5rem;
     line-height: 1;
-    color: #aaa;
+    color: var(--text-muted);
     cursor: pointer;
     padding: 0 5px;
     transition: color 0.2s;
 }
 .close-panel-btn:hover {
-    color: #333;
+    color: var(--brand-blue-dark);
 }
 
 /* Panel Content */
@@ -258,7 +259,7 @@
 }
 .panel-content .issue-area {
     font-style: italic;
-    color: #666;
+    color: var(--text-secondary);
     margin-bottom: 20px;
 }
 
@@ -305,7 +306,7 @@
     margin-top: 5px;
     font-size: 0.9rem;
     font-style: italic;
-    color: #555;
+    color: var(--text-secondary);
     line-height: 1.5;
     background-color: #f8f9fa;
     padding: 8px 12px;
@@ -313,7 +314,7 @@
     border-radius: 4px;
 }
 .stance-party-item .party-quote.no-quote {
-    color: #999;
+    color: var(--text-muted);
 }
 
 /* ------ SLUTT: NYE REGLER FOR DETALJPANEL ------ */
