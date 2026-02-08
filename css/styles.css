@@ -18,7 +18,7 @@
     --kf-light-green: #8ece3f;
     --kf-green: #00a8a3;
     /* Semantiske brand-farger */
-    --brand-peach-dark: #e9723d;
+    --brand-peach-dark: #fce3ce;
     --brand-peach-light: #ffe6d8;
     --brand-blue-dark: #00235a;
     /* Variabel for menybredde */
@@ -58,7 +58,7 @@ header {
     background-color: var(--brand-peach-dark);
     border: 1px solid rgba(0,0,0,0.08);
     border-radius: 12px;
-    box-shadow: 0 6px 16px rgba(0,0,0,0.18);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.12);
     justify-content: space-between;
     gap: 1rem;
 }
@@ -87,7 +87,7 @@ header {
 }
 
 header h1 {
-    color: #fff;
+    color: #2d2d2d;
     font-size: 2rem;
     font-weight: 600;
     margin: 0;
@@ -99,7 +99,7 @@ header h1 strong {
 }
 
 .header-subtitle {
-    color: rgba(255,255,255,0.85);
+    color: #4a4a4a;
     font-size: 1.1rem;
     margin-top: 0.4rem;
 }
@@ -126,14 +126,14 @@ header h1 strong {
 }
 
 .nav-link:hover {
-    background-color: rgba(255,255,255,0.2);
-    color: #fff;
+    background-color: rgba(0,0,0,0.05);
+    color: var(--kf-purple);
     transform: translateY(-1px);
 }
 
 .nav-links .nav-link.active {
     font-weight: bold;
-    color: #fff;
+    color: var(--kf-purple);
     cursor: default;
     pointer-events: none;
 }
@@ -348,7 +348,7 @@ header h1 strong {
 }
 
 .result-header {
-    color: #fff;
+    color: var(--kf-blue);
     background-color: var(--brand-peach-dark);
     margin-top: 0;
     margin-bottom: 20px;
@@ -357,8 +357,8 @@ header h1 strong {
     text-align: center;
     padding: 0.8rem 1rem;
     border-radius: 10px;
-    border-bottom: 2px solid rgba(255,255,255,0.35);
-    box-shadow: 0 10px 24px rgba(0,0,0,0.18);
+    border-bottom: 2px solid rgba(0,0,0,0.12);
+    box-shadow: 0 8px 18px rgba(0,0,0,0.12);
     position: relative;
 }
 .result-header::after {
@@ -369,7 +369,7 @@ header h1 strong {
     transform: translateX(-50%);
     width: 80px;
     height: 2px;
-    background: linear-gradient(90deg, rgba(255,255,255,0.4), var(--brand-peach-light));
+    background: linear-gradient(90deg, rgba(0,0,0,0.15), var(--brand-peach-light));
 }
 
 .progress-container {
@@ -961,16 +961,16 @@ body.menu-open .burger-menu {
 }
 .menu-header {
     padding: 20px;
-    border-bottom: 1px solid rgba(255,255,255,0.2);
+    border-bottom: 1px solid rgba(0,0,0,0.12);
     background-color: var(--brand-peach-dark);
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-shrink: 0;
 }
-.menu-header h3 { margin: 0; color: #fff; }
-.close-button { font-size: 24px; cursor: pointer; background: none; border: none; padding: 0; margin: 0; line-height: 1; color: rgba(255,255,255,0.85); }
-.close-button:hover { color: #fff; }
+.menu-header h3 { margin: 0; color: var(--kf-blue); }
+.close-button { font-size: 24px; cursor: pointer; background: none; border: none; padding: 0; margin: 0; line-height: 1; color: #666; }
+.close-button:hover { color: #333; }
 .menu-items {
     padding: 20px;
     overflow-y: auto;
@@ -1213,7 +1213,7 @@ body.menu-open .burger-menu {
     justify-content: space-between;
     align-items: center;
     padding: 18px 28px;
-    border-bottom: 1px solid rgba(255,255,255,0.2);
+    border-bottom: 1px solid rgba(0,0,0,0.12);
     background-color: var(--brand-peach-dark);
     flex-shrink: 0;
 }
@@ -1227,7 +1227,7 @@ body.menu-open .burger-menu {
     border: none;
     font-size: 2.5rem;
     line-height: 1;
-    color: rgba(255,255,255,0.85);
+    color: #777;
     cursor: pointer;
     padding: 0 6px;
     transition: color 0.2s ease;

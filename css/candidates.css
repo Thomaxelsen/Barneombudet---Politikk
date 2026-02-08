@@ -87,10 +87,10 @@
     gap: 12px;
     margin-bottom: 15px;
     padding: 10px 12px;
-    border-bottom: 1px solid rgba(255,255,255,0.25);
+    border-bottom: 1px solid rgba(0,0,0,0.12);
     background-color: var(--brand-peach-dark);
     border-radius: 10px;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.16);
+    box-shadow: 0 6px 14px rgba(0,0,0,0.12);
 }
 
 .candidate-detail-panel .detail-header h3 {
