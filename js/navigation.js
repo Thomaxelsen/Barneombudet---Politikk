@@ -8,10 +8,34 @@ document.addEventListener('DOMContentLoaded', function() {
         return;
     }
 
+    insertGlobalBanner();
     populateDesktopNav();
     populateMobileMenu();
     setupMenuEvents();
 });
+
+/**
+ * Setter inn et globalt banner før headeren.
+ */
+function insertGlobalBanner() {
+    const container = document.querySelector('.container');
+    if (!container) {
+        console.log("Navigation JS: Container (.container) not found for global banner.");
+        return;
+    }
+
+    if (container.querySelector('.global-banner')) {
+        return;
+    }
+
+    container.insertAdjacentHTML('afterbegin', `
+        <div class="global-banner">
+            <picture>
+                <img src="images/Banner.png" alt="Barneombudet – Vi er på lag med barn og unge">
+            </picture>
+        </div>
+    `);
+}
 
 /**
  * Fyller navigasjonsområdet for desktop-visning med kategoriserte dropdowns.
