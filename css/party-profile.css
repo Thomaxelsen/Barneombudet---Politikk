@@ -152,7 +152,7 @@
 
 .party-hero-summary {
     margin: 0;
-    color: #42516d;
+    color: var(--text-secondary);
     font-size: 1rem;
     line-height: 1.5;
 }
@@ -246,7 +246,7 @@
     display: block;
     margin-bottom: 10px;
     font-weight: 500;
-    color: #444;
+    color: var(--text-secondary);
 }
 
 /* ===== START: 2x2 Grid Layout ===== */
@@ -293,7 +293,7 @@
 /* Placeholder før parti er valgt */
 .profile-placeholder {
     text-align: center;
-    color: #777;
+    color: var(--text-secondary);
     font-style: italic;
     padding: 50px 0;
     font-size: 1.1rem;
@@ -320,7 +320,7 @@
     text-align: center;
     padding: 40px 20px;
     font-size: 1.1rem;
-    color: #888;
+    color: var(--text-muted);
     margin: auto; /* Sentrerer i flex container */
 }
 
@@ -444,7 +444,7 @@
 .issues-subtitle {
     margin: 0;
     font-size: 0.95rem;
-    color: #4a5c7c;
+    color: var(--text-secondary);
     max-width: 520px;
     line-height: 1.4;
 }
@@ -472,7 +472,7 @@
     font-size: 0.75rem;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    color: #5b6b8a;
+    color: var(--text-secondary);
 }
 
 .issues-stat-value {
@@ -523,7 +523,7 @@
 .tab-button {
     font-size: 0.85rem;
     font-weight: 600;
-    color: #4a5c7c;
+    color: var(--text-secondary);
     padding: 10px 12px;
     border-radius: 12px;
     border: 1px solid transparent;
@@ -653,7 +653,7 @@
 .issue-item-action {
     font-weight: 600;
     font-size: 0.9rem;
-    color: #0d6efd;
+    color: var(--link-color);
     display: inline-flex;
     align-items: center;
     gap: 6px;
@@ -710,7 +710,7 @@
 .no-issues {
     padding: 20px;
     text-align: center;
-    color: #65738f;
+    color: var(--text-secondary);
     background: rgba(241, 245, 255, 0.7);
     border-radius: 16px;
     font-style: italic;
@@ -1018,9 +1018,9 @@
     padding-bottom: 15px; border-bottom: 1px dashed #ddd; align-items: flex-end; flex-shrink: 0;
 }
 .profile-candidate-filters .filter-group { flex: 1; min-width: 150px; }
-.profile-candidate-filters label { display: block; margin-bottom: 5px; font-weight: 500; color: #555; font-size: 0.85rem; }
+.profile-candidate-filters label { display: block; margin-bottom: 5px; font-weight: 500; color: var(--text-secondary); font-size: 0.85rem; }
 .profile-candidate-filters .filter-dropdown { width: 100%; padding: 8px 10px; font-size: 0.9rem; border-radius: 8px; border: 1px solid var(--border-color); background-color: white; cursor: pointer;} /*lagt til*/
-.profile-candidate-filters .count-group { flex-basis: 100%; text-align: right; color: #666; font-size: 0.85rem; padding-top: 5px; padding-bottom: 0; min-width: auto; flex-grow: 0; }
+.profile-candidate-filters .count-group { flex-basis: 100%; text-align: right; color: var(--text-secondary); font-size: 0.85rem; padding-top: 5px; padding-bottom: 0; min-width: auto; flex-grow: 0; }
 @media (min-width: 576px) { .profile-candidate-filters .count-group { flex-basis: auto; } }
 #profile-candidate-count { font-weight: bold; }
 
@@ -1119,7 +1119,7 @@
     font-size: 1.1rem; padding: 10px 0 8px 0; margin-top: 15px; margin-bottom: 5px;
     font-weight: bold; color: var(--kf-blue); border-bottom: 2px solid var(--kf-purple);/*lagt til*/
 }
-.profile-candidate-grid-area .constituency-separator .count { font-size: 0.9rem; font-weight: normal; color: #555; }/*lagt til*/
+.profile-candidate-grid-area .constituency-separator .count { font-size: 0.9rem; font-weight: normal; color: var(--text-secondary); }/*lagt til*/
 .profile-candidate-grid-area .constituency-separator:first-of-type { margin-top: 5px; } /*lagt til*/
 
 .profile-candidate-grid-area .loader {
@@ -1127,12 +1127,12 @@
     text-align: center; /*lagt til*/
     padding: 40px 20px; /*lagt til*/
     font-size: 1.1rem; /*lagt til*/
-    color: #888; /*lagt til*/
+    color: var(--text-muted); /*lagt til*/
     margin: auto; /*lagt til*/
 }
 .profile-candidate-grid-area .no-results {
      grid-column: 1 / -1;
-     text-align: center; padding: 20px; color: #888; font-style: italic;
+     text-align: center; padding: 20px; color: var(--text-muted); font-style: italic;
 }
 
 /* Sørg for at korttyper skjules/vises korrekt basert på JS-klassene */
@@ -1156,24 +1156,24 @@
     display: flex; justify-content: space-between; align-items: center;
     padding: 15px 20px; border-bottom: 1px solid rgba(0,0,0,0.12); background-color: var(--brand-peach-dark); flex-shrink: 0;
 }
-.overlay-header h4 { margin: 0; font-size: 1.2rem; color: #fff; }
+.overlay-header h4 { margin: 0; font-size: 1.2rem; color: var(--brand-blue-dark); }
 .close-overlay-button {
-    font-size: 26px; font-weight: bold; color: #666; background: none; border: none;
+    font-size: 26px; font-weight: bold; color: var(--text-muted); background: none; border: none;
     cursor: pointer; padding: 0 5px; line-height: 1;
 }
-.close-overlay-button:hover { color: #fff; }
+.close-overlay-button:hover { color: var(--brand-blue-dark); }
 .overlay-content { flex-grow: 1; overflow-y: auto; padding: 25px; }
 /* Stiler for innhold i overlay (gjenbruk fra candidates.css) */
 .overlay-content .detail-image-container { text-align: center; margin-bottom: 20px; }
 .overlay-content .detail-image { max-width: 160px; border-radius: 6px; }
-.overlay-content .image-placeholder-panel { width: 160px; height: 160px; margin: 0 auto; font-size: 0.85rem; border: 1px dashed #ccc; background-color: #f0f4f8; display: flex; align-items: center; justify-content: center; color: #999;}
+.overlay-content .image-placeholder-panel { width: 160px; height: 160px; margin: 0 auto; font-size: 0.85rem; border: 1px dashed #ccc; background-color: #f0f4f8; display: flex; align-items: center; justify-content: center; color: var(--text-muted);}
 .overlay-content .detail-header { display: flex; align-items: center; gap: 10px; margin-bottom: 12px; padding-bottom: 8px; border-bottom: 1px solid #eee;}
 .overlay-content .detail-header h3 { flex-grow: 1; font-size: 1.3rem; }
 .overlay-content .detail-header .party-icon { width: 32px; height: 32px; font-size: 14px; flex-shrink: 0; display: flex; align-items: center; justify-content: center; border-radius: 50%; color: white; font-weight: bold;} /* lagt til */
-.overlay-content .detail-info p { font-size: 0.9rem; margin-bottom: 8px; line-height: 1.5; color: #444;}
-.overlay-content .detail-info strong { display: inline-block; min-width: 80px; color: #222; font-weight: 600; margin-right: 5px;}
-.overlay-content .detail-info a { color: var(--kf-blue); text-decoration: none; }
-.overlay-content .detail-info a:hover { text-decoration: underline; }
+.overlay-content .detail-info p { font-size: 0.9rem; margin-bottom: 8px; line-height: 1.5; color: var(--text-secondary);}
+.overlay-content .detail-info strong { display: inline-block; min-width: 80px; color: var(--text-primary); font-weight: 600; margin-right: 5px;}
+.overlay-content .detail-info a { color: var(--link-color); text-decoration: none; }
+.overlay-content .detail-info a:hover { color: var(--link-hover); text-decoration: underline; }
 .overlay-content .profile-link-btn {
     display: block;
     margin-top: 15px;
@@ -1189,7 +1189,7 @@
 .overlay-content .profile-link-btn:hover {
     background-color: var(--kf-purple);
 }
-.overlay-content .privacy-notice-panel { font-size: 0.75rem; color: #888; margin-top: 15px; text-align: center; border-top: 1px dashed #ddd; padding-top: 8px;}
+.overlay-content .privacy-notice-panel { font-size: 0.75rem; color: var(--text-muted); margin-top: 15px; text-align: center; border-top: 1px dashed #ddd; padding-top: 8px;}
 /* ===== SLUTT: Kandidat Boks ===== */
 
 @media (max-width: 1023px) {

@@ -22,6 +22,12 @@
     --brand-peach-dark: #fce3ce;
     --brand-peach-light: #ffe6d8;
     --brand-blue-dark: #00235a;
+    /* Tekst og lenker for kontrast mot fersken */
+    --text-primary: #2b2b2b;
+    --text-secondary: #454545;
+    --text-muted: #5f5f5f;
+    --link-color: #1a3d7c;
+    --link-hover: #5a1e6a;
     /* Variabel for menybredde */
     --menu-width: 250px;
 }
@@ -37,7 +43,16 @@
 body {
     background-color: var(--light-bg);
     line-height: 1.6;
-    color: #333;
+    color: var(--text-primary);
+}
+
+a {
+    color: var(--link-color);
+}
+
+a:hover,
+a:focus-visible {
+    color: var(--link-hover);
 }
 
 body.menu-open {
@@ -88,7 +103,7 @@ header {
 }
 
 header h1 {
-    color: #2d2d2d;
+    color: var(--text-primary);
     font-size: 2rem;
     font-weight: 600;
     margin: 0;
@@ -96,11 +111,11 @@ header h1 {
 }
 
 header h1 strong {
-    color: #fff;
+    color: var(--brand-blue-dark);
 }
 
 .header-subtitle {
-    color: #4a4a4a;
+    color: var(--text-secondary);
     font-size: 1.1rem;
     margin-top: 0.4rem;
 }
@@ -117,7 +132,7 @@ header h1 strong {
     display: inline-block;
     padding: 8px 15px;
     background-color: transparent;
-    color: #fff;
+    color: var(--brand-blue-dark);
     text-decoration: none;
     border-radius: 20px;
     font-weight: 500;
@@ -161,7 +176,7 @@ header h1 strong {
     font-size: 1.8rem;
 }
 .introduction p {
-    color: #555;
+    color: var(--text-secondary);
     max-width: 800px;
     margin: 0 auto 1rem auto;
     line-height: 1.6;
@@ -174,7 +189,7 @@ header h1 strong {
 
 .info-text {
     font-size: 1rem;
-    color: #666;
+    color: var(--text-secondary);
     margin-top: 0.7rem;
 }
 
@@ -242,7 +257,7 @@ header h1 strong {
 .party-name {
     font-size: 1rem;
     font-weight: bold;
-    color: #333;
+    color: var(--text-primary);
 }
 
 /* GAMLE REGLER (fjernes eller kommenteres ut) */
@@ -289,7 +304,7 @@ header h1 strong {
     font-weight: 500; /* Normal vekt */
     font-size: 0.85em;
     border: 1.5px solid;
-    color: #333;
+    color: var(--text-primary);
     margin: 3px;
     vertical-align: middle;
 }
@@ -298,7 +313,7 @@ header h1 strong {
     width: 18px;
 }
 .party-tag-placeholder {
-    color: #888;
+    color: var(--text-muted);
     font-style: italic;
     font-size: 0.9rem;
 }
@@ -316,7 +331,7 @@ header h1 strong {
 .party-instructions p {
     margin: 0;
     font-size: 0.95rem;
-    color: #444;
+    color: var(--text-secondary);
 }
 .info-button {
    width: 24px;
@@ -442,7 +457,7 @@ header h1 strong {
 
 .result-label {
     font-size: 0.9rem;
-    color: #555;
+    color: var(--text-secondary);
 }
 
 .result-status {
@@ -508,7 +523,7 @@ button, .button {
 }
 .btn-secondary, .button.secondary {
     background-color: #f5f5f5;
-    color: #444;
+    color: var(--text-primary);
     border: 1px solid #ddd;
 }
 .btn-primary:hover, .button.primary:hover {
@@ -529,7 +544,7 @@ footer {
     border-top: 1px solid var(--border-color);
     padding: 25px 0;
     font-size: 0.9rem;
-    color: #777;
+    color: var(--text-secondary);
     text-align: center;
 }
 
@@ -577,7 +592,7 @@ footer {
    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
    font-size: 10px;
    pointer-events: none;
-   fill: #333;
+   fill: var(--text-primary);
 }
 #tooltip {
    font-weight: bold;
@@ -672,7 +687,7 @@ footer {
 .issue-selector h2::after { display: none; }
 .issue-description {
     font-size: 0.9rem;
-    color: #555;
+    color: var(--text-secondary);
     margin-bottom: 15px;
     text-align: left;
 }
@@ -711,7 +726,7 @@ footer {
    font-weight: 600;
 }
 .issue-area {
-   color: #555;
+   color: var(--text-muted);
    font-style: italic;
    font-size: 0.85rem;
    margin-bottom: 10px;
@@ -719,7 +734,7 @@ footer {
    border-bottom: 1px solid #e0e0e0;
 }
 .issue-explainer {
-   color: #666;
+   color: var(--text-secondary);
    font-style: italic;
    text-align: center;
    font-size: 0.9rem;
@@ -783,7 +798,7 @@ footer {
 }
 .interaction-tip {
    font-size: 0.8rem;
-   color: #666;
+   color: var(--text-secondary);
    font-style: italic;
    margin: 5px 0 8px 0;
    text-align: left;
@@ -805,7 +820,7 @@ footer {
     background-color: var(--kf-purple);
 }
 .no-parties {
-   color: #777;
+   color: var(--text-secondary);
    font-style: italic;
    font-size: 0.9rem;
 }
@@ -906,15 +921,15 @@ body.modal-open {
 }
 .no-quote-text {
     font-style: italic;
-    color: #777;
+    color: var(--text-muted);
 }
 
 /* Info Popup/Tooltip (for ? knapp) */
 .info-popup { display: none; position: fixed; z-index: 1001; left: 0; top: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,0.4); backdrop-filter: blur(3px); }
 .info-popup-content { background-color: white; margin: 15% auto; padding: 25px; border-radius: 12px; width: 90%; max-width: 500px; box-shadow: 0 4px 25px rgba(0,0,0,0.2); animation: popupFadeIn 0.3s; position: relative; }
 .info-popup h4 { color: var(--kf-dark-blue); margin-top: 0; margin-bottom: 15px; }
-.close-popup { color: #aaa; position: absolute; right: 15px; top: 10px; font-size: 28px; font-weight: bold; cursor: pointer; transition: color 0.2s; }
-.close-popup:hover { color: #333; }
+.close-popup { color: var(--text-muted); position: absolute; right: 15px; top: 10px; font-size: 28px; font-weight: bold; cursor: pointer; transition: color 0.2s; }
+.close-popup:hover { color: var(--text-primary); }
 @keyframes popupFadeIn { from {opacity: 0; transform: translateY(-20px);} to {opacity: 1; transform: translateY(0);} }
 .info-tooltip { display: none; position: absolute; background-color: white; padding: 15px; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.15); width: 250px; z-index: 100; font-size: 0.9rem; line-height: 1.4; border-left: 3px solid var(--kf-dark-blue); animation: tooltipFadeIn 0.2s; top: 50%; left: calc(100% + 10px); transform: translateY(-50%); color: #333; }
 .info-button:hover .info-tooltip { display: block; }
@@ -976,14 +991,14 @@ body.menu-open .burger-menu {
     flex-shrink: 0;
 }
 .menu-header h3 { margin: 0; color: var(--kf-blue); }
-.close-button { font-size: 24px; cursor: pointer; background: none; border: none; padding: 0; margin: 0; line-height: 1; color: #666; }
-.close-button:hover { color: #333; }
+.close-button { font-size: 24px; cursor: pointer; background: none; border: none; padding: 0; margin: 0; line-height: 1; color: var(--text-muted); }
+.close-button:hover { color: var(--text-primary); }
 .menu-items {
     padding: 20px;
     overflow-y: auto;
     flex-grow: 1;
 }
-.menu-items a { display: block; padding: 12px 15px; margin-bottom: 10px; color: #333; text-decoration: none; border-radius: 5px; transition: background-color 0.2s, color 0.2s; font-weight: 500; }
+.menu-items a { display: block; padding: 12px 15px; margin-bottom: 10px; color: var(--text-primary); text-decoration: none; border-radius: 5px; transition: background-color 0.2s, color 0.2s; font-weight: 500; }
 .menu-items a:hover { background-color: rgba(0, 48, 135, 0.05); color: var(--kf-blue); }
 .menu-items a.active { background-color: var(--kf-blue); color: white; font-weight: 600; }
 .menu-overlay {
@@ -1006,7 +1021,7 @@ body.menu-open .burger-menu {
 /* Issue Matrix Styling */
 .matrix-filters { display: flex; flex-wrap: wrap; gap: 20px; margin: 20px 0 30px; background: white; padding: 25px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.06); }
 .filter-group { flex: 1; min-width: 250px; }
-.filter-group label { display: block; margin-bottom: 8px; font-weight: 500; color: #444; }
+.filter-group label { display: block; margin-bottom: 8px; font-weight: 500; color: var(--text-secondary); }
 .toggle-group {
     display: flex;
     align-items: center;
@@ -1025,7 +1040,7 @@ body.menu-open .burger-menu {
     align-items: center;
     cursor: pointer;
     font-weight: normal;
-    color: #555;
+    color: var(--text-secondary);
     margin-bottom: 0;
 }
 .toggle-label input[type="checkbox"] {
@@ -1069,7 +1084,7 @@ body.menu-open .burger-menu {
 .matrix-table thead th.party-col:last-of-type { border-right: none; }
 .matrix-table thead th.party-col[title="Sum av poeng"] {
     background-color: #e9ecef;
-    color: #555;
+    color: var(--text-secondary);
     border-left: 1px solid #ddd;
     border-radius: 0 12px 12px 0;
 }
@@ -1163,7 +1178,7 @@ body.menu-open .burger-menu {
     text-align: center;
     border-radius: 50%;
     background-color: rgba(255, 255, 255, 0.8);
-    color: #555;
+    color: var(--text-secondary);
     font-style: italic;
     font-weight: 600;
     border: 1px solid rgba(0, 0, 0, 0.1);
@@ -1179,7 +1194,7 @@ body.menu-open .burger-menu {
 }
 .sum-cell-content { display: inline-flex; align-items: center; justify-content: center; width: 70px; height: 36px; border-radius: 24px; font-weight: bold; font-size: 1rem; border: 1px solid transparent; box-sizing: border-box; cursor: default; }
 .matrix-tooltip { display: none; position: absolute; z-index: 1000; background-color: white; box-shadow: 0 4px 20px rgba(0,0,0,0.15); border-radius: 8px; padding: 15px 20px; max-width: 350px; font-size: 0.95rem; line-height: 1.5; border-left: 4px solid var(--kf-purple); }
-.matrix-loader { text-align: center; padding: 50px; font-size: 1.2rem; color: #666; }
+.matrix-loader { text-align: center; padding: 50px; font-size: 1.2rem; color: var(--text-secondary); }
 
 /* ------ Detaljpanel for saksinformasjon (gjenbrukbar stil) ------ */
 .panel-overlay {
@@ -1227,21 +1242,21 @@ body.menu-open .burger-menu {
 .panel-header h3 {
     margin: 0;
     font-size: 1.35rem;
-    color: #fff;
+    color: var(--brand-blue-dark);
 }
 .close-panel-btn {
     background: none;
     border: none;
     font-size: 2.5rem;
     line-height: 1;
-    color: #777;
+    color: var(--text-muted);
     cursor: pointer;
     padding: 0 6px;
     transition: color 0.2s ease;
 }
 .close-panel-btn:hover,
 .close-panel-btn:focus-visible {
-    color: #fff;
+    color: var(--brand-blue-dark);
     outline: none;
 }
 .panel-content {
@@ -1251,13 +1266,13 @@ body.menu-open .burger-menu {
 }
 .panel-issue-area {
     font-style: italic;
-    color: #666;
+    color: var(--text-secondary);
     margin: 0 0 16px 0;
 }
 .panel-issue-description {
     margin: 0 0 22px 0;
     line-height: 1.6;
-    color: #444;
+    color: var(--text-secondary);
 }
 .stance-group {
     margin-bottom: 28px;
@@ -1311,7 +1326,7 @@ body.menu-open .burger-menu {
     margin-top: 4px;
     font-size: 0.9rem;
     font-style: italic;
-    color: #555;
+    color: var(--text-secondary);
     line-height: 1.5;
     background-color: #f8f9fa;
     padding: 9px 12px;
@@ -1319,11 +1334,11 @@ body.menu-open .burger-menu {
     border-radius: 4px;
 }
 .stance-party-item .party-quote.no-quote {
-    color: #999;
+    color: var(--text-muted);
 }
 .panel-empty-state {
     text-align: center;
-    color: #777;
+    color: var(--text-secondary);
     font-style: italic;
 }
 
@@ -1644,7 +1659,7 @@ header {
 
 /* 3. Justerer SUM-headeren for konsistens */
 .matrix-table thead th.party-col[title="Sum av poeng"] {
-    color: #555 !important;
+    color: var(--text-secondary) !important;
     font-weight: bold;
     font-size: 0.9rem;
 }
