@@ -18,6 +18,9 @@
     --kf-yellow: #ffbe2c;
     --kf-light-green: #8ece3f;
     --kf-green: #00a8a3;
+    /* Semantiske farger for uenighet */
+    --disagree-soft-amber: #f6c47a;
+    --disagree-soft-red: #d85c6f;
     /* Semantiske brand-farger */
     --brand-peach-dark: #fce3ce;
     --brand-peach-light: #ffe6d8;
@@ -405,7 +408,7 @@ header h1 strong {
 
 .progress-bar {
     height: 100%;
-    background: linear-gradient(90deg, var(--kf-pink), var(--kf-purple));
+    background: linear-gradient(90deg, var(--disagree-soft-amber), var(--disagree-soft-red));
     transition: width 0.4s ease, background 0.4s ease;
     border-radius: 15px;
 }
@@ -473,9 +476,9 @@ header h1 strong {
 
 .required-votes { background-color: #f8f9fa; color: var(--kf-blue); border: 1px solid rgba(0, 48, 135, 0.1); }
 .votes-for { background-color: rgba(142, 206, 63, 0.08); color: var(--kf-green); border: 1px solid rgba(0, 168, 163, 0.2); }
-.votes-against { background-color: rgba(230, 60, 140, 0.08); color: var(--kf-pink); border: 1px solid rgba(230, 60, 140, 0.2); }
+.votes-against { background-color: rgba(216, 92, 111, 0.12); color: var(--disagree-soft-red); border: 1px solid rgba(216, 92, 111, 0.25); }
 .has-majority { background: linear-gradient(90deg, var(--kf-light-green), var(--kf-green)); color: white; }
-.no-majority { background: linear-gradient(90deg, var(--kf-pink), var(--kf-purple)); color: white; }
+.no-majority { background: linear-gradient(90deg, var(--disagree-soft-amber), var(--disagree-soft-red)); color: white; }
 
 .selected-parties {
     margin-top: 25px;
@@ -575,7 +578,7 @@ footer {
    transform: translateX(-50%);
    width: 80px;
    height: 2px;
-   background: linear-gradient(90deg, var(--kf-pink), var(--kf-purple));
+   background: linear-gradient(90deg, var(--disagree-soft-amber), var(--disagree-soft-red));
 }
 .parliament-container {
     width: 100%;
@@ -751,7 +754,7 @@ footer {
 }
 .issue-status strong { font-weight: 600; }
 .issue-status.majority { background: linear-gradient(90deg, var(--kf-light-green), var(--kf-green)); color: white; }
-.issue-status.no-majority { background: linear-gradient(90deg, var(--kf-pink), var(--kf-purple)); color: white; }
+.issue-status.no-majority { background: linear-gradient(90deg, var(--disagree-soft-amber), var(--disagree-soft-red)); color: white; }
 .issue-parties { margin-top: 15px; }
 .issue-parties h4 { color: var(--kf-dark-blue); margin-bottom: 8px; font-size: 1rem; }
 .issue-parties-list { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 5px; }
