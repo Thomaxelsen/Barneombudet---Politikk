@@ -1,11 +1,8 @@
 /* css/particle-explorer.css */
 
-/* Override standard container padding for full-page feel */
+/* Layout for particle explorer */
 .particle-page-container {
-    padding: 0;
-    margin: 0;
-    width: 100%;
-    height: 100vh; /* Fyll hele viewport-høyden */
+    min-height: 100vh; /* Fyll hele viewport-høyden */
     display: flex;
     flex-direction: column;
     overflow: hidden; /* Forhindre scrolling av siden */
@@ -13,14 +10,9 @@
 
 /* Juster header for denne siden */
 .particle-page-container header {
-    padding: 1rem 1.5rem; /* Litt mindre padding */
-    margin-bottom: 0; /* Ingen bunnmargin */
-    border-radius: 0; /* Ingen avrunding */
-    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
     flex-shrink: 0; /* Ikke la header krympe */
     position: relative; /* For z-index */
     z-index: 20; /* Sørg for at header ligger over 3D-view */
-    background-color: var(--brand-peach-dark); /* Sikre bakgrunn */
 }
 
 /* Hovedinnhold-området */
