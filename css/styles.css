@@ -7,7 +7,7 @@
     --success-color: #28a745;
     --fail-color: #dc3545;
     --neutral-color: #6c757d;
-    --light-bg: #f7f9fc;
+    --light-bg: #FBEADB;
     --border-color: #dee2e6;
     /* Barneombudets fargepalett */
     --kf-blue: #003087;
@@ -145,7 +145,8 @@ header h1 strong {
     padding: 1.8rem;
     background-color: white;
     border-radius: 12px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+    border: 1px solid rgba(0,0,0,0.05);
     border-left: 5px solid var(--kf-pink);
     transition: box-shadow 0.3s ease;
 }
@@ -167,7 +168,7 @@ header h1 strong {
 
 .description:hover,
 .introduction:hover {
-    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+    box-shadow: 0 8px 22px rgba(0,0,0,0.1);
 }
 
 .info-text {
@@ -186,7 +187,8 @@ header h1 strong {
     background-color: white;
     padding: 25px;
     border-radius: 12px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+    border: 1px solid rgba(0,0,0,0.05);
     margin-bottom: 30px;
 }
 
@@ -343,7 +345,8 @@ header h1 strong {
     background-color: white;
     padding: 25px;
     border-radius: 12px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+    border: 1px solid rgba(0,0,0,0.05);
     margin-bottom: 30px;
 }
 
