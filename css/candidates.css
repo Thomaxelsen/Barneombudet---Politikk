@@ -86,15 +86,18 @@
     align-items: center;
     gap: 12px;
     margin-bottom: 15px;
-    padding-bottom: 10px;
-    border-bottom: 1px solid #eee;
+    padding: 10px 12px;
+    border-bottom: 1px solid rgba(255,255,255,0.25);
+    background-color: var(--brand-peach-dark);
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.16);
 }
 
 .candidate-detail-panel .detail-header h3 {
     flex-grow: 1;
     margin: 0;
     font-size: 1.4rem;
-    color: var(--kf-blue);
+    color: #fff;
     line-height: 1.3;
 }
 .candidate-detail-panel .detail-header .party-icon {

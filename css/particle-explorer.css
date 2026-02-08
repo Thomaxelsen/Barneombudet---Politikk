@@ -16,11 +16,11 @@
     padding: 1rem 1.5rem; /* Litt mindre padding */
     margin-bottom: 0; /* Ingen bunnmargin */
     border-radius: 0; /* Ingen avrunding */
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
     flex-shrink: 0; /* Ikke la header krympe */
     position: relative; /* For z-index */
     z-index: 20; /* Sørg for at header ligger over 3D-view */
-    background-color: white; /* Sikre bakgrunn */
+    background-color: var(--brand-peach-dark); /* Sikre bakgrunn */
 }
 
 /* Hovedinnhold-området */
