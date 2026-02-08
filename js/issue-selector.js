@@ -49,15 +49,13 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 // --- Globale variabler og hjelpefunksjoner (uendret) ---
-function isTouchDevice() { /* ... (som før) ... */
+function isTouchDevice() {
     try {
-        return (('ontouchstart' in window) ||
-                (navigator.maxTouchPoints > 0) ||
-                (navigator.msMaxTouchPoints > 0));
+        return window.matchMedia('(hover: none) and (pointer: coarse)').matches;
     } catch (e) {
         return false; // Anta ikke-touch hvis sjekken feiler
     }
- }
+}
 let currentIssueId = null;
 let hoverTimer = null;
 let currentHoveredParty = null;
