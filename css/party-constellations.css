@@ -1,0 +1,286 @@
+/* === Generell layoutstyling (beholdt fra original) === */
+.main-content {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+}
+
+.selection-container {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.selection-container h2 {
+    margin-top: 0;
+    color: #333;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+}
+
+/* === NYTT KORT-DESIGN FOR PARTIVELGER === */
+.party-selector {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
+    gap: 1rem;
+    margin-bottom: 15px; /* Justert fra originalen */
+}
+
+.party-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 0.5rem;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    background-color: #ffffff;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    text-align: center;
+    user-select: none;
+}
+
+.party-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    border-color: #c0c0c0;
+}
+
+.party-card.selected {
+    border-color: #005FAB; /* Kreftforeningens blåfarge */
+    box-shadow: 0 4px 15px rgba(0, 95, 171, 0.25);
+    background-color: #f0f8ff;
+}
+
+.party-logo {
+    height: 50px;
+    max-width: 100%; /* Bruker max-width i stedet for width */
+    object-fit: contain;
+    margin-bottom: 0.75rem;
+}
+
+.party-name {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #333;
+}
+
+
+/* === Styling for valg av enighet (beholdt fra original) === */
+.agreement-selector label {
+    font-weight: normal;
+    margin-left: 8px;
+    cursor: pointer;
+}
+.agreement-selector input {
+    cursor: pointer;
+}
+
+/* === Handlingsknapper (beholdt fra original) === */
+.action-buttons {
+    margin-top: 15px;
+    display: flex;
+    gap: 10px;
+}
+
+.action-buttons button {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#selectAllBtn {
+    background-color: #007bff;
+    color: white;
+}
+
+#clearAllBtn {
+    background-color: #6c757d;
+    color: white;
+}
+
+
+/* === Styling for resultat-seksjonen (beholdt og ryddet fra original) === */
+.results-container {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.placeholder-text {
+    color: #888;
+    font-style: italic;
+    text-align: center;
+    padding: 40px 0;
+}
+
+.constellation-result {
+    margin-bottom: 25px;
+}
+
+.constellation-header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+}
+
+/* *** START PÅ ENDRING *** */
+.constellation-header .party-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 4px 12px 4px 8px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 0.9em;
+    border: 1.5px solid;
+    color: #333;
+}
+
+/* Ny stil for logoen inni tag'en */
+.party-tag-logo {
+    height: 22px;
+    width: 22px;
+}
+/* *** SLUTT PÅ ENDRING *** */
+
+.constellation-seat-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 4px 10px;
+    border-radius: 16px;
+    background: linear-gradient(135deg, rgba(0, 95, 171, 0.15), rgba(0, 95, 171, 0.05));
+    color: #004a85;
+    font-size: 0.95rem;
+    border: 1px solid rgba(0, 95, 171, 0.25);
+}
+
+.constellation-seat-badge strong {
+    font-size: 1.05rem;
+}
+
+.issue-category-group {
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.issue-category-header {
+    background-color: #f0f0f0;
+    padding: 10px 15px;
+    font-weight: bold;
+    color: #333;
+    border-bottom: 1px solid #e0e0e0;
+    border-radius: 8px 8px 0 0;
+}
+
+.issue-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.issue-list li {
+    background-color: #f9f9f9;
+    padding: 12px 15px;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+}
+
+.issue-list li:last-child {
+    border-bottom: none;
+    border-radius: 0 0 8px 8px;
+}
+
+.issue-name {
+    flex-grow: 1;
+    text-align: left;
+    margin-right: 10px;
+}
+
+.issue-controls {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    flex-shrink: 0;
+}
+
+.issue-party-buttons-container {
+    display: flex;
+    gap: 5px;
+}
+
+.issue-party-button-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+.issue-party-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    color: white;
+    font-size: 11px;
+    font-weight: bold;
+    cursor: pointer;
+    user-select: none;
+    border: 1px solid rgba(0,0,0,0.2);
+}
+
+.issue-quote-tooltip {
+    visibility: hidden;
+    opacity: 0;
+    width: 280px;
+    max-width: 90vw;
+    background-color: #2c3e50;
+    color: #fff;
+    text-align: left;
+    border-radius: 6px;
+    padding: 12px;
+    position: absolute;
+    z-index: 9999;
+    bottom: 130%;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: opacity 0.2s ease-in-out, visibility 0.2s ease-in-out;
+    font-size: 0.9em;
+    line-height: 1.5;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    pointer-events: none;
+    word-break: break-word;
+}
+
+.issue-quote-tooltip::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 6px;
+    border-style: solid;
+    border-color: #2c3e50 transparent transparent transparent;
+}
+
+.issue-party-button-wrapper:hover .issue-quote-tooltip,
+.issue-party-button-wrapper:focus .issue-quote-tooltip,
+.issue-party-button-wrapper:focus-within .issue-quote-tooltip {
+    visibility: visible;
+    opacity: 1;
+    pointer-events: auto;
+}

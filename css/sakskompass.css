@@ -1,0 +1,320 @@
+/* sakskompass.css - OPPGRADERT OG KOMPLETT VERSJON */
+
+/* Kontrollpanel */
+.sk-controls {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 30px;
+    background-color: white;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+}
+.sk-controls .filter-group {
+    flex: 1;
+    min-width: 200px;
+}
+
+/* Visualiseringsområde */
+.sk-visualization-area {
+    background-color: white;
+    border-radius: 12px;
+    padding: 25px;
+    margin-top: 30px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+}
+.visualization-container {
+    width: 100%;
+    min-height: 400px;
+    margin-top: 20px;
+    position: relative;
+}
+.visualization-container .loader,
+.visualization-container .no-data,
+.visualization-container .error {
+     text-align: center;
+     padding: 40px 20px;
+     font-size: 1.1rem;
+     color: #777;
+}
+
+/* --- D3 Chart Styles (OPPDATERT) --- */
+.sk-visualization-area svg {
+    display: block;
+    width: 100%;
+    height: auto;
+    overflow: visible;
+}
+
+/* Akser */
+.sk-visualization-area .axis path {
+    stroke: #ccc;
+}
+.sk-visualization-area .axis .domain {
+    stroke: none; /* Skjul hovedaksen for et renere utseende */
+}
+.sk-visualization-area .axis line {
+    stroke: #e9ecef; /* Svak farge for rutenett */
+    stroke-dasharray: 2, 2; /* Stiplede linjer */
+}
+.sk-visualization-area .y-axis .tick line {
+    stroke: none; /* Fjerner tick-streker på y-aksen */
+}
+.sk-visualization-area .axis text {
+    font-size: 0.85rem;
+    fill: #555;
+    cursor: default;
+}
+
+/* Flertallslinje */
+.sk-visualization-area .majority-line {
+    stroke: var(--kf-purple);
+    stroke-width: 1.5px;
+    stroke-dasharray: 4, 4;
+}
+.sk-visualization-area .majority-label {
+    fill: var(--kf-purple);
+    font-size: 0.75rem;
+    font-weight: bold;
+    text-anchor: middle;
+}
+
+/* --- Søyler (NYTT DESIGN) --- */
+.bar-group {
+    transition: opacity 0.3s ease;
+}
+.bar-segment {
+    transition: filter 0.2s ease, stroke-width 0.2s ease;
+    stroke: rgba(255, 255, 255, 0.5);
+    stroke-width: 1px;
+}
+.bar-group:hover .bar-segment {
+    filter: brightness(1.1);
+}
+.bar-segment:hover {
+    stroke-width: 1.5px;
+    stroke: black;
+}
+
+/* Demping av andre elementer KUN NÅR man interagerer */
+.sk-visualization-area.is-interacting .bar-group:not(.highlighted),
+.sk-visualization-area.is-interacting .y-axis .tick:not(.highlighted) {
+    opacity: 0.3;
+}
+
+/* Utheving av Y-akse-tekst ved hover */
+.y-axis .tick {
+    transition: opacity 0.3s ease;
+}
+.y-axis .tick text {
+    transition: fill 0.2s, font-weight 0.2s;
+}
+.y-axis .tick:hover text,
+.y-axis .tick.highlighted text {
+    font-weight: bold;
+    fill: var(--kf-blue);
+}
+
+/* Total mandat-label */
+.total-mandate-label {
+    pointer-events: none;
+    font-weight: 500;
+}
+
+/* --- Tooltip (OPPDATERT) --- */
+.d3-tooltip {
+    position: absolute;
+    background-color: #343a40;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+    z-index: 1050;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    border: 1px solid rgba(255,255,255,0.1);
+}
+.d3-tooltip.visible {
+    opacity: 1;
+}
+.d3-tooltip b {
+    color: #ffbe2c;
+    display: block;
+    margin-bottom: 5px;
+    font-size: 1rem;
+}
+.d3-tooltip br {
+    display: block;
+    content: "";
+    margin-top: 5px;
+}
+.d3-tooltip small {
+    display: block;
+    margin-top: 8px;
+    color: #ced4da;
+    font-size: 0.8em;
+    line-height: 1.4;
+}
+
+/* Tabellvisning og Legende (uendret fra din original) */
+.sk-table-container { overflow-x: auto; max-height: 80vh; }
+.sk-table { width: 100%; border-collapse: collapse; margin-top: 20px; font-size: 0.9rem; }
+.sk-table th, .sk-table td { padding: 10px 12px; border: 1px solid #eee; text-align: left; vertical-align: top; }
+.sk-table th { background-color: #f8f9fa; font-weight: 600; position: sticky; top: 0; z-index: 10; }
+.sk-table td.mandates-col { text-align: right; font-weight: bold; min-width: 80px; vertical-align: middle; }
+.sk-table td.parties-col { min-width: 200px; line-height: 1.8; }
+.sk-table .mini-party-tag { display: inline-block; padding: 2px 6px; border-radius: 10px; font-size: 0.75rem; margin: 2px; border: 1px solid transparent; white-space: nowrap; }
+.sk-table .mini-party-tag.level-1 { opacity: 0.7; }
+.legend-container-sk { margin-top: 20px; padding-top: 15px; border-top: 1px solid #eee; display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; }
+.legend-container-sk .legend-item { opacity: 1; cursor: default; }
+.legend-container-sk .legend-item:hover { transform: none; }
+
+/* Responsivitet (uendret fra din original) */
+@media (max-width: 768px) {
+    .sk-controls { flex-direction: column; }
+    .sk-visualization-area .axis text { font-size: 0.7rem; }
+    .sk-visualization-area .majority-label,
+    .sk-visualization-area .total-mandate-label,
+    .sk-visualization-area .dot-label { font-size: 0.7rem; }
+    .sk-table { font-size: 0.8rem; }
+    .sk-table th, .sk-table td { padding: 6px 8px; }
+    .sk-table td.parties-col { min-width: 150px; }
+}
+/* ------ START: NYE REGLER FOR DETALJPANEL ------ */
+
+/* Overlay/Bakdrop */
+.panel-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1090; /* Høyt, men under panelet */
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    pointer-events: none; /* Kan ikke klikkes når skjult */
+}
+.panel-overlay.active {
+    opacity: 1;
+    pointer-events: auto; /* Kan klikkes når synlig */
+}
+
+/* Selve sidepanelet */
+.detail-panel {
+    position: fixed;
+    top: 0;
+    right: -450px; /* Start utenfor skjermen */
+    width: 450px;
+    max-width: 90vw; /* Maks 90% av skjermbredden */
+    height: 100%;
+    background-color: white;
+    box-shadow: -5px 0 20px rgba(0,0,0,0.15);
+    z-index: 1100; /* Ligger over alt annet */
+    transition: right 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+    display: flex;
+    flex-direction: column;
+}
+.detail-panel.active {
+    right: 0; /* Gli inn i synet */
+}
+
+/* Panel Header */
+.panel-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 25px;
+    border-bottom: 1px solid #eee;
+    flex-shrink: 0; /* Header skal ikke krympe */
+}
+.panel-header h3 {
+    margin: 0;
+    font-size: 1.3rem;
+    color: var(--kf-blue);
+}
+.close-panel-btn {
+    background: none;
+    border: none;
+    font-size: 2.5rem;
+    line-height: 1;
+    color: #aaa;
+    cursor: pointer;
+    padding: 0 5px;
+    transition: color 0.2s;
+}
+.close-panel-btn:hover {
+    color: #333;
+}
+
+/* Panel Content */
+.panel-content {
+    padding: 25px;
+    overflow-y: auto; /* Scroll for langt innhold */
+    flex-grow: 1;
+}
+.panel-content .issue-area {
+    font-style: italic;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+/* Gruppering av standpunkt */
+.stance-group {
+    margin-bottom: 25px;
+}
+.stance-group h4 {
+    margin: 0 0 10px 0;
+    padding-bottom: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    border-bottom: 2px solid;
+}
+.stance-group.level-2 h4 { color: #28a745; border-color: #28a745; }
+.stance-group.level-1 h4 { color: #ffc107; border-color: #ffc107; }
+.stance-group.level-0 h4 { color: #dc3545; border-color: #dc3545; }
+
+/* Parti-element i listen */
+.stance-party-item {
+    display: flex;
+    gap: 12px;
+    padding: 12px 0;
+    border-bottom: 1px solid #f0f0f0;
+}
+.stance-party-item:last-child {
+    border-bottom: none;
+}
+
+.stance-party-item .party-logo {
+    width: 36px;
+    height: 36px;
+    flex-shrink: 0;
+}
+
+.stance-party-item .party-details {
+    flex-grow: 1;
+}
+.stance-party-item .party-name {
+    font-weight: bold;
+    font-size: 1rem;
+}
+.stance-party-item .party-quote {
+    margin-top: 5px;
+    font-size: 0.9rem;
+    font-style: italic;
+    color: #555;
+    line-height: 1.5;
+    background-color: #f8f9fa;
+    padding: 8px 12px;
+    border-left: 3px solid #ddd;
+    border-radius: 4px;
+}
+.stance-party-item .party-quote.no-quote {
+    color: #999;
+}
+
+/* ------ SLUTT: NYE REGLER FOR DETALJPANEL ------ */
+```4.  Lagre filen `sakskompass.css`.

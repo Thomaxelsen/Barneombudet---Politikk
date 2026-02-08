@@ -1,0 +1,293 @@
+/*
+ * party-unique.css
+ * Stiler for siden som viser unike partisaker.
+ * --- OPPGRADERT DESIGN + FIX FOR LAYOUT OG TOOLTIP ---
+ */
+
+.main-content {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.selection-container {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.selection-container h2 {
+    margin-top: 0;
+    color: #333;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+}
+
+/* === FIX 1: Bytter fra Grid til Flexbox for jevnere layout === */
+.party-selector {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Sentrerer partikortene */
+    gap: 1rem;
+    margin-bottom: 15px;
+}
+/* === SLUTT FIX 1 === */
+
+.party-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 0.5rem;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    background-color: #ffffff;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    text-align: center;
+    user-select: none;
+    /* Setter en fast bredde slik at de ikke strekker seg rart */
+    width: 120px;
+}
+
+.party-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    border-color: #c0c0c0;
+}
+
+.party-card.selected {
+    border-color: var(--kf-purple, #7d5ba6);
+    box-shadow: 0 4px 15px rgba(125, 91, 166, 0.25);
+    background-color: #f6f4f9;
+}
+
+.party-logo {
+    height: 50px;
+    max-width: 100%;
+    object-fit: contain;
+    margin-bottom: 0.75rem;
+}
+
+.party-name {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.action-buttons {
+    margin-top: 15px;
+    display: flex;
+    gap: 10px;
+    /* Sentrerer knappene under partivelgeren */
+    justify-content: center;
+}
+
+.action-buttons button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: all 0.2s ease;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.08);
+}
+
+#selectAllBtn {
+    background: linear-gradient(45deg, #007bff, #0056b3);
+    color: white;
+}
+#selectAllBtn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 12px rgba(0,0,0,0.12);
+}
+
+#clearAllBtn {
+    background-color: #6c757d;
+    color: white;
+}
+#clearAllBtn:hover {
+    background-color: #5a6268;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+}
+
+.agreement-selector {
+    margin-top: 1rem;
+}
+
+.agreement-selector label {
+    margin-left: 0.25rem;
+    font-size: 0.9rem;
+}
+
+.results-container {
+    margin-top: 1.5rem;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.results-container h2 {
+    margin-bottom: 0.5rem;
+}
+
+.selected-parties-badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+    align-items: center;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #eee;
+}
+
+.party-tag-small {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 3px 10px 3px 6px;
+    border-radius: 16px;
+    font-weight: 500;
+    font-size: 0.85em;
+    border: 1.5px solid;
+    color: #333;
+}
+.party-tag-logo {
+    height: 18px;
+    width: 18px;
+}
+
+.party-unique-card {
+    background-color: #fcfcfc;
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.party-unique-card h3 {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    color: #333;
+}
+
+.party-logo-header {
+    width: 36px;
+    height: 36px;
+    object-fit: contain;
+    margin-right: 0.75rem;
+}
+
+/* === FIX 2: Fjerner 'overflow: hidden' som klipper tooltipen === */
+.issue-category-group {
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    /* overflow: hidden;  <-- DENNE LINJEN ER FJERNET */
+}
+
+.issue-category-header {
+    background-color: #f0f0f0;
+    padding: 10px 15px;
+    font-weight: bold;
+    color: #333;
+    border-bottom: 1px solid #e0e0e0;
+    /* Legger til border-radius på toppen for å erstatte effekten av overflow */
+    border-radius: 8px 8px 0 0;
+}
+
+.issue-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.issue-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 15px;
+    background-color: #fff;
+    border-bottom: 1px solid #f1f3f7;
+    font-size: 0.9rem;
+    gap: 15px;
+}
+
+.issue-item:last-child {
+    border-bottom: none;
+    /* Legger til border-radius i bunnen på siste element for å fullføre designet */
+    border-radius: 0 0 8px 8px;
+}
+/* === SLUTT FIX 2 === */
+
+
+.issue-name {
+    flex-grow: 1;
+}
+
+.issue-controls {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+}
+
+.party-icon-small {
+    width: 24px;
+    height: 24px;
+}
+
+.info-message {
+    padding: 1.5rem;
+    background-color: #f4f7fb;
+    border-radius: 8px;
+    text-align: center;
+    color: #555;
+    font-style: italic;
+}
+
+.quote-btn {
+    width: 24px;
+    height: 24px;
+    border: none;
+    border-radius: 50%;
+    background-color: #e9ecef;
+    color: #555;
+    font-size: 0.9rem;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    transition: background-color 0.2s;
+}
+.quote-btn:hover {
+    background-color: #dee2e6;
+}
+.quote-tooltip {
+    visibility: hidden; opacity: 0; position: absolute; z-index: 100;
+    bottom: 135%; left: 50%; transform: translateX(-50%);
+    width: 280px; max-width: 80vw; background-color: #fff; color: #333;
+    border-radius: 8px; padding: 1rem; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    border: 1px solid #ddd; transition: opacity 0.2s ease, visibility 0.2s ease;
+    pointer-events: none;
+}
+.quote-tooltip::after {
+    content: ""; position: absolute; top: 100%; left: 50%;
+    transform: translateX(-50%); border-width: 6px; border-style: solid;
+    border-color: #fff transparent transparent transparent;
+}
+.quote-btn:hover .quote-tooltip { visibility: visible; opacity: 1; }
+.quote-tooltip-title { margin: 0 0 0.5rem 0; font-size: 1rem; font-weight: 600; display: flex; align-items: center;}
+.quote-tooltip-logo { width: 20px; height: 20px; margin-right: 8px;}
+.quote-tooltip-text { font-size: 0.9rem; line-height: 1.4; font-style: italic; color: #555; margin: 0;}

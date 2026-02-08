@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Partiprofil - Detaljert analyse</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/party-profile.css">
+    <link rel="stylesheet" href="css/candidates.css">
+</head>
+<body>
+    <div class="burger-menu" id="burgerMenu">
+        <div class="burger-bar"></div>
+        <div class="burger-bar"></div>
+        <div class="burger-bar"></div>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="menu-header">
+            <h3>Meny</h3>
+            <button class="close-button" id="closeMenu">×</button>
+        </div>
+        <div class="menu-items" id="mobileMenuItems"></div>
+    </div>
+    <div class="menu-overlay" id="menuOverlay"></div>
+    <div class="container">
+        <header>
+           <div class="logo-container">
+                <a href="index.html">
+                    <img src="images/Logo.png" alt="Kreftforeningens logo" class="logo-image">
+                </a>
+            </div>
+            <div class="header-text">
+                <h1>Partiprofil</h1>
+                <div class="header-subtitle">Detaljert analyse av partiets politikk og representanter</div>
+            </div>
+            <div class="nav-links"></div>
+        </header>
+
+        <section class="party-hero" id="party-hero" aria-live="polite">
+            <div class="party-hero-placeholder">
+                <p>Velg et parti for å låse opp en skreddersydd profil.</p>
+            </div>
+        </section>
+
+        <div class="party-selector-wrapper">
+            <div class="party-logo-banner" id="party-logo-banner" aria-label="Tilgjengelige partier"></div>
+            <div class="party-selector-profile">
+                <label for="party-select">Velg parti for å se detaljert profil:</label>
+                <select id="party-select" class="filter-dropdown">
+                    <option value="">Velg parti...</option>
+                    </select>
+            </div>
+        </div>
+
+        <main id="profile-content" class="profile-content-grid">
+
+            <div class="profile-placeholder full-grid-placeholder">
+                <p>Velg et parti fra menyen over for å se detaljer.</p>
+            </div>
+
+            <div class="profile-box box-issues">
+                <div id="profile-issues-content" class="profile-inner-content">
+                    <div class="loader">Laster saker...</div>
+                </div>
+            </div>
+
+            <div class="profile-box box-candidates">
+                 <div class="profile-inner-content">
+                    <h3 class="box-title">Partiets stortingsrepresentanter</h3>
+                    <div class="profile-candidate-filters">
+                        <div class="filter-group">
+                            <label for="candidate-constituency-filter">Valgkrets:</label>
+                            <select id="candidate-constituency-filter" class="filter-dropdown">
+                                <option value="all">Alle Valgkretser</option>
+                                </select>
+                        </div>
+                        <div class="filter-group">
+                            <label for="candidate-committee-filter">Komité:</label>
+                            <select id="candidate-committee-filter" class="filter-dropdown">
+                                <option value="all">Alle komiteer</option>
+                            </select>
+                        </div>
+                         <div class="filter-group count-group">
+                             <span id="profile-candidate-count">0</span> representanter vises.
+                         </div>
+                    </div>
+                    <div id="profile-candidate-grid" class="candidate-grid profile-candidate-grid-area">
+                         <div class="loader">Laster representanter...</div>
+                    </div>
+                 </div>
+                 <aside id="profile-candidate-detail-overlay" class="candidate-detail-panel-overlay">
+                     <div class="overlay-header">
+                         <h4>Representantinformasjon</h4>
+                         <button class="close-overlay-button" id="close-candidate-overlay">×</button>
+                     </div>
+                     <div class="overlay-content" id="profile-candidate-detail-content">
+                         </div>
+                 </aside>
+            </div>
+
+            <div class="profile-box box-stance-chart">
+                <div id="profile-stance-chart-content" class="profile-inner-content">
+                     <div class="loader">Laster diagram...</div>
+                </div>
+            </div>
+
+            <div class="profile-box box-area-chart">
+                 <div id="profile-area-chart-content" class="profile-inner-content">
+                     <div class="loader">Laster diagram...</div>
+                 </div>
+            </div>
+
+        </main>
+        <footer>
+            Data basert på mandatfordeling etter Stortingsvalget 2021 og partienes program/uttalelser. Til bruk for informasjonsformål.
+        </footer>
+    </div>
+
+    <script src="js/navigationConfig.js"></script>
+    <script src="js/navigation.js"></script>
+    <script src='https://cdn.plot.ly/plotly-latest.min.js'></script>
+    <script src="js/issues.js"></script>
+    <script src="js/partiesData.js"></script>
+    <script src="js/party-profile.js"></script>
+
+</body>
+</html>

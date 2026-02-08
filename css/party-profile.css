@@ -1,0 +1,1321 @@
+/* css/party-profile.css (Version 2.2 - Fjerner konflikter for featured view) */
+
+/* Container for partivelger */
+.party-hero {
+    margin-top: 30px;
+}
+
+.party-hero-placeholder {
+    background: linear-gradient(135deg, #f6f9ff 0%, #eef2ff 100%);
+    border-radius: 22px;
+    padding: 32px;
+    text-align: center;
+    color: #506080;
+    box-shadow: 0 18px 45px rgba(24, 61, 116, 0.12);
+}
+
+.party-hero-card {
+    --party-color: var(--kf-blue);
+    --party-color-soft: rgba(13, 109, 253, 0.12);
+    --party-color-border: rgba(13, 109, 253, 0.24);
+    --party-color-strong: #0d6efd;
+    background: linear-gradient(140deg, rgba(255,255,255,0.96) 0%, rgba(255,255,255,0.88) 40%, rgba(255,255,255,0.82) 100%);
+    border-radius: 26px;
+    padding: 34px clamp(24px, 5vw, 48px);
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: clamp(20px, 4vw, 40px);
+    align-items: center;
+    box-shadow: 0 24px 55px rgba(13, 45, 94, 0.18);
+    position: relative;
+    overflow: hidden;
+}
+
+.party-hero-card::after {
+    content: "";
+    position: absolute;
+    inset: -40% auto auto -40%;
+    width: 220px;
+    height: 220px;
+    background: radial-gradient(circle at center, rgba(255,255,255,0.55) 0%, rgba(255,255,255,0) 70%);
+    opacity: 0.9;
+}
+
+.party-hero-card::before {
+    content: "";
+    position: absolute;
+    inset: auto -35% -60% auto;
+    width: 260px;
+    height: 260px;
+    background: radial-gradient(circle at center, rgba(0,0,0,0.08) 0%, rgba(0,0,0,0) 70%);
+    opacity: 0.7;
+}
+
+.party-hero-logo {
+    position: relative;
+    z-index: 1;
+    width: clamp(84px, 12vw, 120px);
+    aspect-ratio: 1 / 1;
+    border-radius: 24px;
+    background: linear-gradient(145deg, rgba(255,255,255,0.8), rgba(255,255,255,0.4));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 18px 38px rgba(13, 45, 94, 0.16);
+    border: 1px solid rgba(255,255,255,0.75);
+}
+
+.party-hero-logo img {
+    max-width: 70%;
+    height: auto;
+}
+
+.party-hero-details {
+    position: relative;
+    z-index: 1;
+    display: grid;
+    gap: 10px;
+    color: #1f2d46;
+}
+
+.party-hero-title {
+    margin: 0;
+    font-size: clamp(1.8rem, 3vw, 2.4rem);
+    font-weight: 700;
+    color: #0f2343;
+}
+
+.party-hero-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 4px;
+}
+
+.party-hero-pill {
+    background: rgba(13, 109, 253, 0.08);
+    border: 1px solid rgba(13, 109, 253, 0.18);
+    color: #0d6efd;
+    font-weight: 600;
+    padding: 6px 14px;
+    border-radius: 999px;
+    font-size: 0.9rem;
+    box-shadow: 0 6px 14px rgba(15, 45, 92, 0.1);
+}
+
+.party-hero-pill--support {
+    --support-pill-bg: linear-gradient(135deg, rgba(13, 109, 253, 0.2) 0%, rgba(13, 109, 253, 0.08) 100%);
+    --support-pill-border: rgba(13, 109, 253, 0.24);
+    --support-pill-color: #10325a;
+    --support-pill-shadow: rgba(15, 45, 92, 0.18);
+    background: var(--support-pill-bg);
+    border-color: var(--support-pill-border);
+    color: var(--support-pill-color);
+    box-shadow: 0 12px 28px var(--support-pill-shadow);
+    font-weight: 700;
+}
+
+.party-hero-pill--support[data-support-tier="low"] {
+    --support-pill-bg: linear-gradient(135deg, #fde5e9 0%, #f8ccd5 100%);
+    --support-pill-border: rgba(208, 79, 79, 0.45);
+    --support-pill-color: #b22738;
+    --support-pill-shadow: rgba(208, 79, 79, 0.25);
+}
+
+.party-hero-pill--support[data-support-tier="mid"] {
+    --support-pill-bg: linear-gradient(135deg, #ffedd8 0%, #ffd7ad 100%);
+    --support-pill-border: rgba(242, 163, 60, 0.45);
+    --support-pill-color: #c46611;
+    --support-pill-shadow: rgba(242, 163, 60, 0.25);
+}
+
+.party-hero-pill--support[data-support-tier="elevated"] {
+    --support-pill-bg: linear-gradient(135deg, #fef6cf 0%, #fdeca2 100%);
+    --support-pill-border: rgba(242, 198, 58, 0.45);
+    --support-pill-color: #b08507;
+    --support-pill-shadow: rgba(242, 198, 58, 0.22);
+}
+
+.party-hero-pill--support[data-support-tier="high"] {
+    --support-pill-bg: linear-gradient(135deg, #dcf4e7 0%, #c0ebd6 100%);
+    --support-pill-border: rgba(53, 164, 111, 0.45);
+    --support-pill-color: #25724d;
+    --support-pill-shadow: rgba(53, 164, 111, 0.25);
+}
+
+.party-hero-pill--support[data-support-tier="unknown"] {
+    --support-pill-bg: linear-gradient(135deg, #e7ecf6 0%, #d7dff0 100%);
+    --support-pill-border: rgba(112, 128, 159, 0.35);
+    --support-pill-color: #3d4b63;
+    --support-pill-shadow: rgba(112, 128, 159, 0.22);
+}
+
+.party-hero-summary {
+    margin: 0;
+    color: #42516d;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.party-selector-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 30px;
+}
+
+.party-logo-banner {
+    display: none;
+    background: linear-gradient(135deg, rgba(255,255,255,0.95) 0%, rgba(247,250,255,0.95) 100%);
+    border-radius: 18px;
+    padding: 16px clamp(16px, 3vw, 28px);
+    box-shadow: 0 18px 45px rgba(15, 45, 92, 0.14);
+    gap: 12px;
+    overflow-x: auto;
+    align-items: center;
+}
+
+.party-logo-banner::-webkit-scrollbar {
+    height: 8px;
+}
+
+.party-logo-banner::-webkit-scrollbar-thumb {
+    background: rgba(15, 45, 92, 0.2);
+    border-radius: 999px;
+}
+
+.party-logo-button {
+    border: none;
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 14px;
+    border-radius: 16px;
+    gap: 8px;
+    cursor: pointer;
+    transition: transform 0.25s ease, box-shadow 0.25s ease, background 0.25s ease;
+    min-width: 92px;
+    position: relative;
+}
+
+.party-logo-button:focus-visible {
+    outline: 3px solid rgba(13, 109, 253, 0.35);
+    outline-offset: 4px;
+}
+
+.party-logo-button img {
+    width: 46px;
+    height: 46px;
+    object-fit: contain;
+    filter: drop-shadow(0 4px 6px rgba(15, 45, 92, 0.16));
+    transition: transform 0.25s ease;
+}
+
+.party-logo-button span {
+    font-weight: 600;
+    color: #32415e;
+    font-size: 0.85rem;
+    letter-spacing: 0.02em;
+}
+
+.party-logo-button:hover {
+    transform: translateY(-4px);
+    background: rgba(13, 109, 253, 0.08);
+}
+
+.party-logo-button.selected {
+    background: linear-gradient(140deg, rgba(13, 109, 253, 0.12), rgba(13, 109, 253, 0.22));
+    box-shadow: 0 18px 35px rgba(13, 45, 94, 0.18);
+}
+
+.party-logo-button.selected img {
+    transform: scale(1.08);
+}
+
+.party-selector-profile {
+    background-color: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+    margin-bottom: 30px;
+}
+
+.party-selector-profile label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 500;
+    color: #444;
+}
+
+/* ===== START: 2x2 Grid Layout ===== */
+.profile-content-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* To like kolonner */
+    grid-template-rows: auto auto; /* Høyde basert på innhold */
+    gap: 30px; /* Avstand mellom boksene */
+    margin-top: 30px;
+    min-height: 600px; /* Minimumshøyde for layouten */
+    position: relative; /* For placeholder */
+}
+/* Vis grid-innholdet når aktiv */
+.profile-content-grid:not(.active) > .profile-box {
+    display: none;
+}
+.profile-content-grid.active > .profile-box {
+    display: flex; /* Eller 'block' hvis det passer bedre */
+}
+
+
+/* Stil for hver boks i rutenettet */
+.profile-box {
+    background: linear-gradient(160deg, rgba(255,255,255,0.96), rgba(245,250,255,0.92));
+    border-radius: 22px;
+    box-shadow: 0 26px 55px rgba(13, 45, 94, 0.12);
+    border: 1px solid rgba(13, 45, 94, 0.05);
+    padding: 0; /* Padding settes på inner-content */
+    display: flex; /* Bruker flex for å håndtere inner-content */
+    flex-direction: column;
+    overflow: hidden; /* Skjuler innhold som går utenfor */
+    position: relative; /* For loader og evt. overlay */
+}
+
+.profile-inner-content {
+    padding: clamp(22px, 3vw, 28px);
+    flex-grow: 1; /* Tar tilgjengelig plass */
+    display: flex;
+    flex-direction: column;
+    overflow: hidden; /* Viktig: Hindrer dobbel scrollbar */
+    /* Intern scrolling styres av elementer inni her */
+}
+
+/* Placeholder før parti er valgt */
+.profile-placeholder {
+    text-align: center;
+    color: #777;
+    font-style: italic;
+    padding: 50px 0;
+    font-size: 1.1rem;
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0; /* Dekker hele griden */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--light-bg); /* Match bakgrunn */
+    z-index: 20;
+    border-radius: 12px;
+    margin: 0; /* Nullstill margin */
+}
+/* Skjul placeholder når innhold vises */
+.profile-content-grid.active + .profile-placeholder,
+.profile-content-grid.active ~ .profile-placeholder,
+.profile-content-grid .full-grid-placeholder {
+    display: none;
+}
+
+
+/* Generell loader for bokser */
+.profile-box .loader {
+    text-align: center;
+    padding: 40px 20px;
+    font-size: 1.1rem;
+    color: #888;
+    margin: auto; /* Sentrerer i flex container */
+}
+
+.chart-container {
+    background: linear-gradient(145deg, rgba(255,255,255,0.92) 0%, rgba(235,242,255,0.92) 100%);
+    border-radius: 18px;
+    padding: clamp(18px, 4vw, 26px);
+    box-shadow: inset 0 1px 0 rgba(255,255,255,0.6);
+    position: relative;
+    overflow: hidden;
+}
+
+.chart-container::after {
+    content: "";
+    position: absolute;
+    inset: auto -30% -40% auto;
+    width: 220px;
+    height: 220px;
+    background: radial-gradient(circle at center, rgba(13, 109, 253, 0.12) 0%, rgba(13, 109, 253, 0) 70%);
+    pointer-events: none;
+}
+
+.chart-container h3 {
+    margin-top: 0;
+    margin-bottom: 16px;
+    color: #16315c;
+}
+
+.chart-surface {
+    width: 100%;
+    min-height: 260px;
+}
+.profile-box .loader.error p {
+    color: var(--fail-color);
+    font-weight: bold;
+}
+
+
+/* Tittel inni bokser (f.eks. for Kandidater) */
+.box-title {
+    margin: 0 0 20px 0;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+    font-size: 1.3rem;
+    color: var(--kf-blue);
+    font-weight: 600;
+     flex-shrink: 0; /* Ikke krymp */
+}
+
+
+/* Responsivitet for grid */
+@media (max-width: 992px) {
+    .profile-content-grid {
+        grid-template-columns: 1fr; /* En kolonne på mindre skjermer */
+        grid-template-rows: auto auto auto auto; /* Stabler boksene */
+    }
+    .profile-placeholder {
+        position: relative; /* Tilbake til normal flyt */
+        height: 200px; /* Gi litt fast høyde */
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .party-hero-card {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .party-hero-logo {
+        margin: 0 auto;
+    }
+
+    .party-hero-meta {
+        justify-content: center;
+    }
+}
+
+@media (min-width: 992px) {
+    .party-logo-banner {
+        display: flex;
+    }
+
+    .party-selector-profile {
+        display: none;
+    }
+}
+/* ===== SLUTT: 2x2 Grid Layout ===== */
+
+
+/* ===== START: Saker Boks (Topp-Venstre) ===== */
+.box-issues .profile-inner-content {
+    max-height: none;
+    min-height: clamp(440px, 54vh, 680px);
+    overflow: hidden;
+    position: relative;
+    background: linear-gradient(160deg, rgba(255,255,255,0.96) 0%, rgba(243,248,255,0.9) 100%);
+}
+
+.profile-issues-section {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    gap: clamp(18px, 3vw, 26px);
+    position: relative;
+    overflow: hidden;
+}
+
+.issues-header {
+    display: flex;
+    flex-direction: column;
+    gap: clamp(16px, 3vw, 28px);
+}
+
+.issues-heading-group h3 {
+    margin: 0 0 6px 0;
+    font-size: clamp(1.2rem, 2.1vw, 1.5rem);
+    color: #0f2343;
+}
+
+.issues-subtitle {
+    margin: 0;
+    font-size: 0.95rem;
+    color: #4a5c7c;
+    max-width: 520px;
+    line-height: 1.4;
+}
+
+.issues-stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 14px;
+    background: linear-gradient(135deg, rgba(15,35,67,0.08) 0%, rgba(15,35,67,0.02) 100%);
+    padding: 16px 20px;
+    border-radius: 16px;
+    border: 1px solid rgba(15, 35, 67, 0.08);
+    box-shadow: 0 12px 30px rgba(12, 32, 68, 0.12);
+}
+
+.issues-stat {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    gap: 4px;
+}
+
+.issues-stat-label {
+    font-size: 0.75rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #5b6b8a;
+}
+
+.issues-stat-value {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #10325a;
+}
+
+.issues-main {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    min-height: 0;
+    position: relative;
+}
+
+@media (min-width: 1024px) {
+    .issues-header {
+        display: grid;
+        grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr);
+        align-items: stretch;
+        gap: clamp(20px, 4vw, 40px);
+    }
+
+    .issues-heading-group {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .issues-stats {
+        height: 100%;
+        align-items: center;
+    }
+}
+
+.issues-tabs {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 8px;
+    background: rgba(255,255,255,0.7);
+    padding: 6px;
+    border-radius: 14px;
+    border: 1px solid rgba(15, 35, 67, 0.08);
+    box-shadow: inset 0 1px 0 rgba(255,255,255,0.6);
+}
+
+.tab-button {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #4a5c7c;
+    padding: 10px 12px;
+    border-radius: 12px;
+    border: 1px solid transparent;
+    background: linear-gradient(135deg, rgba(255,255,255,0.9) 0%, rgba(237,243,255,0.9) 100%);
+    box-shadow: 0 10px 20px rgba(16, 50, 90, 0.08);
+    cursor: pointer;
+    transition: all 0.25s ease;
+    text-align: center;
+}
+
+.tab-button:hover,
+.tab-button:focus-visible {
+    color: #0f2343;
+    border-color: rgba(13, 109, 253, 0.35);
+    box-shadow: 0 16px 28px rgba(15, 40, 92, 0.16);
+    outline: none;
+}
+
+.tab-button.active {
+    color: #fff;
+    background: linear-gradient(135deg, #3367ff 0%, #0d6efd 100%);
+    box-shadow: 0 18px 38px rgba(13, 45, 94, 0.28);
+    border-color: rgba(13, 109, 253, 0.45);
+}
+
+.tab-content {
+    display: none;
+    flex: initial;
+    overflow-y: auto;
+    margin-top: 14px;
+    padding-right: 10px;
+    padding-bottom: 8px;
+    position: relative;
+    max-height: clamp(340px, 45vh, 420px);
+}
+
+.tab-content.active {
+    display: block;
+}
+
+.issue-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: clamp(12px, 2vw, 18px);
+}
+
+.issue-item {
+    position: relative;
+    border-radius: 18px;
+    padding: clamp(18px, 2.5vw, 24px);
+    background: linear-gradient(145deg, rgba(255,255,255,0.9), rgba(239,246,255,0.9));
+    border: 1px solid rgba(15, 35, 67, 0.08);
+    box-shadow: 0 18px 40px rgba(14, 37, 79, 0.12);
+    cursor: pointer;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    overflow: hidden;
+    outline: none;
+}
+
+.issue-item-sheen {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(120deg, rgba(255,255,255,0) 30%, rgba(255,255,255,0.45) 50%, rgba(255,255,255,0) 70%);
+    transform: translateX(-120%);
+    transition: transform 0.6s ease;
+    pointer-events: none;
+}
+
+.issue-item-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.issue-item-top {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    align-items: center;
+}
+
+.issue-item-status {
+    font-size: 0.7rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 6px 12px;
+    border-radius: 999px;
+    background: rgba(13, 109, 253, 0.12);
+    color: #0d6efd;
+}
+
+.issue-item-area {
+    font-size: 0.85rem;
+    color: #607193;
+    font-weight: 600;
+    background: rgba(96, 113, 147, 0.08);
+    padding: 4px 10px;
+    border-radius: 999px;
+}
+
+.issue-item-title {
+    margin: 0;
+    font-size: clamp(1rem, 2.4vw, 1.2rem);
+    color: #132c52;
+    font-weight: 700;
+}
+
+.issue-item-quote {
+    margin: 0;
+    padding: 12px 14px;
+    border-radius: 14px;
+    background: rgba(15, 35, 67, 0.06);
+    color: #3b4c6c;
+    font-style: italic;
+    line-height: 1.5;
+}
+
+.issue-item-footer {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.issue-item-action {
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: #0d6efd;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.issue-item-action::after {
+    content: '→';
+    transition: transform 0.25s ease;
+}
+
+.issue-item:hover,
+.issue-item:focus-visible {
+    transform: translateY(-4px);
+    box-shadow: 0 26px 50px rgba(14, 37, 79, 0.18);
+}
+
+.issue-item:hover .issue-item-sheen,
+.issue-item:focus-visible .issue-item-sheen {
+    transform: translateX(0);
+}
+
+.issue-item:hover .issue-item-action::after,
+.issue-item:focus-visible .issue-item-action::after {
+    transform: translateX(4px);
+}
+
+.issue-item.agree-item {
+    border-color: rgba(53, 164, 111, 0.35);
+}
+
+.issue-item.agree-item .issue-item-status {
+    background: rgba(53, 164, 111, 0.18);
+    color: #25724d;
+}
+
+.issue-item.partial-item {
+    border-color: rgba(242, 163, 60, 0.35);
+}
+
+.issue-item.partial-item .issue-item-status {
+    background: rgba(242, 163, 60, 0.2);
+    color: #b05d12;
+}
+
+.issue-item.disagree-item {
+    border-color: rgba(208, 79, 79, 0.35);
+}
+
+.issue-item.disagree-item .issue-item-status {
+    background: rgba(208, 79, 79, 0.22);
+    color: #962b2b;
+}
+
+.no-issues {
+    padding: 20px;
+    text-align: center;
+    color: #65738f;
+    background: rgba(241, 245, 255, 0.7);
+    border-radius: 16px;
+    font-style: italic;
+}
+
+.tab-content::-webkit-scrollbar,
+.issue-detail-scroll::-webkit-scrollbar {
+    width: 6px;
+}
+
+.tab-content::-webkit-scrollbar-track,
+.issue-detail-scroll::-webkit-scrollbar-track {
+    background: rgba(231, 235, 245, 0.7);
+    border-radius: 999px;
+}
+
+.tab-content::-webkit-scrollbar-thumb,
+.issue-detail-scroll::-webkit-scrollbar-thumb {
+    background: rgba(143, 156, 182, 0.6);
+    border-radius: 999px;
+}
+
+.profile-issues-section.showing-issue-detail .issues-main {
+    filter: blur(1px);
+    opacity: 0.35;
+    pointer-events: none;
+}
+
+.issue-detail-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(160deg, rgba(10, 31, 66, 0.6) 0%, rgba(10, 31, 66, 0.35) 70%);
+    display: flex;
+    justify-content: flex-end;
+    padding: clamp(12px, 2vw, 20px);
+    opacity: 0;
+    transform: translateX(12%);
+    transition: opacity 0.35s ease, transform 0.35s ease;
+    pointer-events: none;
+    z-index: 5;
+}
+
+.issue-detail-overlay.active {
+    opacity: 1;
+    transform: translateX(0);
+    pointer-events: auto;
+}
+
+.issue-detail-panel {
+    background: linear-gradient(145deg, rgba(255,255,255,0.96) 0%, rgba(240,246,255,0.92) 100%);
+    border-radius: 24px;
+    box-shadow: 0 40px 70px rgba(8, 22, 54, 0.35);
+    border: 1px solid rgba(255,255,255,0.55);
+    width: min(520px, 100%);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    position: relative;
+}
+
+.issue-detail-panel::before {
+    content: "";
+    position: absolute;
+    inset: auto -30% -40% auto;
+    width: 280px;
+    height: 280px;
+    background: radial-gradient(circle at center, rgba(13, 109, 253, 0.18) 0%, rgba(13, 109, 253, 0) 70%);
+    pointer-events: none;
+}
+
+.issue-detail-panel-header {
+    display: flex;
+    justify-content: flex-end;
+    padding: 14px 18px 0 18px;
+}
+
+.issue-detail-close {
+    background: rgba(13, 109, 253, 0.12);
+    border: 1px solid rgba(13, 109, 253, 0.22);
+    color: #0d6efd;
+    width: 36px;
+    height: 36px;
+    border-radius: 12px;
+    font-size: 1.4rem;
+    line-height: 1;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.issue-detail-close:hover,
+.issue-detail-close:focus-visible {
+    transform: translateY(-2px);
+    box-shadow: 0 16px 28px rgba(13, 45, 94, 0.24);
+    outline: none;
+}
+
+.issue-detail-scroll {
+    flex: 1;
+    overflow-y: auto;
+    padding: 0 clamp(22px, 3vw, 32px) clamp(24px, 4vw, 36px);
+    position: relative;
+    z-index: 1;
+}
+
+.issue-detail-header {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.issue-detail-meta {
+    display: flex;
+    gap: 8px;
+}
+
+.issue-detail-area {
+    font-size: 0.8rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #0d6efd;
+    background: rgba(13, 109, 253, 0.12);
+    padding: 6px 12px;
+    border-radius: 999px;
+}
+
+.issue-detail-header h4 {
+    margin: 0;
+    font-size: clamp(1.2rem, 2.6vw, 1.5rem);
+    color: #0f2343;
+    line-height: 1.3;
+}
+
+.issue-detail-description {
+    margin: 0;
+    color: #445675;
+    line-height: 1.6;
+}
+
+.issue-detail-divider {
+    margin: clamp(18px, 3vw, 26px) 0;
+    height: 1px;
+    background: linear-gradient(90deg, rgba(15, 35, 67, 0), rgba(15, 35, 67, 0.25), rgba(15, 35, 67, 0));
+}
+
+.issue-detail-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.issue-detail-item {
+    background: rgba(255,255,255,0.75);
+    border-radius: 18px;
+    border: 1px solid rgba(15, 35, 67, 0.08);
+    padding: 16px 18px;
+    box-shadow: 0 12px 24px rgba(15, 35, 67, 0.08);
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.issue-detail-party {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.issue-party-indicator {
+    width: 12px;
+    height: 40px;
+    border-radius: 999px;
+    background: var(--party-color, #b8bed0);
+    box-shadow: 0 8px 18px rgba(16, 50, 90, 0.25);
+}
+
+.issue-detail-party-text {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.issue-detail-party-name {
+    font-weight: 700;
+    color: #132c52;
+}
+
+.issue-detail-badge {
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    padding: 5px 10px;
+    border-radius: 999px;
+    align-self: flex-start;
+}
+
+.stance-badge--agree {
+    background: rgba(53, 164, 111, 0.18);
+    color: #25724d;
+}
+
+.stance-badge--partial {
+    background: rgba(242, 163, 60, 0.22);
+    color: #b05d12;
+}
+
+.stance-badge--disagree {
+    background: rgba(208, 79, 79, 0.22);
+    color: #962b2b;
+}
+
+.stance-badge--unknown {
+    background: rgba(99, 112, 139, 0.2);
+    color: #394962;
+}
+
+.issue-detail-quote {
+    margin: 0;
+    color: #445675;
+    line-height: 1.5;
+    font-style: italic;
+}
+
+.issue-detail-quote--muted {
+    color: #7a869d;
+    font-style: normal;
+}
+
+@media (max-width: 992px) {
+    .issues-header {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .issues-stats {
+        grid-auto-flow: row;
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+        width: 100%;
+    }
+
+    .issue-detail-overlay {
+        padding: 10px;
+    }
+
+    .issue-detail-panel {
+        width: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+    .issues-tabs {
+        grid-template-columns: 1fr;
+    }
+
+    .issues-stats {
+        gap: 10px;
+    }
+
+    .issue-item-top {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .issue-item-footer {
+        justify-content: flex-start;
+    }
+
+    .issue-detail-panel-header {
+        padding-top: 10px;
+    }
+}
+/* ===== SLUTT: Saker Boks ===== */
+
+
+/* ===== START: Kandidat Boks (Topp-Høyre) ===== */
+.box-candidates {
+    position: relative;
+    overflow: hidden;
+}
+.box-candidates .profile-inner-content {
+    max-height: 90vh;
+    min-height: clamp(420px, 60vh, 780px);
+    overflow: hidden;
+}
+
+@media (max-width: 768px) {
+    .box-issues .profile-inner-content,
+    .box-candidates .profile-inner-content {
+        max-height: none;
+        min-height: auto;
+    }
+}
+
+/* Kandidatfiltre */
+.profile-candidate-filters {
+    display: flex; flex-wrap: wrap; gap: 10px 15px; margin-bottom: 20px;
+    padding-bottom: 15px; border-bottom: 1px dashed #ddd; align-items: flex-end; flex-shrink: 0;
+}
+.profile-candidate-filters .filter-group { flex: 1; min-width: 150px; }
+.profile-candidate-filters label { display: block; margin-bottom: 5px; font-weight: 500; color: #555; font-size: 0.85rem; }
+.profile-candidate-filters .filter-dropdown { width: 100%; padding: 8px 10px; font-size: 0.9rem; border-radius: 8px; border: 1px solid var(--border-color); background-color: white; cursor: pointer;} /*lagt til*/
+.profile-candidate-filters .count-group { flex-basis: 100%; text-align: right; color: #666; font-size: 0.85rem; padding-top: 5px; padding-bottom: 0; min-width: auto; flex-grow: 0; }
+@media (min-width: 576px) { .profile-candidate-filters .count-group { flex-basis: auto; } }
+#profile-candidate-count { font-weight: bold; }
+
+
+/* Kandidat Grid Area */
+.profile-candidate-grid-area {
+    flex-grow: 1;
+    overflow-y: auto;
+    padding: 5px 10px 5px 5px;
+    margin: 0 -10px 0 -5px;
+    position: relative;
+    scrollbar-width: thin; scrollbar-color: #ccc #f1f1f1;
+}
+.profile-candidate-grid-area::-webkit-scrollbar { width: 6px; }
+.profile-candidate-grid-area::-webkit-scrollbar-track { background: #f1f1f1; border-radius: 3px;}
+.profile-candidate-grid-area::-webkit-scrollbar-thumb { background: #ccc; border-radius: 3px;}
+.profile-candidate-grid-area::-webkit-scrollbar-thumb:hover { background: #aaa; }
+
+
+/* Normal visning (bruker .candidate-grid fra candidates.css / styles.css) */
+/* Ingen egen regel nødvendig her hvis .candidate-grid definerer layouten */
+/* Sørg for at .candidate-grid er definert i candidates.css eller styles.css */
+/* F.eks.: */
+/* .candidate-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 15px; } */
+
+
+/* Featured visning (bruker .featured-candidates-grid fra candidates.css / styles.css) */
+/* Ingen egen regel nødvendig her hvis .featured-candidates-grid definerer layouten */
+/* Sørg for at .featured-candidates-grid er definert i candidates.css eller styles.css */
+/* F.eks.: */
+/* .featured-candidates-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 20px; } */
+
+
+/* === CSS for å fjerne/kommentere ut motstridende regler === */
+
+/* KOMMENTERT UT: Grid-layout spesifikt for featured view i party-profile.css */
+/* Dette lar reglene for .featured-candidates-grid fra candidates.css gjelde */
+/*
+.profile-candidate-grid-area.featured-view {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)); / * <--- KONFLIKT * /
+    gap: 15px; / * <--- KONFLIKT * /
+}
+*/
+
+/* KOMMENTERT UT: Styling for selve featured-kortet i party-profile.css */
+/* Dette lar reglene for .featured-candidate-card fra candidates.css gjelde */
+/*
+.profile-candidate-grid-area.featured-view .featured-candidate-card {
+    display: block;
+    border-radius: 6px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    aspect-ratio: 1 / 1.2; / * <--- KONFLIKT * /
+    background-color: #f0f0f0;
+    box-sizing: border-box;
+    --card-party-color: #ccc;
+    border: 2px solid var(--card-party-color); / * <--- KONFLIKT * /
+    position: relative;
+}
+
+.profile-candidate-grid-area.featured-view .featured-candidate-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    border-color: var(--kf-pink);
+}
+
+.profile-candidate-grid-area.featured-view .featured-candidate-card img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; / * <--- KONFLIKT * /
+    background-color: #f8f9fa;
+}
+
+.profile-candidate-grid-area.featured-view .featured-candidate-card .image-placeholder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    color: #888;
+    font-size: 0.8rem;
+    text-align: center;
+    padding: 5px;
+    box-sizing: border-box;
+}
+*/
+
+/* Felles for grid (disse kan beholdes) */
+.profile-candidate-grid-area .constituency-separator {
+    grid-column: 1 / -1; /* Sørg for at separator tar full bredde */
+    display: flex; justify-content: space-between; align-items: baseline; /*lagt til*/
+    font-size: 1.1rem; padding: 10px 0 8px 0; margin-top: 15px; margin-bottom: 5px;
+    font-weight: bold; color: var(--kf-blue); border-bottom: 2px solid var(--kf-purple);/*lagt til*/
+}
+.profile-candidate-grid-area .constituency-separator .count { font-size: 0.9rem; font-weight: normal; color: #555; }/*lagt til*/
+.profile-candidate-grid-area .constituency-separator:first-of-type { margin-top: 5px; } /*lagt til*/
+
+.profile-candidate-grid-area .loader {
+    grid-column: 1 / -1;
+    text-align: center; /*lagt til*/
+    padding: 40px 20px; /*lagt til*/
+    font-size: 1.1rem; /*lagt til*/
+    color: #888; /*lagt til*/
+    margin: auto; /*lagt til*/
+}
+.profile-candidate-grid-area .no-results {
+     grid-column: 1 / -1;
+     text-align: center; padding: 20px; color: #888; font-style: italic;
+}
+
+/* Sørg for at korttyper skjules/vises korrekt basert på JS-klassene */
+/* Hvis JS bruker .featured-candidates-grid og .candidate-grid: */
+.profile-candidate-grid-area.featured-candidates-grid .candidate-card { display: none; }
+.profile-candidate-grid-area.candidate-grid .featured-candidate-card { display: none; }
+.profile-candidate-grid-area.candidate-grid .candidate-card { display: flex; } /* Eller block hvis det var det */
+.profile-candidate-grid-area.featured-candidates-grid .featured-candidate-card { display: block; } /* Eller flex hvis det var det */
+
+
+/* Kandidat Detalj Overlay Panel */
+.candidate-detail-panel-overlay {
+    position: absolute; top: 0; right: -100%; width: 100%; height: 100%;
+    background-color: rgba(255, 255, 255, 0.98); backdrop-filter: blur(3px);
+    z-index: 30; transition: right 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+    display: flex; flex-direction: column; border-left: 1px solid #ddd;
+    box-shadow: -5px 0 15px rgba(0,0,0,0.1);
+}
+.candidate-detail-panel-overlay.active { right: 0; }
+.overlay-header {
+    display: flex; justify-content: space-between; align-items: center;
+    padding: 15px 20px; border-bottom: 1px solid #eee; background-color: #f8f9fa; flex-shrink: 0;
+}
+.overlay-header h4 { margin: 0; font-size: 1.2rem; color: var(--kf-blue); }
+.close-overlay-button {
+    font-size: 26px; font-weight: bold; color: #888; background: none; border: none;
+    cursor: pointer; padding: 0 5px; line-height: 1;
+}
+.close-overlay-button:hover { color: #333; }
+.overlay-content { flex-grow: 1; overflow-y: auto; padding: 25px; }
+/* Stiler for innhold i overlay (gjenbruk fra candidates.css) */
+.overlay-content .detail-image-container { text-align: center; margin-bottom: 20px; }
+.overlay-content .detail-image { max-width: 160px; border-radius: 6px; }
+.overlay-content .image-placeholder-panel { width: 160px; height: 160px; margin: 0 auto; font-size: 0.85rem; border: 1px dashed #ccc; background-color: #f0f4f8; display: flex; align-items: center; justify-content: center; color: #999;}
+.overlay-content .detail-header { display: flex; align-items: center; gap: 10px; margin-bottom: 12px; padding-bottom: 8px; border-bottom: 1px solid #eee;}
+.overlay-content .detail-header h3 { flex-grow: 1; font-size: 1.3rem; }
+.overlay-content .detail-header .party-icon { width: 32px; height: 32px; font-size: 14px; flex-shrink: 0; display: flex; align-items: center; justify-content: center; border-radius: 50%; color: white; font-weight: bold;} /* lagt til */
+.overlay-content .detail-info p { font-size: 0.9rem; margin-bottom: 8px; line-height: 1.5; color: #444;}
+.overlay-content .detail-info strong { display: inline-block; min-width: 80px; color: #222; font-weight: 600; margin-right: 5px;}
+.overlay-content .detail-info a { color: var(--kf-blue); text-decoration: none; }
+.overlay-content .detail-info a:hover { text-decoration: underline; }
+.overlay-content .profile-link-btn {
+    display: block;
+    margin-top: 15px;
+    padding: 10px 15px;
+    background-color: var(--kf-blue);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 500;
+    text-align: center;
+    transition: background-color 0.2s ease;
+}
+.overlay-content .profile-link-btn:hover {
+    background-color: var(--kf-purple);
+}
+.overlay-content .privacy-notice-panel { font-size: 0.75rem; color: #888; margin-top: 15px; text-align: center; border-top: 1px dashed #ddd; padding-top: 8px;}
+/* ===== SLUTT: Kandidat Boks ===== */
+
+@media (max-width: 1023px) {
+    .candidate-detail-panel-overlay {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        padding: clamp(16px, 4vh, 28px) clamp(12px, 4vw, 24px);
+        border-left: none;
+        box-shadow: none;
+        background-color: rgba(15, 35, 72, 0.32);
+        backdrop-filter: blur(4px);
+        justify-content: center;
+        align-items: center;
+        transform: translateY(100%);
+        opacity: 0;
+        pointer-events: none;
+        transition: transform 0.35s cubic-bezier(0.25, 0.8, 0.25, 1), opacity 0.3s ease;
+        z-index: 120;
+    }
+
+    .candidate-detail-panel-overlay.active {
+        transform: translateY(0);
+        opacity: 1;
+        pointer-events: auto;
+    }
+
+    .candidate-detail-panel-overlay .overlay-header,
+    .candidate-detail-panel-overlay .overlay-content {
+        width: min(520px, 92vw);
+        margin: 0 auto;
+        background-color: #fff;
+    }
+
+    .candidate-detail-panel-overlay .overlay-header {
+        border-radius: 18px 18px 0 0;
+        border: none;
+        box-shadow: 0 18px 45px rgba(13, 45, 94, 0.22);
+        padding: clamp(18px, 4vw, 26px) clamp(18px, 4vw, 28px);
+    }
+
+    .candidate-detail-panel-overlay .overlay-header h4 {
+        font-size: 1.15rem;
+    }
+
+    .candidate-detail-panel-overlay .close-overlay-button {
+        font-size: 32px;
+        color: #506080;
+    }
+
+    .candidate-detail-panel-overlay .close-overlay-button:hover {
+        color: #10325a;
+    }
+
+    .candidate-detail-panel-overlay .overlay-content {
+        border-radius: 0 0 18px 18px;
+        box-shadow: 0 28px 55px rgba(13, 45, 94, 0.18);
+        padding: clamp(20px, 4vw, 30px);
+        max-height: calc(100vh - 200px);
+        overflow-y: auto;
+    }
+
+    .candidate-detail-panel-overlay .overlay-content::-webkit-scrollbar {
+        width: 8px;
+    }
+
+    .candidate-detail-panel-overlay .overlay-content::-webkit-scrollbar-thumb {
+        background-color: rgba(15, 45, 92, 0.25);
+        border-radius: 999px;
+    }
+
+    .candidate-detail-panel-overlay .overlay-content .detail-image {
+        max-width: min(200px, 70vw);
+    }
+}
+
+
+/* ===== START: Chart Bokser (Bunn) --- */
+.box-stance-chart .profile-inner-content,
+.box-area-chart .profile-inner-content {
+    padding-top: 0;
+    align-items: center;
+    overflow-y: hidden;
+    justify-content: center;
+}
+
+.box-stance-chart .chart-container,
+.box-area-chart .chart-container {
+    border: none; padding: 0; background-color: transparent;
+    box-shadow: none; width: 100%;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+.box-stance-chart h3,
+.box-area-chart h3 {
+    text-align: center; font-size: 1.1rem; margin-bottom: 15px;
+    color: var(--kf-blue); font-weight: 500; flex-shrink: 0;
+}
+#plotly-stance-chart,
+#plotly-area-chart {
+    width: 100% !important; height: auto !important;
+    min-height: 300px;
+    flex-grow: 1;
+}
+
+#plotly-stance-chart {
+    position: relative;
+    border-radius: 28px;
+    padding: 18px;
+    background: radial-gradient(140% 140% at 50% 32%, rgba(255, 255, 255, 0.95) 0%, rgba(232, 239, 253, 0.86) 62%, rgba(216, 228, 250, 0.82) 100%);
+    box-shadow: 0 24px 46px rgba(15, 45, 92, 0.16);
+    overflow: hidden;
+}
+
+#plotly-stance-chart::after {
+    content: "";
+    position: absolute;
+    inset: auto -25% -35% auto;
+    width: 220px;
+    height: 220px;
+    background: radial-gradient(circle at center, rgba(53, 164, 111, 0.14) 0%, rgba(53, 164, 111, 0) 70%);
+    pointer-events: none;
+}
+/* ===== SLUTT: Chart Bokser ===== */

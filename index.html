@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flertallskalkulator for Stortinget</title>
+    <!-- Link til den sentrale CSS-filen -->
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Andre CSS-linker (om nødvendig) kan legges her -->
+
+    <!-- MERK: Inline <style>-blokken for menyen er fjernet herfra -->
+
+</head>
+<body>
+    <!-- START: HTML-struktur for Hamburgermeny (Skal være lik på alle sider) -->
+    <div class="burger-menu" id="burgerMenu">
+        <div class="burger-bar"></div>
+        <div class="burger-bar"></div>
+        <div class="burger-bar"></div>
+    </div>
+
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="menu-header">
+            <h3>Meny</h3>
+            <button class="close-button" id="closeMenu">×</button>
+        </div>
+        <div class="menu-items" id="mobileMenuItems">
+            <!-- Lenker fylles dynamisk av navigation.js -->
+        </div>
+    </div>
+
+    <div class="menu-overlay" id="menuOverlay"></div>
+    <!-- SLUTT: HTML-struktur for Hamburgermeny -->
+
+    <div class="container">
+        <header>
+            <div class="logo-container">
+                <a href="index.html">
+                    <img src="images/Logo.png" alt="Kreftforeningens logo" class="logo-image">
+                </a>
+            </div>
+            <div class="header-text">
+                <h1>Flertallskalkulator for Stortinget</h1>
+                <div class="header-subtitle">Visualisering av stemmefordeling</div>
+            </div>
+            <div class="nav-links">
+                <!-- Desktop-lenker fylles dynamisk av navigation.js -->
+            </div>
+        </header>
+
+        <div class="two-column">
+            <div class="column">
+                <!-- Issue-selector -->
+               <div class="result-container">
+                    <h2 class="result-header">Velg sak fra Kreftforeningens program</h2>
+                    <div id="issue-selector-container">
+                        <!-- Saksvelgeren legges til dynamisk av issue-selector.js -->
+                    </div>
+                </div>
+
+                <!-- Partivelger -->
+                <div class="party-section">
+                    <h2 class="section-title">Velg partier for flertall</h2>
+
+                    <div class="party-instructions">
+                        <p>Velg partiene som stemmer <strong class="highlight">for</strong> forslaget</p>
+                        <div class="info-button" id="infoButton">i
+                            <div class="info-tooltip" id="infoTooltip">
+                                <strong>Om flertall på Stortinget:</strong>
+                                <p>Stortinget har totalt 169 representanter. Et forslag trenger minst 85 stemmer for å få flertall.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Mobil popup (kun for touch) -->
+                    <div class="info-popup" id="infoPopup">
+                        <div class="info-popup-content">
+                            <span class="close-popup">×</span>
+                            <h4>Om flertall på Stortinget</h4>
+                            <p>Stortinget har totalt 169 representanter. Et forslag trenger minst 85 stemmer for å få flertall.</p>
+                        </div>
+                    </div>
+
+                    <div class="party-grid" id="partyGrid">
+                        <!-- Party cards legges til av script.js -->
+                    </div>
+
+                    <div class="action-buttons">
+                        <button class="btn-primary" id="selectAllBtn">Velg alle</button>
+                        <button class="btn-secondary" id="clearAllBtn">Fjern alle</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="result-container">
+                    <h2 class="result-header">Resultat</h2>
+
+                    <div class="progress-container">
+                        <div class="progress-bar" id="progressBar"></div>
+                        <div class="progress-labels">
+                            <span id="votesFor">0</span>
+                            <span id="votesAgainst">169</span>
+                        </div>
+                    </div>
+
+                    <div class="result-details">
+                        <div class="result-box required-votes">
+                            <div class="result-value">85</div>
+                            <div class="result-label">Stemmer nødvendig for flertall</div>
+                        </div>
+
+                        <div class="result-box votes-for">
+                            <div class="result-value" id="totalVotesFor">0</div>
+                            <div class="result-label">Stemmer for</div>
+                        </div>
+
+                        <div class="result-box votes-against">
+                            <div class="result-value" id="totalVotesAgainst">169</div>
+                            <div class="result-label">Stemmer mot</div>
+                        </div>
+                    </div>
+
+                    <div class="result-status no-majority" id="majorityStatus">
+                        Ingen flertall (trenger 85 stemmer minst)
+                    </div>
+
+                    <div class="selected-parties">
+                        <h3 class="selected-parties-title">Partier som stemmer for:</h3>
+                        <div id="selectedPartyTags"></div>
+                    </div>
+                </div>
+
+                <!-- Blokkvisualisering -->
+                <div class="section-divider"></div>
+
+                <div class="parliament-visualization">
+                    <h2 class="section-title">Blokkvisualisering av Stortinget</h2>
+
+                    <div id="d3-parliament" class="parliament-container">
+                        <!-- D3 visualization legges til av parliament-visualization.js -->
+                    </div>
+
+                    <div class="parliament-legend" id="parliamentLegend">
+                        <!-- Legend legges til av parliament-visualization.js -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            Data basert på mandatfordeling etter Stortingsvalget 2021. Til bruk for informasjonsformål.
+        </footer>
+    </div>
+
+    <!-- MERK: Inline <script>-blokken for menyen er fjernet herfra -->
+
+    <!-- Scripts lastes til slutt, i riktig rekkefølge -->
+    <script src="js/navigationConfig.js"></script>
+    <script src="js/navigation.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="js/issues.js"></script>
+    <script src="js/parliament-visualization.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/issue-selector.js"></script>
+
+</body>
+</html>
