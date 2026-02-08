@@ -11,6 +11,7 @@
     --border-color: #dee2e6;
     /* Barneombudets fargepalett */
     --kf-blue: #003087;
+    --kf-dark-blue: #2F3EAD;
     --kf-purple: #6e2b62;
     --kf-pink: #e63c8c;
     --kf-orange: #ff6d30;
@@ -147,15 +148,15 @@ header h1 strong {
     border-radius: 12px;
     box-shadow: 0 6px 18px rgba(0,0,0,0.08);
     border: 1px solid rgba(0,0,0,0.05);
-    border-left: 5px solid var(--kf-pink);
+    border-left: 5px solid var(--kf-dark-blue);
     transition: box-shadow 0.3s ease;
 }
 .introduction {
-     border-left-color: var(--kf-blue);
+     border-left-color: var(--kf-dark-blue);
      text-align: center;
 }
 .introduction h2 {
-    color: var(--kf-blue);
+    color: var(--kf-dark-blue);
     margin-bottom: 15px;
     font-size: 1.8rem;
 }
@@ -321,7 +322,7 @@ header h1 strong {
    width: 24px;
    height: 24px;
    border-radius: 50%;
-   background-color: var(--kf-blue);
+   background-color: var(--kf-dark-blue);
    color: white;
    display: flex;
    align-items: center;
@@ -335,7 +336,8 @@ header h1 strong {
    font-size: 14px;
 }
 .info-button:hover {
-   background-color: var(--kf-purple);
+   background-color: var(--kf-dark-blue);
+   filter: brightness(0.95);
    transform: translateY(-2px);
    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
 }
@@ -501,7 +503,7 @@ button, .button {
     text-align: center;
 }
 .btn-primary, .button.primary {
-    background: linear-gradient(45deg, var(--kf-pink), var(--kf-purple));
+    background-color: var(--kf-dark-blue);
     color: white;
 }
 .btn-secondary, .button.secondary {
@@ -512,6 +514,8 @@ button, .button {
 .btn-primary:hover, .button.primary:hover {
     transform: translateY(-2px);
     box-shadow: 0 5px 12px rgba(0,0,0,0.12);
+    background-color: var(--kf-dark-blue);
+    filter: brightness(0.95);
 }
 .btn-secondary:hover, .button.secondary:hover {
     background-color: #eee;
@@ -656,7 +660,7 @@ footer {
    border-radius: 8px;
 }
 .issue-selector h2 {
-    color: var(--kf-blue);
+    color: var(--kf-dark-blue);
     margin-top: 0;
     margin-bottom: 10px;
     font-size: 1.2rem;
@@ -680,7 +684,7 @@ footer {
    width: 100%;
    padding: 10px 12px;
    border-radius: 6px;
-   border: 1px solid var(--border-color);
+   border: 1px solid rgba(47, 62, 173, 0.25);
    font-size: 0.95rem;
    margin: 8px 0;
    background-color: white;
@@ -688,20 +692,20 @@ footer {
    box-shadow: 0 1px 3px rgba(0,0,0,0.04);
    transition: all 0.2s ease;
 }
-.area-filter:hover, .issue-dropdown:hover { border-color: var(--kf-purple); box-shadow: 0 2px 5px rgba(0,0,0,0.06); }
-.area-filter:focus, .issue-dropdown:focus { outline: none; border-color: var(--kf-pink); box-shadow: 0 0 0 2px rgba(230, 60, 140, 0.2); }
+.area-filter:hover, .issue-dropdown:hover { border-color: var(--kf-dark-blue); box-shadow: 0 2px 5px rgba(0,0,0,0.06); }
+.area-filter:focus, .issue-dropdown:focus { outline: none; border-color: var(--kf-dark-blue); box-shadow: 0 0 0 2px rgba(47, 62, 173, 0.2); }
 .issue-details {
    background-color: #f0f4f8;
    border-radius: 6px;
    padding: 15px;
    margin-top: 15px;
-   border-left: 4px solid var(--kf-blue);
+   border-left: 4px solid var(--kf-dark-blue);
    transition: all 0.3s ease;
    min-height: 150px;
 }
 .issue-details:hover { box-shadow: 0 3px 8px rgba(0,0,0,0.06); }
 .issue-name {
-   color: var(--kf-blue);
+   color: var(--kf-dark-blue);
    margin-bottom: 5px;
    font-size: 1.1rem;
    font-weight: 600;
@@ -733,7 +737,7 @@ footer {
 .issue-status.majority { background: linear-gradient(90deg, var(--kf-light-green), var(--kf-green)); color: white; }
 .issue-status.no-majority { background: linear-gradient(90deg, var(--kf-pink), var(--kf-purple)); color: white; }
 .issue-parties { margin-top: 15px; }
-.issue-parties h4 { color: var(--kf-blue); margin-bottom: 8px; font-size: 1rem; }
+.issue-parties h4 { color: var(--kf-dark-blue); margin-bottom: 8px; font-size: 1rem; }
 .issue-parties-list { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 5px; }
 .issue-party {
    padding: 4px 10px;
@@ -908,13 +912,13 @@ body.modal-open {
 /* Info Popup/Tooltip (for ? knapp) */
 .info-popup { display: none; position: fixed; z-index: 1001; left: 0; top: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,0.4); backdrop-filter: blur(3px); }
 .info-popup-content { background-color: white; margin: 15% auto; padding: 25px; border-radius: 12px; width: 90%; max-width: 500px; box-shadow: 0 4px 25px rgba(0,0,0,0.2); animation: popupFadeIn 0.3s; position: relative; }
-.info-popup h4 { color: var(--kf-blue); margin-top: 0; margin-bottom: 15px; }
+.info-popup h4 { color: var(--kf-dark-blue); margin-top: 0; margin-bottom: 15px; }
 .close-popup { color: #aaa; position: absolute; right: 15px; top: 10px; font-size: 28px; font-weight: bold; cursor: pointer; transition: color 0.2s; }
 .close-popup:hover { color: #333; }
 @keyframes popupFadeIn { from {opacity: 0; transform: translateY(-20px);} to {opacity: 1; transform: translateY(0);} }
-.info-tooltip { display: none; position: absolute; background-color: white; padding: 15px; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.15); width: 250px; z-index: 100; font-size: 0.9rem; line-height: 1.4; border-left: 3px solid var(--kf-blue); animation: tooltipFadeIn 0.2s; top: 50%; left: calc(100% + 10px); transform: translateY(-50%); color: #333; }
+.info-tooltip { display: none; position: absolute; background-color: white; padding: 15px; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.15); width: 250px; z-index: 100; font-size: 0.9rem; line-height: 1.4; border-left: 3px solid var(--kf-dark-blue); animation: tooltipFadeIn 0.2s; top: 50%; left: calc(100% + 10px); transform: translateY(-50%); color: #333; }
 .info-button:hover .info-tooltip { display: block; }
-.info-tooltip strong { display: block; margin-bottom: 8px; color: var(--kf-blue); font-size: 1rem; }
+.info-tooltip strong { display: block; margin-bottom: 8px; color: var(--kf-dark-blue); font-size: 1rem; }
 .info-tooltip p { margin: 0; color: #333; }
 @keyframes tooltipFadeIn { from {opacity: 0; transform: translate(5px, -50%);} to {opacity: 1; transform: translate(0, -50%);} }
 @media (hover: hover) and (pointer: fine) { .info-popup { display: none !important; } }
