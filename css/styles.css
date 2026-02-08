@@ -95,7 +95,7 @@ header h1 {
 }
 
 header h1 strong {
-    color: var(--kf-blue);
+    color: #fff;
 }
 
 .header-subtitle {
@@ -116,7 +116,7 @@ header h1 strong {
     display: inline-block;
     padding: 8px 15px;
     background-color: transparent;
-    color: var(--kf-blue);
+    color: #fff;
     text-decoration: none;
     border-radius: 20px;
     font-weight: 500;
@@ -1220,7 +1220,7 @@ body.menu-open .burger-menu {
 .panel-header h3 {
     margin: 0;
     font-size: 1.35rem;
-    color: var(--kf-blue);
+    color: #fff;
 }
 .close-panel-btn {
     background: none;
@@ -1234,7 +1234,7 @@ body.menu-open .burger-menu {
 }
 .close-panel-btn:hover,
 .close-panel-btn:focus-visible {
-    color: #333;
+    color: #fff;
     outline: none;
 }
 .panel-content {

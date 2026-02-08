@@ -235,7 +235,7 @@
 .panel-header h3 {
     margin: 0;
     font-size: 1.3rem;
-    color: var(--kf-blue);
+    color: #fff;
 }
 .close-panel-btn {
     background: none;
@@ -248,7 +248,7 @@
     transition: color 0.2s;
 }
 .close-panel-btn:hover {
-    color: #333;
+    color: #fff;
 }
 
 /* Panel Content */
