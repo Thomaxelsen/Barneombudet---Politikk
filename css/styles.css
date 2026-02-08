@@ -17,6 +17,10 @@
     --kf-yellow: #ffbe2c;
     --kf-light-green: #8ece3f;
     --kf-green: #00a8a3;
+    /* Semantiske brand-farger */
+    --brand-peach-dark: #e9723d;
+    --brand-peach-light: #ffe6d8;
+    --brand-blue-dark: #00235a;
     /* Variabel for menybredde */
     --menu-width: 250px;
 }
