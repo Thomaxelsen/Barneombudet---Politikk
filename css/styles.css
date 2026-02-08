@@ -69,8 +69,6 @@ body.menu-open {
     width: 100vw;
     border-radius: 18px;
     overflow: hidden;
-    aspect-ratio: 1368 / 289;
-    max-height: clamp(120px, 22vw, 260px);
     margin-bottom: 1.75rem;
     background-color: #f0d9c7;
     box-shadow: 0 8px 20px rgba(0,0,0,0.12);
