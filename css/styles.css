@@ -22,6 +22,7 @@
     --brand-peach-dark: #fce3ce;
     --brand-peach-light: #ffe6d8;
     --brand-blue-dark: #00235a;
+    --brand-banner-text: #ffffff;
     /* Tekst og lenker for kontrast mot fersken */
     --text-primary: #2b2b2b;
     --text-secondary: #454545;
@@ -71,7 +72,7 @@ header {
     align-items: center;
     padding: 1.5rem;
     margin-bottom: 2rem;
-    background-color: var(--brand-peach-dark);
+    background-color: var(--kf-dark-blue);
     border: 1px solid rgba(0,0,0,0.08);
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.12);
@@ -103,20 +104,21 @@ header {
 }
 
 header h1 {
-    color: var(--text-primary);
+    color: var(--brand-banner-text);
     font-size: 2rem;
-    font-weight: 600;
+    font-weight: 700;
     margin: 0;
     line-height: 1.2;
 }
 
 header h1 strong {
-    color: var(--brand-blue-dark);
+    color: var(--brand-banner-text);
 }
 
 .header-subtitle {
-    color: var(--text-secondary);
+    color: var(--brand-banner-text);
     font-size: 1.1rem;
+    font-weight: 600;
     margin-top: 0.4rem;
 }
 
@@ -1372,9 +1374,11 @@ body.menu-open .burger-menu {
     }
     header h1 {
         font-size: 1.6rem;
+        color: var(--brand-banner-text);
     }
     header .header-subtitle {
         font-size: 0.95rem;
+        color: var(--brand-banner-text);
     }
     .logo-image {
         height: 50px;
