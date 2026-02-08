@@ -11,12 +11,12 @@
 }
 
 .selection-container {
-    background-color: #ffffff;
+    background-color: var(--brand-peach-light);
     padding: 20px;
     border-radius: 8px;
     margin-bottom: 20px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.12);
-    border: 1px solid rgba(0,0,0,0.06);
+    box-shadow: 0 4px 12px rgba(47, 62, 173, 0.12);
+    border: 1px solid rgba(47, 62, 173, 0.12);
 }
 
 .selection-container h2 {
@@ -42,27 +42,28 @@
     align-items: center;
     justify-content: center;
     padding: 1rem 0.5rem;
-    border: 2px solid #e0e0e0;
+    border: 2px solid rgba(47, 62, 173, 0.15);
     border-radius: 8px;
-    background-color: #ffffff;
+    background-color: var(--brand-peach-light);
     cursor: pointer;
     transition: all 0.2s ease-in-out;
     text-align: center;
     user-select: none;
     /* Setter en fast bredde slik at de ikke strekker seg rart */
     width: 120px;
+    box-shadow: 0 4px 10px rgba(47, 62, 173, 0.08);
 }
 
 .party-card:hover {
     transform: translateY(-4px);
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
-    border-color: #c0c0c0;
+    box-shadow: 0 8px 20px rgba(47, 62, 173, 0.18);
+    border-color: var(--kf-dark-blue);
 }
 
 .party-card.selected {
-    border-color: var(--kf-purple, #7d5ba6);
-    box-shadow: 0 4px 15px rgba(125, 91, 166, 0.25);
-    background-color: #f6f4f9;
+    border-color: var(--kf-dark-blue);
+    box-shadow: 0 6px 18px rgba(47, 62, 173, 0.25);
+    background-color: rgba(252, 227, 206, 0.9);
 }
 
 .party-logo {

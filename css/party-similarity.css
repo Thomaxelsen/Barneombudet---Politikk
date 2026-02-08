@@ -16,13 +16,14 @@
 
 /* --- Heatmap Seksjon --- */
 .similarity-introduction {
-    background-color: white;
+    background-color: var(--brand-peach-light);
     padding: 25px 30px;
     border-radius: 12px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+    box-shadow: 0 4px 15px rgba(47, 62, 173, 0.12);
     margin-bottom: 20px; /* Mindre margin før selve heatmap */
     text-align: center;
-    border-left: 5px solid var(--kf-green);
+    border-left: 5px solid var(--kf-dark-blue);
+    border: 1px solid rgba(47, 62, 173, 0.12);
 }
 
 .similarity-introduction h2 {
@@ -39,9 +40,10 @@
 }
 
 .heatmap-container-main {
-    background-color: white;
+    background-color: var(--brand-peach-dark);
     border-radius: 12px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+    box-shadow: 0 4px 15px rgba(47, 62, 173, 0.12);
+    border: 1px solid rgba(47, 62, 173, 0.12);
     padding: 20px;
     min-height: 500px;
     display: flex;
@@ -65,10 +67,11 @@
 
 /* --- Radar Sammenligning Seksjon --- */
 .radar-comparison-section {
-    background-color: white;
+    background-color: var(--brand-peach-light);
     padding: 30px;
     border-radius: 12px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+    box-shadow: 0 4px 15px rgba(47, 62, 173, 0.12);
+    border: 1px solid rgba(47, 62, 173, 0.12);
 }
 
 .radar-comparison-section h2 {
@@ -93,11 +96,11 @@
 }
 
 .party-selector-radar fieldset {
-    border: 1px solid #ddd;
+    border: 1px solid rgba(47, 62, 173, 0.12);
     border-radius: 8px;
     padding: 15px 20px 20px 20px;
     margin-bottom: 20px;
-    background-color: #fdfdfd;
+    background-color: var(--brand-peach-light);
 }
 
 .party-selector-radar legend {
