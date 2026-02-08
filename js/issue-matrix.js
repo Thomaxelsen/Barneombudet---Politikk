@@ -10,6 +10,13 @@ function isTouchDevice() {
         return false; // Anta ikke-touch hvis sjekken feiler
     }
 }
+function supportsHover() {
+    try {
+        return window.matchMedia('(hover: hover) and (pointer: fine)').matches;
+    } catch (e) {
+        return false;
+    }
+}
 
 // Global variables for popup logic within this script
 let hoverTimerMatrix = null;
@@ -65,12 +72,12 @@ function createPopupModalMatrix() {
 
     // Allow hovering over the popup itself without it disappearing (for desktop hover mode)
     const modalContent = modal.querySelector('.quote-modal-content');
-    if (modalContent && !isTouchDevice()) {
-         modalContent.addEventListener('mouseenter', () => {
+    if (modalContent && supportsHover()) {
+         modalContent.addEventListener('pointerenter', () => {
             // Når musen går inn i popupen, ikke lukk den
             if (hoverTimerMatrix) clearTimeout(hoverTimerMatrix); // Stopp eventuell lukketime
          });
-         modalContent.addEventListener('mouseleave', () => {
+         modalContent.addEventListener('pointerleave', () => {
             // Når musen forlater popupen, lukk den
             modal.style.display = 'none';
             currentHoveredCell = null;
@@ -510,11 +517,11 @@ function generateMatrix(areaFilter, viewMode) {
                     infoIndicator.className = 'info-indicator';
                     infoIndicator.innerHTML = 'i';
                     cell.appendChild(infoIndicator);
-                    if (isTouchDevice()) {
+                    if (!supportsHover()) {
                         cell.addEventListener('click', handleMatrixCellInteraction);
                     } else {
-                        cell.addEventListener('mouseenter', handleMatrixCellInteraction);
-                        cell.addEventListener('mouseleave', handleMatrixCellLeave);
+                        cell.addEventListener('pointerenter', handleMatrixCellInteraction);
+                        cell.addEventListener('pointerleave', handleMatrixCellLeave);
                     }
                 } else {
                     cell.style.cursor = "default";
@@ -567,7 +574,7 @@ function handleMatrixCellInteraction(event) {
         return;
     }
 
-    if (isTouchDevice()) {
+    if (!supportsHover()) {
         showPartyQuoteMatrix(issue, partyCode, level, quote, cell);
     } else {
         if (hoverTimerMatrix) clearTimeout(hoverTimerMatrix);
