@@ -200,11 +200,11 @@ header h1 strong {
 
 /* === Partivelger (index.html) - MODIFISERT SEKSJON === */
 .party-section {
-    background-color: var(--brand-peach-dark);
+    background-color: white;
     padding: 25px;
     border-radius: 12px;
-    box-shadow: 0 6px 18px rgba(47, 62, 173, 0.12);
-    border: 1px solid rgba(47, 62, 173, 0.12);
+    box-shadow: 0 6px 18px rgba(247, 197, 160, 0.35);
+    border: 1px solid var(--brand-peach-light);
     margin-bottom: 30px;
 }
 
