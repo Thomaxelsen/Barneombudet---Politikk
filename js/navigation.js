@@ -11,6 +11,7 @@ document.addEventListener('DOMContentLoaded', function() {
     populateDesktopNav();
     populateMobileMenu();
     setupMenuEvents();
+    setupBannerScrollState();
 });
 
 /**
@@ -125,4 +126,24 @@ function setupMenuEvents() {
     closeMenuButton.addEventListener('click', closeMenu);
     menuOverlay.addEventListener('click', closeMenu);
     console.log("Navigation JS: Menu events set up successfully.");
+}
+
+/**
+ * Setter opp scroll-lytter for å veksle mellom utvidet og kollapset banner.
+ */
+function setupBannerScrollState() {
+    const collapseThreshold = 40;
+    const banner = document.getElementById('siteBanner');
+
+    function updateBannerState() {
+        const isCollapsed = window.scrollY > collapseThreshold;
+        document.body.classList.toggle('banner-collapsed', isCollapsed);
+        if (banner) {
+            banner.classList.toggle('banner-collapsed', isCollapsed);
+            banner.classList.toggle('banner-expanded', !isCollapsed);
+        }
+    }
+
+    updateBannerState();
+    window.addEventListener('scroll', updateBannerState, { passive: true });
 }
