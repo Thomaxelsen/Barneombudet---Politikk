@@ -5,9 +5,7 @@
 // Detect if we're on a touch device (mobile/tablet)
 function isTouchDevice() {
     try { // Inkluderer try-catch for eldre nettlesere
-        return (('ontouchstart' in window) ||
-                (navigator.maxTouchPoints > 0) ||
-                (navigator.msMaxTouchPoints > 0));
+        return window.matchMedia('(hover: none) and (pointer: coarse)').matches;
     } catch (e) {
         return false; // Anta ikke-touch hvis sjekken feiler
     }
