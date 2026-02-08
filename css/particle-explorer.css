@@ -96,7 +96,7 @@
     display: block;
     font-size: 0.85rem;
     margin-bottom: 5px;
-    color: #444;
+    color: var(--text-secondary);
     font-weight: 500;
 }
 .control-group input[type="range"] {
@@ -109,7 +109,7 @@
     width: 35px;
     text-align: right;
     font-size: 0.8rem;
-    color: #555;
+    color: var(--text-secondary);
     vertical-align: middle;
     margin-left: 5px;
 }
@@ -180,13 +180,13 @@
     border: none;
     font-size: 24px;
     font-weight: bold;
-    color: #aaa;
+    color: var(--text-muted);
     cursor: pointer;
     padding: 0;
     line-height: 1;
 }
 #close-info-panel:hover {
-    color: #333;
+    color: var(--text-primary);
 }
 
 #info-panel-content {
@@ -240,15 +240,16 @@
     font-size: 0.85rem;
 }
 #info-panel-content li a {
-    color: var(--kf-blue);
+    color: var(--link-color);
     text-decoration: none;
 }
 #info-panel-content li a:hover {
+    color: var(--link-hover);
     text-decoration: underline;
 }
 #info-panel-content .info-label {
     font-weight: bold;
-    color: #555;
+    color: var(--text-secondary);
     display: block;
     margin-top: 15px;
     font-size: 0.8rem;
@@ -335,7 +336,7 @@
 
 #info-panel-content .no-image-text {
     font-style: italic;
-    color: #888;
+    color: var(--text-muted);
     text-align: center;
     margin: 15px 0;
     font-size: 0.85rem;

@@ -140,7 +140,7 @@
 .card-star-container { margin-left: auto; padding-left: 10px; padding-top: 1px; }
 .map-candidate-card .candidate-rank { font-weight: 700; color: #333; font-size: 1.2em; line-height: 1.1; min-width: 1.3em; text-align: center; }
 .map-candidate-card .candidate-name { color: var(--kf-deep-blue, #003366); font-weight: 600; font-size: 1.05em; line-height: 1.3; }
-.map-candidate-card .candidate-location { font-size: 0.85em; color: #555; line-height: 1.2; }
+.map-candidate-card .candidate-location { font-size: 0.85em; color: var(--text-secondary); line-height: 1.2; }
 .map-candidate-card .realistic-chance-indicator { color: var(--kf-gold, #E6A23C); font-size: 1.4em; line-height: 1; }
 /* ----- SLUTT: CSS for Kandidatkort ----- */
 
