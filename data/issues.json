@@ -1,2026 +1,1362 @@
 [
   {
     "id": 1,
-    "area": "Arbeidsliv",
-    "name": "Fleksibel sykepengeordning",
-    "description": "Fleksibel sykepengeordning for kreftpasienter",
+    "area": "Tverrgående rettigheter og medvirkning",
+    "name": "Sikre at ingen barn utsettes for diskriminering, og at alle barns rettigheter respekteres og beskyttes likt.",
+    "description": "Sikre at ingen barn utsettes for diskriminering, og at alle barns rettigheter respekteres og beskyttes likt.",
     "partyStances": {
-      "R": {
-        "level": 1,
-        "quote": "Forsvare og forbedre dagens sykelønnsordning"
-      },
-      "FrP": {
-        "level": 2,
-        "quote": "Sikre en god og forutsigbar sykelønnordning for arbeidstakere, og innføre en tidskonto-ordning som sikrer gode muligheter for å stå delvis i arbeid under sykemelding."
-      },
-      "H": {
-        "level": 1,
-        "quote": "A)åpne for større fleksibilitet for når på dagen arbeidsmarkedstiltak skal gjennomføres, tilpasset den enkelte brukers og bedriftens behov B) Forsterke praktiseringen av at gradering skal være hovedregelen ved mottak av sykelønn."
-      },
-      "V": {
-        "level": 0,
-        "quote": null
-      },
-      "KrF": {
-        "level": 1,
-        "quote": "Følge opp Sysselsettingsutvalgets anbefalinger om en omlegging av sykepengeordningen, slik at arbeidsgiverne motiveres til å få langtidssykmeldte tilbake til arbeid og arbeidstakerne kan bruke gradert sykmelding."
-      },
-      "AP": {
-        "level": 1,
-        "quote": "Bedre sykefraværsoppfølgingen, blant annet gjennom økt etterlevelse av pliktene i regelverket for både arbeidsgiver og arbeidstaker, sykemelder og NAV, og gjøre dialogen lettere med nye digitale løsninger"
-      },
-      "MDG": {
-        "level": 0,
-        "quote": null
-      },
-      "SP": {
-        "level": 2,
-        "quote": "Greie ut mulighetene for at personer med alvorlige diagnoser som er under aktiv behandling, får nødvendig fleksibilitet i sykemeldingens lengde og gradering."
-      },
-      "SV": {
-        "level": 0,
-        "quote": null
-      }
+      "R": {},
+      "FrP": {},
+      "H": {},
+      "V": {},
+      "KrF": {},
+      "AP": {},
+      "MDG": {},
+      "SP": {},
+      "SV": {}
     }
   },
   {
     "id": 2,
-    "area": "Arbeidsliv",
-    "name": "Styrking av kompetansen i NAV",
-    "description": "Styrking av kompetansen i NAV",
+    "area": "Tverrgående rettigheter og medvirkning",
+    "name": "Sikre at barns rett til å bli hørt ivaretas i alle offentlige beslutningsprosesser, og styrke departementenes arbeid med barne- og ungdomsmedvirkning.",
+    "description": "Sikre at barns rett til å bli hørt ivaretas i alle offentlige beslutningsprosesser, og styrke departementenes arbeid med barne- og ungdomsmedvirkning.",
     "partyStances": {
-      "R": {
-        "level": 2,
-        "quote": "a) Gi de ansatte i førstelinjen i NAV tid og tillit til å gjøre jobben sin. b) Stoppe nedleggelsen av NAV-kontorer og omgjøre NAV til en institusjon som gir gode og nære tjenester til dem som trenger det. Tilbakeføre vedtaksmyndighet til Navs lokalkontorer."
-      },
-      "FrP": {
-        "level": 2,
-        "quote": "Styrke kompetansen i NAV."
-      },
-      "H": {
-        "level": 0,
-        "quote": null
-      },
-      "V": {
-        "level": 1,
-        "quote": "Et langt kapittel om NAV"
-      },
-      "KrF": {
-        "level": 0,
-        "quote": null
-      },
-      "AP": {
-        "level": 2,
-        "quote": "At NAV skal hjelpe flere inn i arbeid. Derfor må NAV styrkes med nye verktøy. De ansatte i NAV må gis mer fleksibilitet, slik at de kan tilpasse virkemiddelbruken til den enkelte."
-      },
-      "MDG": {
-        "level": 0,
-        "quote": null
-      },
-      "SP": {
-        "level": 2,
-        "quote": "Sørge for eit desentralisert NAV med kompetanse, tenester og auka avgjerslemakt på det enkelte kommunale NAV-kontor. Regelverket må opne for fornuftige, lokale tilpassingar."
-      },
-      "SV": {
-        "level": 2,
-        "quote": "Gjennomføre en tillitsreform i NAV med sterk involvering nedenfra, mer tillit og tid til de ansatte og nok ressurser lokalt."
-      }
+      "R": {},
+      "FrP": {},
+      "H": {},
+      "V": {},
+      "KrF": {},
+      "AP": {},
+      "MDG": {},
+      "SP": {},
+      "SV": {}
     }
   },
   {
     "id": 3,
-    "area": "Arbeidsliv",
-    "name": "Økt bruk av tiltak som Individuell jobbstøtte (IPS) og Arbeid med støtte (AMS)",
-    "description": "Økt bruk av tiltak som Individuell jobbstøtte (IPS) og Arbeid med støtte (AMS)",
+    "area": "Tverrgående rettigheter og medvirkning",
+    "name": "Ivaretar barnets beste som et grunnleggende hensyn under alle politikkområder.",
+    "description": "Ivaretar barnets beste som et grunnleggende hensyn under alle politikkområder.",
     "partyStances": {
-      "R": {
-        "level": 1,
-        "quote": "At retten til arbeid må gjøres reell. Arbeidslivet må åpnes opp for flere, med ulike grader av funksjonsevner"
-      },
-      "FrP": {
-        "level": 0,
-        "quote": null
-      },
-      "H": {
-        "level": 0,
-        "quote": null
-      },
-      "V": {
-        "level": 1,
-        "quote": "Et langt kapittel om NAV"
-      },
-      "KrF": {
-        "level": 1,
-        "quote": "Sikre økt tilgang på skreddersydde tjenester, slik at systemet tilpasses den enkelte og ikke motsatt. Slå sammen all oppfølging/ytelser for unge under 30 år til en felles ytelse med mål om arbeid, kvalifisering og utdanning som erstatter dagpenger, arbeidsavklaringspenger, uføretrygd, tiltakspenger, sosialhjelp og kvalifiseringsprogram."
-      },
-      "AP": {
-        "level": 1,
-        "quote": "Hjelpe dem som står utenfor arbeidslivet også når ledigheten er lav. Virkemidlene til NAV har bedre effekt i perioder der etterspørselen etter arbeidskraft er høy."
-      },
-      "MDG": {
-        "level": 1,
-        "quote": "Jobbe mer helhetlig med langsiktig oppfølging av funksjonshindrede og kronikere, bl.a. universell utforming og lønnstilskudd som rettighetsfestes. Ordningen må også kunne samordnes med BPA."
-      },
-      "SP": {
-        "level": 2,
-        "quote": "Styrke ordningen med individuell jobbstøtte gjennom NAV (IPS) for personer med psykiske utfordringer eller rusproblemer."
-      },
-      "SV": {
-        "level": 2,
-        "quote": "Styrke individuell jobbstøtte (IPS) og jobbfokusert psykologisk behandling, slik at flere unge med psykiske helseplager får delta i arbeidslivet"
-      }
+      "R": {},
+      "FrP": {},
+      "H": {},
+      "V": {},
+      "KrF": {},
+      "AP": {},
+      "MDG": {},
+      "SP": {},
+      "SV": {}
     }
   },
   {
     "id": 4,
-    "area": "Arbeidsliv",
-    "name": "Økt bruk av lønnstilskudd",
-    "description": "Økt bruk av lønnstilskudd",
+    "area": "Tverrgående rettigheter og medvirkning",
+    "name": "Styrke Bufdirs arbeid med å øke kompetansen på barns medvirkning i alle sektorer og på alle forvaltningsnivåer.",
+    "description": "Styrke Bufdirs arbeid med å øke kompetansen på barns medvirkning i alle sektorer og på alle forvaltningsnivåer.",
     "partyStances": {
-      "R": {
-        "level": 0,
-        "quote": null
-      },
-      "FrP": {
-        "level": 2,
-        "quote": "Innføre et fleksibelt lønnstilskudd for å få flere med nedsatt arbeidsevne inn i arbeidslivet."
-      },
-      "H": {
-        "level": 2,
-        "quote": "Prioritere bruk av lønnstilskudd og andre arbeidsmarkedstiltak som har beviselig god effekt for å sikre en mer effektiv og målrettet bruk av ressursene."
-      },
-      "V": {
-        "level": 1,
-        "quote": "Kun brødtekst: Lønnstilskudd til bedrifter som ansetter unge arbeidsledige og personer med funksjonsnedsettelse"
-      },
-      "KrF": {
-        "level": 2,
-        "quote": "Ha økt bruk av lønnstilskudd og arbeidstrening for å gi flere muligheten til å delta i arbeidslivet."
-      },
-      "AP": {
-        "level": 2,
-        "quote": "Utvide ordningen med varig lønnstilskudd til flere utsatte grupper."
-      },
-      "MDG": {
-        "level": 2,
-        "quote": "Sikre funksjonsassistanse og lønnstilskudd i arbeid og praksis som en rettighetsfestet ordning."
-      },
-      "SP": {
-        "level": 2,
-        "quote": "Utvide omfanget av ordningar med varig lønnstilskudd til bedrifter som ansetter arbeidsøkende via NAV."
-      },
-      "SV": {
-        "level": 2,
-        "quote": "At det skal lønne seg å ansette folk som står utenfor arbeidslivet. Styrke lønnstilskuddsordningen, særlig for grupper med nedsatt arbeidsevne."
-      }
+      "R": {},
+      "FrP": {},
+      "H": {},
+      "V": {},
+      "KrF": {},
+      "AP": {},
+      "MDG": {},
+      "SP": {},
+      "SV": {}
     }
   },
   {
     "id": 5,
-    "area": "Arbeidsliv",
-    "name": "Styrke og øke bruken av arbeidsrettet rehabilitering",
-    "description": "Styrke og øke bruken av arbeidsrettet rehabilitering",
+    "area": "Skole og barnehage",
+    "name": "Sikre tilstrekkelig bemanning og kompetanse for et trygt og godt tilbud.",
+    "description": "Sikre tilstrekkelig bemanning og kompetanse for et trygt og godt tilbud.",
     "partyStances": {
-      "R": {
-        "level": 1,
-        "quote": "Bygge ut og styrke habilitering- og rehabiliteringsinstitusjoner, slik at kronisk syke personer utsatt for ulykker og personer med sammensatte diagnoser ikke blir kasteballer mellom sykehus og kommunale helse- og omsorgstjenester."
-      },
-      "FrP": {
-        "level": 2,
-        "quote": "At personer som på grunn av sykdom eller skade får nedsatt arbeidsevne, skal sikres rask rehabilitering og nødvendige hjelpetiltak slik at de fortsatt kan delta i arbeidslivet. Rehabilitering og habilitering skal være rettighetsfestet."
-      },
-      "H": {
-        "level": 2,
-        "quote": "Satse mer på arbeidsrettet rehabilitering for å sikre at flere kommer raskere tilbake til arbeidslivet."
-      },
-      "V": {
-        "level": 2,
-        "quote": "At rehabiliteringstjenestene styrkes, slik at flere kommer raskt tilbake til livet etter sykdom eller skade."
-      },
-      "KrF": {
-        "level": 1,
-        "quote": "Ha et bedre samarbeid mellom helsetjenestene og arbeidsmarkedstiltakene, slik at flere får riktig tilrettelegging til tiltak som arbeid og utdanning, som er viktig for å mestre livet."
-      },
-      "AP": {
-        "level": 0,
-        "quote": null
-      },
-      "MDG": {
-        "level": 2,
-        "quote": "Sikre alle tilgang til rehabilitering i etterkant av sykdom og skade, slik at man raskt kan komme tilbake i jobb eller utdanning."
-      },
-      "SP": {
-        "level": 2,
-        "quote": "Innføre ein eigen opptrappingsplan for gode kommunalt tilrettelagte rehabiliterings- og habiliteringstilbod for alle pasientgrupper."
-      },
-      "SV": {
-        "level": 2,
-        "quote": "Gi alle som trenger helsehjelp for å mestre arbeidslivet, tilbud om arbeidsrettet rehabilitering, der helse og arbeid sees i sammenheng samtidig."
-      }
+      "R": {},
+      "FrP": {},
+      "H": {},
+      "V": {},
+      "KrF": {},
+      "AP": {},
+      "MDG": {},
+      "SP": {},
+      "SV": {}
     }
   },
   {
     "id": 6,
-    "area": "Diagnostikk og tidlig oppdagelse",
-    "name": "Utvide mammorgrafiprogrammet",
-    "description": "Utvide mammorgrafiprogrammet",
+    "area": "Skole og barnehage",
+    "name": "Styrke tidlig innsats gjennom universelle og individuelle tiltak for inkludering.",
+    "description": "Styrke tidlig innsats gjennom universelle og individuelle tiltak for inkludering.",
     "partyStances": {
-      "R": {
-        "level": 0,
-        "quote": null
-      },
-      "FrP": {
-        "level": 0,
-        "quote": null
-      },
-      "H": {
-        "level": 2,
-        "quote": "Vurdere å utvide mammografiprogrammet i tråd med faglige anbefalinger."
-      },
-      "V": {
-        "level": 0,
-        "quote": null
-      },
-      "KrF": {
-        "level": 0,
-        "quote": null
-      },
-      "AP": {
-        "level": 2,
-        "quote": "Utvide mammografibilddet i tråd med EUs nye retningslinjer."
-      },
-      "MDG": {
-        "level": 0,
-        "quote": null
-      },
-      "SP": {
-        "level": 2,
-        "quote": "Arbeid for mammografitilbud, for eksempel gjennom mammografibuss, i alle distriktskommuner med lang reisevei til slike tilbud."
-      },
-      "SV": {
-        "level": 1,
-        "quote": "Sørge for at transmenn inkluderes i mammografiordningen"
-      }
+      "R": {},
+      "FrP": {},
+      "H": {},
+      "V": {},
+      "KrF": {},
+      "AP": {},
+      "MDG": {},
+      "SP": {},
+      "SV": {}
     }
   },
   {
     "id": 7,
-    "area": "Diagnostikk og tidlig oppdagelse",
-    "name": "Gentest til flere tidligere i forløpet",
-    "description": "Gentest til flere tidligere i forløpet",
+    "area": "Skole og barnehage",
+    "name": "Bedre kunnskapsgrunnlag/nasjonal oversikt over ventetider (PPT/barnehabilitering) for tidlig hjelp.",
+    "description": "Bedre kunnskapsgrunnlag/nasjonal oversikt over ventetider (PPT/barnehabilitering) for tidlig hjelp.",
     "partyStances": {
-      "R": {
-        "level": 0,
-        "quote": null
-      },
-      "FrP": {
-        "level": 1,
-        "quote": "gjøre norsk helsevesen proaktivt i bruk av gen- og bioteknologi"
-      },
-      "H": {
-        "level": 0,
-        "quote": null
-      },
-      "V": {
-        "level": 0,
-        "quote": null
-      },
-      "KrF": {
-        "level": 0,
-        "quote": "opprettholde forbudet mot gentesting av barns arveanlegg, og sikre alle retten til å ikke vite om arvelige egenskaper og sykdom"
-      },
-      "AP": {
-        "level": 0,
-        "quote": null
-      },
-      "MDG": {
-        "level": 0,
-        "quote": null
-      },
-      "SP": {
-        "level": 0,
-        "quote": null
-      },
-      "SV": {
-        "level": 0,
-        "quote": null
-      }
+      "R": {},
+      "FrP": {},
+      "H": {},
+      "V": {},
+      "KrF": {},
+      "AP": {},
+      "MDG": {},
+      "SP": {},
+      "SV": {}
     }
   },
   {
     "id": 8,
-    "area": "Diagnostikk og tidlig oppdagelse",
-    "name": "Pilot på prostatakreftscreening",
-    "description": "Pilot på prostatakreftscreening",
+    "area": "Skole og barnehage",
+    "name": "Flere ansatte (fast) på avdelinger for barn 0-3 år i barnehager i levekårsutsatte områder.",
+    "description": "Flere ansatte (fast) på avdelinger for barn 0-3 år i barnehager i levekårsutsatte områder.",
     "partyStances": {
-      "R": {
-        "level": 2,
-        "quote": "Innføre et pilotprosjekt for å prøve ut et nasjonalt screeningprogram for prostatakreft."
-      },
-      "FrP": {
-        "level": 0,
-        "quote": null
-      },
-      "H": {
-        "level": 2,
-        "quote": "Gjennomføre en pilotstudie for screening av prostata."
-      },
-      "V": {
-        "level": 2,
-        "quote": "Etablere et nasjonalt screeningprogram for prostatakreft og styrke informasjonen til menn om risikofaktorer og symptomer"
-      },
-      "KrF": {
-        "level": 0,
-        "quote": null
-      },
-      "AP": {
-        "level": 0,
-        "quote": null
-      },
-      "MDG": {
-        "level": 0,
-        "quote": null
-      },
-      "SP": {
-        "level": 0,
-        "quote": null
-      },
-      "SV": {
-        "level": 0,
-        "quote": null
-      }
+      "R": {},
+      "FrP": {},
+      "H": {},
+      "V": {},
+      "KrF": {},
+      "AP": {},
+      "MDG": {},
+      "SP": {},
+      "SV": {}
     }
   },
   {
     "id": 9,
-    "area": "Diagnostikk og tidlig oppdagelse",
-    "name": "Innføre lungekreftscreening",
-    "description": "Innføre lungekreftscreening",
+    "area": "Skole og barnehage",
+    "name": "Sikre tidlig og riktig hjelp i barnehagen for barn med barneautisme (tidlig støtte og tilpasset hjelp).",
+    "description": "Sikre tidlig og riktig hjelp i barnehagen for barn med barneautisme (tidlig støtte og tilpasset hjelp).",
     "partyStances": {
-      "R": {
-        "level": 0,
-        "quote": null
-      },
-      "FrP": {
-        "level": 0,
-        "quote": null
-      },
-      "H": {
-        "level": 0,
-        "quote": null
-      },
-      "V": {
-        "level": 0,
-        "quote": null
-      },
-      "KrF": {
-        "level": 0,
-        "quote": null
-      },
-      "AP": {
-        "level": 0,
-        "quote": null
-      },
-      "MDG": {
-        "level": 0,
-        "quote": null
-      },
-      "SP": {
-        "level": 0,
-        "quote": null
-      },
-      "SV": {
-        "level": 0,
-        "quote": null
-      }
+      "R": {},
+      "FrP": {},
+      "H": {},
+      "V": {},
+      "KrF": {},
+      "AP": {},
+      "MDG": {},
+      "SP": {},
+      "SV": {}
     }
   },
   {
     "id": 10,
-    "area": "Folkehelse og forebygging",
-    "name": "Nasjonalt tilbud om røykeslutt og forslag om skattlegging av tobakksnæringen",
-    "description": "Nasjonalt tilbud om røykeslutt og forslag om skattlegging av tobakksnæringen",
+    "area": "Skole og barnehage",
+    "name": "Styrke PP-tjenesten som en sentral del av laget rundt barnet i barnehage og skole.",
+    "description": "Styrke PP-tjenesten som en sentral del av laget rundt barnet i barnehage og skole.",
     "partyStances": {
-      "R": {
-        "level": 0,
-        "quote": null
-      },
-      "FrP": {
-        "level": 1,
-        "quote": "Vi erkjenner at bruk av tobakk og alkohol kan føre til alvorlige helseproblemer, og er tilhengere av offentlig informasjon."
-      },
-      "H": {
-        "level": 2,
-        "quote": "Jobbe for redusert tobakksbruk og innføre et nasjonalt røykesluttprogram."
-      },
-      "V": {
-        "level": 0,
-        "quote": null
-      },
-      "KrF": {
-        "level": 2,
-        "quote": "Tilby gratis legemidler til røykeslutt på nasjonalt nivå."
-      },
-      "AP": {
-        "level": 0,
-        "quote": null
-      },
-      "MDG": {
-        "level": 0,
-        "quote": null
-      },
-      "SP": {
-        "level": 2,
-        "quote": "Tilby gratis legemidler til røykeslutt."
-      },
-      "SV": {
-        "level": 0,
-        "quote": null
-      }
+      "R": {},
+      "FrP": {},
+      "H": {},
+      "V": {},
+      "KrF": {},
+      "AP": {},
+      "MDG": {},
+      "SP": {},
+      "SV": {}
     }
   },
   {
     "id": 11,
-    "area": "Folkehelse og forebygging",
-    "name": "Høyere tobakksavgifter",
-    "description": "Høyere tobakksavgifter",
+    "area": "Skole og barnehage",
+    "name": "Innføre felles nasjonale retningslinjer for arbeidet mot mobbing (fjerne valgfrihet i metode).",
+    "description": "Innføre felles nasjonale retningslinjer for arbeidet mot mobbing (fjerne valgfrihet i metode).",
     "partyStances": {
-      "R": {
-        "level": 0,
-        "quote": null
-      },
-      "FrP": {
-        "level": 0,
-        "quote": "Harmonisere avgiften på alkohol og tobakk med nivået i våre naboland for å unngå handelslekkasje og smugling"
-      },
-      "H": {
-        "level": 0,
-        "quote": null
-      },
-      "V": {
-        "level": 0,
-        "quote": null
-      },
-      "KrF": {
-        "level": 2,
-        "quote": "Øke avgiftene på alkohol til anbefalingene fra særavgiftsutvalget, og øke avgiftene på tobakk."
-      },
-      "AP": {
-        "level": 0,
-        "quote": null
-      },
-      "MDG": {
-        "level": 0,
-        "quote": null
-      },
-      "SP": {
-        "level": 1,
-        "quote": "Jobbe for tiltak som forebygger at ungdom begynner å bruke ulike tobakksprodukt."
-      },
-      "SV": {
-        "level": 0,
-        "quote": null
-      }
+      "R": {},
+      "FrP": {},
+      "H": {},
+      "V": {},
+      "KrF": {},
+      "AP": {},
+      "MDG": {},
+      "SP": {},
+      "SV": {}
     }
   },
   {
     "id": 12,
-    "area": "Folkehelse og forebygging",
-    "name": "Restriktiv alkoholpolitikk",
-    "description": "Restriktiv alkoholpolitikk",
+    "area": "Skole og barnehage",
+    "name": "Sikre at skolene bruker forskningsbaserte metoder.",
+    "description": "Sikre at skolene bruker forskningsbaserte metoder.",
     "partyStances": {
-      "R": {
-        "level": 2,
-        "quote": "Føre en restriktiv tobakks- og alkoholpolitikk."
-      },
-      "FrP": {
-        "level": 0,
-        "quote": "Harmonisere avgiften på alkohol og tobakk med nivået i våre naboland for å unngå handelslekkasje og smugling"
-      },
-      "H": {
-        "level": 0,
-        "quote": null
-      },
-      "V": {
-        "level": 0,
-        "quote": null
-      },
-      "KrF": {
-        "level": 2,
-        "quote": "Føre en restriktiv, solidarisk og trygghetsskapende alkoholpolitikk ved å styrke et bevilgnings- og kontrollsystem som begrenser tilgjengelighet, reduseren den alminnelige skjenketiden fra 03:00 til 02:00"
-      },
-      "AP": {
-        "level": 2,
-        "quote": "Føre en restriktiv alkoholpolitikk og opprettholde Vinmonopolets samfunnsrolle"
-      },
-      "MDG": {
-        "level": 2,
-        "quote": "Videreføre en restriktiv politikk for omsetning av alkohol gjennom å beholde Vinmonopolet og fjerne innreisekvotene."
-      },
-      "SP": {
-        "level": 2,
-        "quote": "Ha restriksjoner på alkoholreklame og begrense tilgjengeligheten."
-      },
-      "SV": {
-        "level": 2,
-        "quote": "Føre en ansvarlig alkoholpolitikk med mål om å redusere alkoholforbruket"
-      }
+      "R": {},
+      "FrP": {},
+      "H": {},
+      "V": {},
+      "KrF": {},
+      "AP": {},
+      "MDG": {},
+      "SP": {},
+      "SV": {}
     }
   },
   {
     "id": 13,
-    "area": "Folkehelse og forebygging",
-    "name": "Merke alkohol med informasjon om de helsekonsekvensene alkoholkonsum medfører",
-    "description": "Merke alkohol med informasjon om de helsekonsekvensene alkoholkonsum medfører",
+    "area": "Skole og barnehage",
+    "name": "Lovfeste krav om at skolen må undersøke årsaker til fravær og iverksette tiltak raskt.",
+    "description": "Lovfeste krav om at skolen må undersøke årsaker til fravær og iverksette tiltak raskt.",
     "partyStances": {
-      "R": {
-        "level": 0,
-        "quote": null
-      },
-      "FrP": {
-        "level": 1,
-        "quote": "Vi erkjenner at bruk av tobakk og alkohol kan føre til alvorlige helseproblemer, og er tilhengere av offentlig informasjon."
-      },
-      "H": {
-        "level": 0,
-        "quote": null
-      },
-      "V": {
-        "level": 0,
-        "quote": null
-      },
-      "KrF": {
-        "level": 0,
-        "quote": null
-      },
-      "AP": {
-        "level": 0,
-        "quote": null
-      },
-      "MDG": {
-        "level": 0,
-        "quote": null
-      },
-      "SP": {
-        "level": 2,
-        "quote": "Innføre krav til innholdsmerking av alkoholholdige drikkevarer."
-      },
-      "SV": {
-        "level": 0,
-        "quote": null
-      }
+      "R": {},
+      "FrP": {},
+      "H": {},
+      "V": {},
+      "KrF": {},
+      "AP": {},
+      "MDG": {},
+      "SP": {},
+      "SV": {}
     }
   },
   {
     "id": 14,
-    "area": "Folkehelse og forebygging",
-    "name": "Strengere regulering av solarium",
-    "description": "Strengere regulering av solarium",
+    "area": "Skole og barnehage",
+    "name": "Etablere nasjonal oversikt/statistikk over omfanget av skolefravær (inkl. bedre oversikt over fraværsårsaker).",
+    "description": "Etablere nasjonal oversikt/statistikk over omfanget av skolefravær (inkl. bedre oversikt over fraværsårsaker).",
     "partyStances": {
-      "R": {
-        "level": 0,
-        "quote": null
-      },
-      "FrP": {
-        "level": 0,
-        "quote": null
-      },
-      "H": {
-        "level": 0,
-        "quote": null
-      },
-      "V": {
-        "level": 0,
-        "quote": null
-      },
-      "KrF": {
-        "level": 0,
-        "quote": null
-      },
-      "AP": {
-        "level": 0,
-        "quote": null
-      },
-      "MDG": {
-        "level": 0,
-        "quote": null
-      },
-      "SP": {
-        "level": 0,
-        "quote": null
-      },
-      "SV": {
-        "level": 0,
-        "quote": null
-      }
+      "R": {},
+      "FrP": {},
+      "H": {},
+      "V": {},
+      "KrF": {},
+      "AP": {},
+      "MDG": {},
+      "SP": {},
+      "SV": {}
     }
   },
   {
     "id": 15,
-    "area": "Folkehelse og forebygging",
-    "name": "Stanse endringer i tobakksskadeloven (innføring av EUs tobakksdirektiv) som vil tillate salg av e-sigaretter",
-    "description": "Stanse endringer i tobakksskadeloven (innføring av EUs tobakksdirektiv) som vil tillate salg av e-sigaretter",
+    "area": "Skole og barnehage",
+    "name": "Kommunene må pålegges å kvalitetssikre innholdet i den tilrettelagte opplæringen, ikke bare omfanget.",
+    "description": "Kommunene må pålegges å kvalitetssikre innholdet i den tilrettelagte opplæringen, ikke bare omfanget.",
     "partyStances": {
-      "R": {
-        "level": 0,
-        "quote": null
-      },
-      "FrP": {
-        "level": 0,
-        "quote": "Ikke avgiftsbelegge e-sigaretter som tobakk"
-      },
-      "H": {
-        "level": 0,
-        "quote": null
-      },
-      "V": {
-        "level": 0,
-        "quote": null
-      },
-      "KrF": {
-        "level": 0,
-        "quote": null
-      },
-      "AP": {
-        "level": 1,
-        "quote": "Beskytte barn og unge bedre mot helseskadelige produkter og tjenester, særlig nikotin, rusmidler og usunn mat og drikke."
-      },
-      "MDG": {
-        "level": 0,
-        "quote": null
-      },
-      "SP": {
-        "level": 0,
-        "quote": null
-      },
-      "SV": {
-        "level": 0,
-        "quote": null
-      }
+      "R": {},
+      "FrP": {},
+      "H": {},
+      "V": {},
+      "KrF": {},
+      "AP": {},
+      "MDG": {},
+      "SP": {},
+      "SV": {}
     }
   },
   {
     "id": 16,
-    "area": "Folkehelse og forebygging",
-    "name": "Avvikle taxfree-ordningen for alkohol, tobakks- og nikotinprodukter",
-    "description": "Avvikle taxfree-ordningen for alkohol, tobakks- og nikotinprodukter",
+    "area": "Skole og barnehage",
+    "name": "Sikre at tiltakene som settes inn faktisk virker.",
+    "description": "Sikre at tiltakene som settes inn faktisk virker.",
     "partyStances": {
-      "R": {
-        "level": 2,
-        "quote": "Avvikle taxfree-ordningen. Fram til dette skjer, bør Vinmonopolet overta driften."
-      },
-      "FrP": {
-        "level": 0,
-        "quote": null
-      },
-      "H": {
-        "level": 0,
-        "quote": "Opprettholde tax-free-ordningen, og gjeninnføre veksling mellom tobakk og alkohol."
-      },
-      "V": {
-        "level": 0,
-        "quote": null
-      },
-      "KrF": {
-        "level": 2,
-        "quote": "Avvikle taxfree-ordningen."
-      },
-      "AP": {
-        "level": 0,
-        "quote": null
-      },
-      "MDG": {
-        "level": 2,
-        "quote": "Avvikle ordningen med taxfree-handel på flyplasser og redusere kvoten til et minimum."
-      },
-      "SP": {
-        "level": 0,
-        "quote": null
-      },
-      "SV": {
-        "level": 0,
-        "quote": null
-      }
+      "R": {},
+      "FrP": {},
+      "H": {},
+      "V": {},
+      "KrF": {},
+      "AP": {},
+      "MDG": {},
+      "SP": {},
+      "SV": {}
     }
   },
   {
     "id": 17,
-    "area": "Folkehelse og forebygging",
-    "name": "Utrydde livmorhalskreft og HPV-relatert kreft",
-    "description": "Utrydde livmorhalskreft og HPV-relatert kreft",
+    "area": "Skole og barnehage",
+    "name": "Styrke PP-tjenesten som en sentral del av laget rundt barnet i barnehage og skole.",
+    "description": "Styrke PP-tjenesten som en sentral del av laget rundt barnet i barnehage og skole.",
     "partyStances": {
-      "R": {
-        "level": 0,
-        "quote": null
-      },
-      "FrP": {
-        "level": 2,
-        "quote": "Tilby en større del av befolkningen vaksine mot HPV-viruset, inkludert gutter og intensivere screeningprogrammet."
-      },
-      "H": {
-        "level": 2,
-        "quote": "Innføre flere tiltak som raskere utrydder HPV-relatert kreft og sykdom"
-      },
-      "V": {
-        "level": 0,
-        "quote": null
-      },
-      "KrF": {
-        "level": 0,
-        "quote": null
-      },
-      "AP": {
-        "level": 2,
-        "quote": "Utrydde livmorhalskreft som sykdom i Norge."
-      },
-      "MDG": {
-        "level": 0,
-        "quote": null
-      },
-      "SP": {
-        "level": 0,
-        "quote": null
-      },
-      "SV": {
-        "level": 0,
-        "quote": null
-      }
+      "R": {},
+      "FrP": {},
+      "H": {},
+      "V": {},
+      "KrF": {},
+      "AP": {},
+      "MDG": {},
+      "SP": {},
+      "SV": {}
     }
   },
   {
     "id": 18,
-    "area": "Folkehelse og forebygging",
-    "name": "Forbud mot markedsføring for usunn mat og drikke",
-    "description": "Forbud mot markedsføring for usunn mat og drikke",
+    "area": "Skole og barnehage",
+    "name": "Styrke «laget rundt eleven» (kapasitet/kompetanse i støtteapparatet rundt barn og unge).",
+    "description": "Styrke «laget rundt eleven» (kapasitet/kompetanse i støtteapparatet rundt barn og unge).",
     "partyStances": {
-      "R": {
-        "level": 0,
-        "quote": null
-      },
-      "FrP": {
-        "level": 0,
-        "quote": null
-      },
-      "H": {
-        "level": 0,
-        "quote": null
-      },
-      "V": {
-        "level": 0,
-        "quote": null
-      },
-      "KrF": {
-        "level": 0,
-        "quote": null
-      },
-      "AP": {
-        "level": 1,
-        "quote": "Beskytte barn og unge bedre mot helseskadelige produkter og tjenester, særlig nikotin, rusmidler og usunn mat og drikke."
-      },
-      "MDG": {
-        "level": 0,
-        "quote": null
-      },
-      "SP": {
-        "level": 0,
-        "quote": null
-      },
-      "SV": {
-        "level": 1,
-        "quote": "Innføre forbud mot kommersiell overvåkning og atferdsrettet reklame på digitale flater"
-      }
+      "R": {},
+      "FrP": {},
+      "H": {},
+      "V": {},
+      "KrF": {},
+      "AP": {},
+      "MDG": {},
+      "SP": {},
+      "SV": {}
     }
   },
   {
     "id": 19,
-    "area": "Folkehelse og forebygging",
-    "name": "Sunn skatteveksling",
-    "description": "Sunn skatteveksling",
+    "area": "Skole og barnehage",
+    "name": "Sikre en skolehverdag med mer lek og fysisk aktivitet, spesielt for de yngste elevene.",
+    "description": "Sikre en skolehverdag med mer lek og fysisk aktivitet, spesielt for de yngste elevene.",
     "partyStances": {
-      "R": {
-        "level": 2,
-        "quote": "Bruke avgiftspolitikken for å stimulere til sunne og miljøvennlige valg."
-      },
-      "FrP": {
-        "level": 0,
-        "quote": null
-      },
-      "H": {
-        "level": 0,
-        "quote": null
-      },
-      "V": {
-        "level": 2,
-        "quote": "Gjennomgå avgiftssystemet for mat med sikte på å gjøre frukt og grønt billigere og usunn mat dyrere."
-      },
-      "KrF": {
-        "level": 2,
-        "quote": "Ha en sunn skatteveksling, slik at sunne matvarer blir billigere og usunne dyrere."
-      },
-      "AP": {
-        "level": 0,
-        "quote": null
-      },
-      "MDG": {
-        "level": 0,
-        "quote": null
-      },
-      "SP": {
-        "level": 0,
-        "quote": null
-      },
-      "SV": {
-        "level": 0,
-        "quote": null
-      }
+      "R": {},
+      "FrP": {},
+      "H": {},
+      "V": {},
+      "KrF": {},
+      "AP": {},
+      "MDG": {},
+      "SP": {},
+      "SV": {}
     }
   },
   {
     "id": 20,
-    "area": "Forskning og innovasjon",
-    "name": "Opprettelse av en helsekatapult",
-    "description": "Opprettelse av en helsekatapult",
+    "area": "Skole og barnehage",
+    "name": "Bevilge midler til gratis skolemåltid for alle fra skoleåret 2026-2027.",
+    "description": "Bevilge midler til gratis skolemåltid for alle fra skoleåret 2026-2027.",
     "partyStances": {
-      "R": {
-        "level": 0,
-        "quote": null
-      },
-      "FrP": {
-        "level": 0,
-        "quote": null
-      },
-      "H": {
-        "level": 2,
-        "quote": "Opprette en egen Katapult for helseteknologi og helseinnovasjon som kobles opp mot ledende forsknings- og innovasjonsmiljøer."
-      },
-      "V": {
-        "level": 2,
-        "quote": "Etablere testfasiliteter innen helse gjennom Norsk katapult, for at ny helseteknologi kommer raskere ut i markedet."
-      },
-      "KrF": {
-        "level": 0,
-        "quote": null
-      },
-      "AP": {
-        "level": 2,
-        "quote": "Opprette helsekatapult for å gjøre det enklere å gå fra ide til salg i markedet"
-      },
-      "MDG": {
-        "level": 0,
-        "quote": null
-      },
-      "SP": {
-        "level": 0,
-        "quote": null
-      },
-      "SV": {
-        "level": 0,
-        "quote": null
-      }
+      "R": {},
+      "FrP": {},
+      "H": {},
+      "V": {},
+      "KrF": {},
+      "AP": {},
+      "MDG": {},
+      "SP": {},
+      "SV": {}
     }
   },
   {
     "id": 21,
-    "area": "Forskning og innovasjon",
-    "name": "Økt bruk av helsedata for å forbedre behandling og utvikle helsenæring",
-    "description": "Økt bruk av helsedata for å forbedre behandling og utvikle helsenæring",
+    "area": "Barnevern og omsorg",
+    "name": "Øke sperrefristen for saker om tilbakeføring for å gi barna ro.",
+    "description": "Øke sperrefristen for saker om tilbakeføring for å gi barna ro.",
     "partyStances": {
-      "R": {
-        "level": 0,
-        "quote": null
-      },
-      "FrP": {
-        "level": 1,
-        "quote": "Gjøre Norge til en ledende produsent, utvikler og eksportør av helseteknologi."
-      },
-      "H": {
-        "level": 2,
-        "quote": "Gjøre helsenæring til et satsingsområde, gjennom bedre digitalisering av helsedata og biobanker og legge til rette for gründerskap."
-      },
-      "V": {
-        "level": 1,
-        "quote": "At offentlige data må deles og tilgjengeliggjøres i større grad enn i dag, og på standardiserte formater"
-      },
-      "KrF": {
-        "level": 0,
-        "quote": null
-      },
-      "AP": {
-        "level": 2,
-        "quote": "Bruke norske helsedata til å utvikle nye tjenester, behandlinger og medisinske produkter"
-      },
-      "MDG": {
-        "level": 1,
-        "quote": "Gjøre alle offentlige data fritt tilgjengelig i strukturert format, så lenge det ikke går utover personvern eller rikets sikkerhet"
-      },
-      "SP": {
-        "level": 2,
-        "quote": "Sikre tilgang på helsedata på tvers av offentleg og privat sektor, slik at ein kan utvikle gode løysingar, samtidig som personvernet ivaretas."
-      },
-      "SV": {
-        "level": 0,
-        "quote": null
-      }
+      "R": {},
+      "FrP": {},
+      "H": {},
+      "V": {},
+      "KrF": {},
+      "AP": {},
+      "MDG": {},
+      "SP": {},
+      "SV": {}
     }
   },
   {
     "id": 22,
-    "area": "Forskning og innovasjon",
-    "name": "Økt satsing på helsenæring",
-    "description": "Økt satsing på helsenæring",
+    "area": "Barnevern og omsorg",
+    "name": "Innføre plikt for nemnd/domstol til å vurdere om omsorgsansvar skal overføres til fosterforeldre for varig stabilitet (evt. også vurdere å oppgi gjenforening).",
+    "description": "Innføre plikt for nemnd/domstol til å vurdere om omsorgsansvar skal overføres til fosterforeldre for varig stabilitet (evt. også vurdere å oppgi gjenforening).",
     "partyStances": {
-      "R": {
-        "level": 0,
-        "quote": null
-      },
-      "FrP": {
-        "level": 2,
-        "quote": "Gjøre Norge til en ledende produsent, utvikler og eksportør av helseteknologi."
-      },
-      "H": {
-        "level": 2,
-        "quote": "Gjøre helsenæring til et satsingsområde, gjennom bedre utnyttelse av helsedata og biobanker og legge til rette for gründerskap."
-      },
-      "V": {
-        "level": 1,
-        "quote": "Brødtekst, i helsekapittelet, om innovasjon i helse"
-      },
-      "KrF": {
-        "level": 0,
-        "quote": null
-      },
-      "AP": {
-        "level": 2,
-        "quote": "Fortsette å løfte helsenæring som eksportsatsing og følge opp utredningen av klyngestrukturen og sørge for at helseklyngene får rammevilkår."
-      },
-      "MDG": {
-        "level": 0,
-        "quote": null
-      },
-      "SP": {
-        "level": 0,
-        "quote": null
-      },
-      "SV": {
-        "level": 0,
-        "quote": null
-      }
+      "R": {},
+      "FrP": {},
+      "H": {},
+      "V": {},
+      "KrF": {},
+      "AP": {},
+      "MDG": {},
+      "SP": {},
+      "SV": {}
     }
   },
   {
     "id": 23,
-    "area": "Forskning og innovasjon",
-    "name": "Politikk for å begrense antibiotikaresistens",
-    "description": "Politikk for å begrense antibiotikaresistens",
+    "area": "Barnevern og omsorg",
+    "name": "Gi fosterforeldre klagerett på offentlige vedtak (f.eks. helse/skole) og innsyn i dokumenter.",
+    "description": "Gi fosterforeldre klagerett på offentlige vedtak (f.eks. helse/skole) og innsyn i dokumenter.",
     "partyStances": {
-      "R": {
-        "level": 2,
-        "quote": "At Norge jobber for å styrke utviklingen av vaksiner og diagnostiske verktøy som kan forebygge antibiotikaresistens."
-      },
-      "FrP": {
-        "level": 2,
-        "quote": "Økt vaksinasjonsdekning vil styrke folkehelsen, redusere helseforskjeller og bekjempe antibiotikaresistens."
-      },
-      "H": {
-        "level": 2,
-        "quote": "Ta en ledende rolle internasjonalt for å stimulere og fremme utvikling for å forhindre og bekjempe antibiotikaresistens."
-      },
-      "V": {
-        "level": 2,
-        "quote": "At Norge skal være pådriver for et sterkere internasjonalt avtaleverk rundt pandemiberedskap og forebygging av antibiotikaresistens."
-      },
-      "KrF": {
-        "level": 2,
-        "quote": "Sørge for at Norge tar lederskap i det internasjonale arbeidet mot antibiotikaresistens."
-      },
-      "AP": {
-        "level": 2,
-        "quote": "At Norge tar lederskap i det globale arbeidet mot antibiotikaresistens"
-      },
-      "MDG": {
-        "level": 2,
-        "quote": "Ytterligere redusere antibiotikabruken i norsk matproduksjon og lede an internasjonalt i arbeidet mot antibiotikaresistens."
-      },
-      "SP": {
-        "level": 2,
-        "quote": "Styrkje forskings- og utredningsarbeid for å stoppe spredning av antibiotikaresistente bakteriar."
-      },
-      "SV": {
-        "level": 0,
-        "quote": null
-      }
+      "R": {},
+      "FrP": {},
+      "H": {},
+      "V": {},
+      "KrF": {},
+      "AP": {},
+      "MDG": {},
+      "SP": {},
+      "SV": {}
     }
   },
   {
     "id": 24,
-    "area": "Forskning og innovasjon",
-    "name": "Få opp nasjonal infrastruktur for legemiddelproduksjon",
-    "description": "Få opp nasjonal infrastruktur for legemiddelproduksjon",
+    "area": "Barnevern og omsorg",
+    "name": "Gi fosterforeldre mer handlingsrom/tydeligere mandat.",
+    "description": "Gi fosterforeldre mer handlingsrom/tydeligere mandat.",
     "partyStances": {
-      "R": {
-        "level": 2,
-        "quote": "Utvikle produksjon av nødvendige legemidler i Norge, og jobbe for endringer i legemiddelindustrien slik at det ikke blir mangel på nødvendige legemidler."
-      },
-      "FrP": {
-        "level": 2,
-        "quote": "I større grad gjøre Norge selvforsynt med de viktigste legemidlene og etablere nasjonalt beredskapslager"
-      },
-      "H": {
-        "level": 1,
-        "quote": "Arbeide aktivt for å sikre mot legemiddelmangel, og styrke og utvide det nordiske samarbeidet om produksjon og lagring av legemidler."
-      },
-      "V": {
-        "level": 0,
-        "quote": null
-      },
-      "KrF": {
-        "level": 2,
-        "quote": "Utrede muligheter for produksjon av kritiske legemidler i Norge, eller for raskt å sette i gang slik produksjon ved krise."
-      },
-      "AP": {
-        "level": 2,
-        "quote": "Styrke utviklingen og produksjonen av legemidler i Norge"
-      },
-      "MDG": {
-        "level": 2,
-        "quote": "Sikre god legemiddelberedskap og øke norsk selvforsyning av viktige legemidler."
-      },
-      "SP": {
-        "level": 0,
-        "quote": null
-      },
-      "SV": {
-        "level": 2,
-        "quote": "Etablere statlig produksjon av legemidler (StatMed) og styrke eksisterende produksjonsmiljøer i Norge."
-      }
+      "R": {},
+      "FrP": {},
+      "H": {},
+      "V": {},
+      "KrF": {},
+      "AP": {},
+      "MDG": {},
+      "SP": {},
+      "SV": {}
     }
   },
   {
     "id": 25,
-    "area": "Forskning og innovasjon",
-    "name": "Økt bruk av digital hjemmeoppfølging",
-    "description": "Økt bruk av digital hjemmeoppfølging",
+    "area": "Barnevern og omsorg",
+    "name": "Overføre omsorgsansvaret for alle enslige mindreårige asylsøkere til barnevernet (også de over 15 år).",
+    "description": "Overføre omsorgsansvaret for alle enslige mindreårige asylsøkere til barnevernet (også de over 15 år).",
     "partyStances": {
-      "R": {
-        "level": 0,
-        "quote": null
-      },
-      "FrP": {
-        "level": 2,
-        "quote": "Øke bruken av velferdsteknologi"
-      },
-      "H": {
-        "level": 2,
-        "quote": "A) Sørge for målrettet bruk av ny teknologi, digitalisering og kunstig intelligens for å jobbe på smartere måter og ha bedre oppgavefordeling i sykehus. B) Sørge for raskere realisering av nytten ved bruk av digitale løsninger og ny teknologi i helse- og omsorgssektoren."
-      },
-      "V": {
-        "level": 0,
-        "quote": null
-      },
-      "KrF": {
-        "level": 2,
-        "quote": "Forsterke samarbeidet om digitalisering med kommunesektoren, herunder tiltak for riktig og økt bruk av velferdsteknologi"
-      },
-      "AP": {
-        "level": 2,
-        "quote": "Benytte mulighetene som ny teknologi, innovasjon og digitalisering gir oss."
-      },
-      "MDG": {
-        "level": 2,
-        "quote": "Satse på innovasjon og velferdsteknologi for å bedre kvalitet og tilgjengelighet i helsetjenestene."
-      },
-      "SP": {
-        "level": 0,
-        "quote": null
-      },
-      "SV": {
-        "level": 2,
-        "quote": "Etablere brukervennlige digitale oppfølgingstjenester og ta i bruk ulike typer velferdsteknologi."
-      }
+      "R": {},
+      "FrP": {},
+      "H": {},
+      "V": {},
+      "KrF": {},
+      "AP": {},
+      "MDG": {},
+      "SP": {},
+      "SV": {}
     }
   },
   {
     "id": 26,
-    "area": "Frivillig sektor",
-    "name": "Økt skattefradrag på gaver",
-    "description": "Økt skattefradrag på gaver",
+    "area": "Barnevern og omsorg",
+    "name": "Styrke bemanning og barnefaglig kompetanse i mottak dersom dagens modell beholdes.",
+    "description": "Styrke bemanning og barnefaglig kompetanse i mottak dersom dagens modell beholdes.",
     "partyStances": {
-      "R": {
-        "level": 0,
-        "quote": null
-      },
-      "FrP": {
-        "level": 2,
-        "quote": "Øke skattefradraget på gaver fra privatpersoner til frivillige organisasjoner"
-      },
-      "H": {
-        "level": 2,
-        "quote": "Forbedre rammevilkårene for frivillige organisasjoners lotterier med tillatelse gitt i pengespilloven, og øke fradragsgrensen for gaver fra private givere og næringsliv til frivillige og ideelle organisasjoner."
-      },
-      "V": {
-        "level": 2,
-        "quote": "Gjeninnføre gaveforsterkningsordningen og øke skattefradraget for private givere for å gjøre det mer attraktivt å tiltrekke seg privat kapital til kulturinstitusjoner."
-      },
-      "KrF": {
-        "level": 2,
-        "quote": "Øke maksgrensen for skattefradrag for gaver til trossamfunn og frivillige organisasjoner til minst 100.000 kroner."
-      },
-      "AP": {
-        "level": 0,
-        "quote": null
-      },
-      "MDG": {
-        "level": 2,
-        "quote": "Øke skattefradraget for gaver til frivillige organisasjoner."
-      },
-      "SP": {
-        "level": 2,
-        "quote": "Øke skattefritaket for gaver til frivillige organisasjoner."
-      },
-      "SV": {
-        "level": 0,
-        "quote": null
-      }
+      "R": {},
+      "FrP": {},
+      "H": {},
+      "V": {},
+      "KrF": {},
+      "AP": {},
+      "MDG": {},
+      "SP": {},
+      "SV": {}
     }
   },
   {
     "id": 27,
-    "area": "Frivillig sektor",
-    "name": "Styrke de spesielle rettsjelpstiltakene",
-    "description": "Styrke de spesielle rettsjelpstiltakene",
+    "area": "Barnevern og omsorg",
+    "name": "Sikre tidlig helsekartlegging og tilgang til psykisk helsehjelp.",
+    "description": "Sikre tidlig helsekartlegging og tilgang til psykisk helsehjelp.",
     "partyStances": {
-      "R": {
-        "level": 0,
-        "quote": null
-      },
-      "FrP": {
-        "level": 0,
-        "quote": null
-      },
-      "H": {
-        "level": 0,
-        "quote": null
-      },
-      "V": {
-        "level": 1,
-        "quote": "Utvide rettshjelpsordningen til flere områder, blant annet lønnstyveri og tvangsinngrep under straffegjennomføring"
-      },
-      "KrF": {
-        "level": 1,
-        "quote": "Styrke tilbudet om fri rettshjelp ved å øke inntekts- og formuesgrensene for dette."
-      },
-      "AP": {
-        "level": 2,
-        "quote": "Styrke de frivillige rettshjelpstilbudene"
-      },
-      "MDG": {
-        "level": 2,
-        "quote": "Styrke ordningen med fri rettshjelp og støtte frivillige organisasjoner som yter fri rettshjelp."
-      },
-      "SP": {
-        "level": 0,
-        "quote": null
-      },
-      "SV": {
-        "level": 2,
-        "quote": "Styrke de frivillige rettshjelpstiltakene."
-      }
+      "R": {},
+      "FrP": {},
+      "H": {},
+      "V": {},
+      "KrF": {},
+      "AP": {},
+      "MDG": {},
+      "SP": {},
+      "SV": {}
     }
   },
   {
     "id": 28,
-    "area": "Frivillig sektor",
-    "name": "Utvide saksområdet for fri rettshjelp",
-    "description": "Utvide saksområdet for fri rettshjelp",
+    "area": "Barnevern og omsorg",
+    "name": "Bedre rutiner ved forsvinninger (klarere samhandling/oppfølging, inkl. politi/UDI).",
+    "description": "Bedre rutiner ved forsvinninger (klarere samhandling/oppfølging, inkl. politi/UDI).",
     "partyStances": {
-      "R": {
-        "level": 1,
-        "quote": "Sikre asylsøkere fri rettshjelp, rettssikker asylsaksbehandling og en reell klagemulighet."
-      },
-      "FrP": {
-        "level": 0,
-        "quote": null
-      },
-      "H": {
-        "level": 1,
-        "quote": "Sikre gode ordninger for fri rettshjelp."
-      },
-      "V": {
-        "level": 2,
-        "quote": "Øke inntektsgrensen for fri rettshjelp, slik at også de med lav inntekt sikres tilgang på rettspleie."
-      },
-      "KrF": {
-        "level": 1,
-        "quote": "At barn og foreldre skal ha rett til fri rettshjelp fra sak blir opprettet. Barna sin mening skal bli hørt, og barn skal ha rett til å uttale seg i saker som omhandler dem."
-      },
-      "AP": {
-        "level": 2,
-        "quote": "Etablere en ny rettshjelpsmodell som sikrer at flere utsatte grupper får rettshjelp, og tilby rettshjelpsveiledning til folk over hele landet i nærtjenestesentre"
-      },
-      "MDG": {
-        "level": 1,
-        "quote": "Styrke arbeidet mot seksuell trakassering og inkludere slike saker i ordningen med fri rettshjelp."
-      },
-      "SP": {
-        "level": 2,
-        "quote": "Endre rettshjelpsordningen til å gjelde flere saksområder og prioritere inntektsgrensa, slik at fleire kjem inn under ordninga."
-      },
-      "SV": {
-        "level": 2,
-        "quote": "Prioritere at flere får fri rettshjelp, og styrke de frivillige rettshjelpstiltakene."
-      }
+      "R": {},
+      "FrP": {},
+      "H": {},
+      "V": {},
+      "KrF": {},
+      "AP": {},
+      "MDG": {},
+      "SP": {},
+      "SV": {}
     }
   },
   {
     "id": 29,
-    "area": "Frivillig sektor",
-    "name": "Gjeninnføre gaveforsterkningsordning",
-    "description": "Gjeninnføre gaveforsterkningsordning",
+    "area": "Barnevern og omsorg",
+    "name": "Innføre krav om minimum antall årlige statlige tilsyn.",
+    "description": "Innføre krav om minimum antall årlige statlige tilsyn.",
     "partyStances": {
-      "R": {
-        "level": 0,
-        "quote": null
-      },
-      "FrP": {
-        "level": 2,
-        "quote": "Gjeninnføre gaveforsterkningsordningen og øke skattefradraget for private givere for å gjøre det mer attraktivt å tiltrekke seg privat kapital."
-      },
-      "H": {
-        "level": 0,
-        "quote": null
-      },
-      "V": {
-        "level": 2,
-        "quote": "Gjeninnføre gaveforsterkningsordningen og øke skattefradraget for private givere for å gjøre det mer attraktivt å tiltrekke seg privat kapital til kulturinstitusjoner."
-      },
-      "KrF": {
-        "level": 1,
-        "quote": "Utvikle ordninger som gjør det mer attraktivt for private å understøtte kunst- og kulturlivet, som for eksempel gaveforsterkningsordningen."
-      },
-      "AP": {
-        "level": 0,
-        "quote": null
-      },
-      "MDG": {
-        "level": 0,
-        "quote": null
-      },
-      "SP": {
-        "level": 0,
-        "quote": null
-      },
-      "SV": {
-        "level": 0,
-        "quote": null
-      }
+      "R": {},
+      "FrP": {},
+      "H": {},
+      "V": {},
+      "KrF": {},
+      "AP": {},
+      "MDG": {},
+      "SP": {},
+      "SV": {}
     }
   },
   {
     "id": 30,
-    "area": "Kreftomsorg",
-    "name": "Satsing på pakkeforløp hjem for kreftpasienter",
-    "description": "Satsing på pakkeforløp hjem for kreftpasienter",
+    "area": "Barnevern og omsorg",
+    "name": "Styrke rettssikkerheten gjennom egen forskrift, lik den for barnevernsinstitusjoner.",
+    "description": "Styrke rettssikkerheten gjennom egen forskrift, lik den for barnevernsinstitusjoner.",
     "partyStances": {
-      "R": {
-        "level": 0,
-        "quote": null
-      },
-      "FrP": {
-        "level": 0,
-        "quote": null
-      },
-      "H": {
-        "level": 0,
-        "quote": null
-      },
-      "V": {
-        "level": 0,
-        "quote": null
-      },
-      "KrF": {
-        "level": 1,
-        "quote": "Styrke ettervernet for de som overlever kreft."
-      },
-      "AP": {
-        "level": 0,
-        "quote": null
-      },
-      "MDG": {
-        "level": 0,
-        "quote": null
-      },
-      "SP": {
-        "level": 0,
-        "quote": null
-      },
-      "SV": {
-        "level": 0,
-        "quote": null
-      }
+      "R": {},
+      "FrP": {},
+      "H": {},
+      "V": {},
+      "KrF": {},
+      "AP": {},
+      "MDG": {},
+      "SP": {},
+      "SV": {}
     }
   },
   {
     "id": 31,
-    "area": "Kreftomsorg",
-    "name": "Kreftkoordinator i alle kommuner",
-    "description": "Kreftkoordinator i alle kommuner",
+    "area": "Barnevern og omsorg",
+    "name": "Samle regelverket i én veileder og sikre løpende vurderinger av barnets situasjon etter plassering.",
+    "description": "Samle regelverket i én veileder og sikre løpende vurderinger av barnets situasjon etter plassering.",
     "partyStances": {
-      "R": {
-        "level": 0,
-        "quote": null
-      },
-      "FrP": {
-        "level": 0,
-        "quote": null
-      },
-      "H": {
-        "level": 0,
-        "quote": null
-      },
-      "V": {
-        "level": 0,
-        "quote": null
-      },
-      "KrF": {
-        "level": 0,
-        "quote": null
-      },
-      "AP": {
-        "level": 0,
-        "quote": null
-      },
-      "MDG": {
-        "level": 0,
-        "quote": null
-      },
-      "SP": {
-        "level": 0,
-        "quote": null
-      },
-      "SV": {
-        "level": 0,
-        "quote": null
-      }
+      "R": {},
+      "FrP": {},
+      "H": {},
+      "V": {},
+      "KrF": {},
+      "AP": {},
+      "MDG": {},
+      "SP": {},
+      "SV": {}
     }
   },
   {
     "id": 32,
-    "area": "Kreftomsorg",
-    "name": "Spesialisering innen palliasjon",
-    "description": "Spesialisering innen palliasjon",
+    "area": "Barnevern og omsorg",
+    "name": "Gjennomgå/stramme inn tilsynsordningen (hyppighet/minstekrav) og sikre ressurser til gjennomføring.",
+    "description": "Gjennomgå/stramme inn tilsynsordningen (hyppighet/minstekrav) og sikre ressurser til gjennomføring.",
     "partyStances": {
-      "R": {
-        "level": 0,
-        "quote": null
-      },
-      "FrP": {
-        "level": 0,
-        "quote": null
-      },
-      "H": {
-        "level": 1,
-        "quote": "Sikre god palliativ pleie og lindrende omsorg til mennesker i livets sluttfase og sikre bruk av hospicefilosofi, som handler om å skape livskvalitet i livets siste fase."
-      },
-      "V": {
-        "level": 1,
-        "quote": "Styrke palliativ behandling"
-      },
-      "KrF": {
-        "level": 2,
-        "quote": "Etablere en egen medisinsk spesialitet for palliativ medisin i Norge."
-      },
-      "AP": {
-        "level": 0,
-        "quote": null
-      },
-      "MDG": {
-        "level": 1,
-        "quote": "Vesentlig styrke kompetansen på smertelindring og terminal omsorg, også hjemmebasert."
-      },
-      "SP": {
-        "level": 1,
-        "quote": "Styrke omsorgstilbodet ved livet sin ende og betre tilbodet om palliativ pleie."
-      },
-      "SV": {
-        "level": 0,
-        "quote": null
-      }
+      "R": {},
+      "FrP": {},
+      "H": {},
+      "V": {},
+      "KrF": {},
+      "AP": {},
+      "MDG": {},
+      "SP": {},
+      "SV": {}
     }
   },
   {
     "id": 33,
-    "area": "Kreftomsorg",
-    "name": "Ernæringsstrategi i alle sykehus",
-    "description": "Ernæringsstrategi i alle sykehus",
+    "area": "Barnevern og omsorg",
+    "name": "Sikre ressurser til et forsvarlig nivå av tilsyn (dagens nivå omtales som uakseptabelt).",
+    "description": "Sikre ressurser til et forsvarlig nivå av tilsyn (dagens nivå omtales som uakseptabelt).",
     "partyStances": {
-      "R": {
-        "level": 0,
-        "quote": null
-      },
-      "FrP": {
-        "level": 1,
-        "quote": "Bekjempe underernæring og få flere kjøkken tilbake på sykehjem"
-      },
-      "H": {
-        "level": 1,
-        "quote": "Styrke det systematiske ernæringsarbeidet for eldre og utsatte grupper."
-      },
-      "V": {
-        "level": 0,
-        "quote": null
-      },
-      "KrF": {
-        "level": 1,
-        "quote": "Styrke det systematiske ernæringsarbeidet og sikre at mat, måltid og ernæring er en del av alt forebyggende, behandlende og rehabiliterende arbeid."
-      },
-      "AP": {
-        "level": 0,
-        "quote": null
-      },
-      "MDG": {
-        "level": 1,
-        "quote": "Sørge for at alle i det offentliges omsorg får servert smakfull, næringsrik og bærekraftig mat i tråd med kostholdsrådene."
-      },
-      "SP": {
-        "level": 1,
-        "quote": "Bidra til at eldre på institusjon og heimebuande får god og tilstrekkeleg ernæring, gjerne laga lokalt og basert på lokale ressursar."
-      },
-      "SV": {
-        "level": 0,
-        "quote": null
-      }
+      "R": {},
+      "FrP": {},
+      "H": {},
+      "V": {},
+      "KrF": {},
+      "AP": {},
+      "MDG": {},
+      "SP": {},
+      "SV": {}
     }
   },
   {
     "id": 34,
-    "area": "Rettigheter",
-    "name": "Totalrevisjon av pasient- og brukerrettighetsloven",
-    "description": "Totalrevisjon av pasient- og brukerrettighetsloven",
+    "area": "Barnevern og omsorg",
+    "name": "Utrede barn og unges opplevelse av å bo på barnevernsinstitusjon.",
+    "description": "Utrede barn og unges opplevelse av å bo på barnevernsinstitusjon.",
     "partyStances": {
-      "R": {
-        "level": 0,
-        "quote": null
-      },
-      "FrP": {
-        "level": 1,
-        "quote": "Det er behov for å forenkle pasientrettigheter og styrke tilbudet om behandlingsreiser til utlandet."
-      },
-      "H": {
-        "level": 1,
-        "quote": "Gjøre det enklere for pasienter og pårørende å forstå sine rettigheter og utøve medvirkning og innflytelse."
-      },
-      "V": {
-        "level": 1,
-        "quote": "Gjennomgå og samordne offentlige kjøp av transporttjenester, slik som skoleskyss, TT-transport og pasienttransport, sett i lys av kunstig intelligens og ny teknologi, for å sikre gode og effektive tjenester"
-      },
-      "KrF": {
-        "level": 0,
-        "quote": null
-      },
-      "AP": {
-        "level": 1,
-        "quote": "Revurdere fordelingen av ansvar og oppgaver mellom primær- og spesialisthelsetjenesten for å gi pasienter et kvalitativt bedre tilbud og bedre arbeidsforhold for fagfolk. Det innebærer å utrede juridiske, organisatoriske og økonomiske virkemidler for å gi pasienter én felles helsetjeneste."
-      },
-      "MDG": {
-        "level": 0,
-        "quote": null
-      },
-      "SP": {
-        "level": 0,
-        "quote": null
-      },
-      "SV": {
-        "level": 0,
-        "quote": null
-      }
+      "R": {},
+      "FrP": {},
+      "H": {},
+      "V": {},
+      "KrF": {},
+      "AP": {},
+      "MDG": {},
+      "SP": {},
+      "SV": {}
     }
   },
   {
     "id": 35,
-    "area": "Rettigheter",
-    "name": "Avkortning av sosialhjelp ved økonomisk støtte",
-    "description": "Avkortning av sosialhjelp ved økonomisk støtte",
+    "area": "Barnevern og omsorg",
+    "name": "Sikre at barn ikke utsettes for uforholdsmessig maktbruk.",
+    "description": "Sikre at barn ikke utsettes for uforholdsmessig maktbruk.",
     "partyStances": {
-      "R": {
-        "level": 2,
-        "quote": "Sikre at sosialhjelpsmottakere kan motta gaver fra venner, slektninger og frivillige organisasjoner uten å være redde for avkortning."
-      },
-      "FrP": {
-        "level": 0,
-        "quote": null
-      },
-      "H": {
-        "level": 0,
-        "quote": null
-      },
-      "V": {
-        "level": 0,
-        "quote": null
-      },
-      "KrF": {
-        "level": 1,
-        "quote": "Sikre økt tilgang på skreddersydde tjenester, slik at systemet tilpasses den enkelte og ikke motsatt. Slå sammen all oppfølging/ytelser for unge under 30 år til en felles ytelse med mål om arbeid, kvalifisering og utdanning som erstatter dagpenger, arbeidsavklaringspenger,uføretrygd, tiltakspenger, sosialhjelp og kvalifiseringsprogram."
-      },
-      "AP": {
-        "level": 0,
-        "quote": null
-      },
-      "MDG": {
-        "level": 1,
-        "quote": "Innføre en mer tillitsbasert sosialstøtte, som en garantert minsteinntekt uten krav om avkortning ved gaver."
-      },
-      "SP": {
-        "level": 0,
-        "quote": null
-      },
-      "SV": {
-        "level": 1,
-        "quote": "Innføre en statlig, forpliktende normering av økonomisk sosialhjelp som sikrer et akseptabelt forbruksnivå, og redusere kravene om dokumentasjon."
-      }
+      "R": {},
+      "FrP": {},
+      "H": {},
+      "V": {},
+      "KrF": {},
+      "AP": {},
+      "MDG": {},
+      "SP": {},
+      "SV": {}
     }
   },
   {
     "id": 36,
-    "area": "Rettigheter",
-    "name": "En gjennomgang og bedring av ordningen for pasientreiser",
-    "description": "En gjennomgang og bedring av ordningen for pasientreiser",
+    "area": "Barnevern og omsorg",
+    "name": "Styrke kunnskapsgrunnlaget om hvilke konsekvenser fysisk maktbruk har for barn.",
+    "description": "Styrke kunnskapsgrunnlaget om hvilke konsekvenser fysisk maktbruk har for barn.",
     "partyStances": {
-      "R": {
-        "level": 1,
-        "quote": "Sikre pasienter mulighet til kvalifisert pasienttransport, særlig i distrikt med lang vei til sykehus."
-      },
-      "FrP": {
-        "level": 0,
-        "quote": null
-      },
-      "H": {
-        "level": 1,
-        "quote": "Bruke teknologiske løsninger og desentralisering av egnede helsetjenester slik at antall pasientreiser går ned og tjenestene likevel oppleves som bedre."
-      },
-      "V": {
-        "level": 0,
-        "quote": null
-      },
-      "KrF": {
-        "level": 0,
-        "quote": null
-      },
-      "AP": {
-        "level": 2,
-        "quote": "Gjennomgå ordningene til Pasientreiser for å sikre at ikke pasienter og pårørende får unødvendig lang, belastende og kostbar reisevei."
-      },
-      "MDG": {
-        "level": 1,
-        "quote": "Videreføre støtte til FOT-ruter og sikre pasientreiser i distriktene, men uten at turisme spiser av tilbudet."
-      },
-      "SP": {
-        "level": 2,
-        "quote": "A) Øke refusjonssatsene på pasientreiser slik at de kommer på et akseptabelt nivå B)Forbedre og forenkle pasientreiseordningen og sikre forsvarlig drosjetransport for pasienter i regi av helseforetakene"
-      },
-      "SV": {
-        "level": 0,
-        "quote": null
-      }
+      "R": {},
+      "FrP": {},
+      "H": {},
+      "V": {},
+      "KrF": {},
+      "AP": {},
+      "MDG": {},
+      "SP": {},
+      "SV": {}
     }
   },
   {
     "id": 37,
-    "area": "Rettigheter",
-    "name": "Kreftpasienters mulighet for erstatning etter pasientskader",
-    "description": "Kreftpasienters mulighet for erstatning etter pasientskader",
+    "area": "Barnevern og omsorg",
+    "name": "Øke kompetansen hos ansatte om pedagogiske metoder for å forebygge fysisk maktbruk.",
+    "description": "Øke kompetansen hos ansatte om pedagogiske metoder for å forebygge fysisk maktbruk.",
     "partyStances": {
-      "R": {
-        "level": 0,
-        "quote": null
-      },
-      "FrP": {
-        "level": 0,
-        "quote": null
-      },
-      "H": {
-        "level": 1,
-        "quote": "Sørge for at det jobbes systematisk for å bedre pasientsikkerheten i helsetjenesten."
-      },
-      "V": {
-        "level": 0,
-        "quote": null
-      },
-      "KrF": {
-        "level": 0,
-        "quote": null
-      },
-      "AP": {
-        "level": 0,
-        "quote": null
-      },
-      "MDG": {
-        "level": 0,
-        "quote": null
-      },
-      "SP": {
-        "level": 0,
-        "quote": null
-      },
-      "SV": {
-        "level": 0,
-        "quote": null
-      }
+      "R": {},
+      "FrP": {},
+      "H": {},
+      "V": {},
+      "KrF": {},
+      "AP": {},
+      "MDG": {},
+      "SP": {},
+      "SV": {}
     }
   },
   {
     "id": 38,
-    "area": "Rettigheter",
-    "name": "Omsorgspenger for pårørende",
-    "description": "Omsorgspenger for pårørende",
+    "area": "Barnevern og omsorg",
+    "name": "Øke kapasiteten i familievernet.",
+    "description": "Øke kapasiteten i familievernet.",
     "partyStances": {
-      "R": {
-        "level": 2,
-        "quote": "At det skal tas hensyn til helhetlige behov når familier hvor flere er kronisk syke, søker om helse- og omsorgstjenester ....og..... Forbedre regelverket for pårørendes permisjonsmuligheter i arbeidslivet for å sikre likestilling og bedre mulighetene til å kombinere arbeid og omsorg."
-      },
-      "FrP": {
-        "level": 2,
-        "quote": "At pårørende til alvorlig syke skal ha rett til tidsbegrenset pleiepenger når de pleier sine nærmeste."
-      },
-      "H": {
-        "level": 0,
-        "quote": null
-      },
-      "V": {
-        "level": 1,
-        "quote": "Mange familier kan ha store omsorgsoppgaver som pårørende. Vi må tenke nytt og gi rom for å prøve ut nye modeller som gjør det lettere for pårørende å stå i omsorgsoppgaver for sine nærmeste over tid."
-      },
-      "KrF": {
-        "level": 2,
-        "quote": "Legge til rette for bedre ordninger med omsorgslønn og avlastningstiltak for familiemedlemmer som selv utfører omfattende omsorgstjeneste samt gjøre disse bedre kjent, og utvide pleiepengeordningen til også å gjelde eldre i livets sluttfase."
-      },
-      "AP": {
-        "level": 1,
-        "quote": "Arbeiderpartiet vil gjøre hverdagen som pårørende bedre ved å øke bruken av pårørendeavtaler, mer avlastning, mer opplæring og bedre støtte for de pårørende. Innføre en prøveordning med korttidspermisjon for pårørende, etter modell for omsorgspenger for barn under 12 år."
-      },
-      "MDG": {
-        "level": 0,
-        "quote": null
-      },
-      "SP": {
-        "level": 2,
-        "quote": "Forbedre pårørendes permisjonsmuligheter i arbeidslivet, og vurdere økonomiske kompensasjonsordningar for å sikre likestilling og betre moglegheitene til å kombinere arbeid og omsorg."
-      },
-      "SV": {
-        "level": 2,
-        "quote": "Anerkjenne pårørendes rolle, sikre nasjonale satser på omsorgsstønader og vurdere sorgmelding."
-      }
+      "R": {},
+      "FrP": {},
+      "H": {},
+      "V": {},
+      "KrF": {},
+      "AP": {},
+      "MDG": {},
+      "SP": {},
+      "SV": {}
     }
   },
   {
     "id": 39,
-    "area": "Rettigheter",
-    "name": "Studenter må få tilgang til arbeidsavklaringspenger",
-    "description": "Studenter må få tilgang til arbeidsavklaringspenger",
+    "area": "Barnevern og omsorg",
+    "name": "Øke midler slik at forebyggende familieråd kan tas i bruk i kommunene.",
+    "description": "Øke midler slik at forebyggende familieråd kan tas i bruk i kommunene.",
     "partyStances": {
-      "R": {
-        "level": 0,
-        "quote": null
-      },
-      "FrP": {
-        "level": 0,
-        "quote": null
-      },
-      "H": {
-        "level": 0,
-        "quote": null
-      },
-      "V": {
-        "level": 1,
-        "quote": "Gi studenter flere sosiale rettigheter og økt studiestøtte til foreldre"
-      },
-      "KrF": {
-        "level": 1,
-        "quote": "Sikre økt tilgang på skreddersydde tjenester, slik at systemet tilpasses den enkelte og ikke motsatt. Slå sammen all oppfølging/ytelser for unge under 30 år til en felles ytelse med mål om arbeid, kvalifisering og utdanning som erstatter dagpenger, arbeidsavklaringspenger, uføretrygd, tiltakspenger, sosialhjelp og kvalifiseringsprogram."
-      },
-      "AP": {
-        "level": 2,
-        "quote": "Sikre gode sammarbeids- og samordningsløsninger mellom helsetjenestene, utdanningsektoren, og NAV, for å støtte mennesker som står utenfor jobb og utdanning tilbake i meningsfull aktivitet."
-      },
-      "MDG": {
-        "level": 0,
-        "quote": null
-      },
-      "SP": {
-        "level": 0,
-        "quote": null
-      },
-      "SV": {
-        "level": 1,
-        "quote": "Sikre studenter rett til inntektssikring på nivå med dagpenger."
-      }
+      "R": {},
+      "FrP": {},
+      "H": {},
+      "V": {},
+      "KrF": {},
+      "AP": {},
+      "MDG": {},
+      "SP": {},
+      "SV": {}
     }
   },
   {
     "id": 40,
-    "area": "Tilgang til behandling",
-    "name": "Satsing på flere kliniske studier",
-    "description": "Satsing på flere kliniske studier",
+    "area": "Barnevern og omsorg",
+    "name": "Styrke kapasitet, kompetanse og handlingsrom i førstelinjen for de yngste barna (0-5).",
+    "description": "Styrke kapasitet, kompetanse og handlingsrom i førstelinjen for de yngste barna (0-5).",
     "partyStances": {
-      "R": {
-        "level": 0,
-        "quote": null
-      },
-      "FrP": {
-        "level": 2,
-        "quote": "Styrke medisinsk forskning, sikre rask tilgang til nye legemidler og metoder, og holde egenandeler på et moderat nivå."
-      },
-      "H": {
-        "level": 2,
-        "quote": "Gjennomføre flere kliniske studier i Norge."
-      },
-      "V": {
-        "level": 2,
-        "quote": "Tilrettelegge for flere kliniske studier og annen helseforskning gjennom forenkling av byråkrati og regelverk, etablering av mer attraktive skatteordninger for legemiddelfirmaer som kjører studier i Norge, økt prioritering av forskning/kliniske studier i helsetjenesten og mer offentlig-privat samarbeid."
-      },
-      "KrF": {
-        "level": 0,
-        "quote": null
-      },
-      "AP": {
-        "level": 2,
-        "quote": "Legge til rette for at flere pasienter får delta i kliniske studier i hele landet"
-      },
-      "MDG": {
-        "level": 0,
-        "quote": null
-      },
-      "SP": {
-        "level": 0,
-        "quote": null
-      },
-      "SV": {
-        "level": 1,
-        "quote": "Etablere statlig produksjon av legemidler (StatMed) og styrke legemiddelforskningen"
-      }
+      "R": {},
+      "FrP": {},
+      "H": {},
+      "V": {},
+      "KrF": {},
+      "AP": {},
+      "MDG": {},
+      "SP": {},
+      "SV": {}
     }
   },
   {
     "id": 41,
-    "area": "Tilgang til behandling",
-    "name": "Kortere ventetider på helsehjelp",
-    "description": "Kortere ventetider på helsehjelp",
+    "area": "Barnevern og omsorg",
+    "name": "Styrke samhandling mellom tjenester rundt små barn og familier.",
+    "description": "Styrke samhandling mellom tjenester rundt små barn og familier.",
     "partyStances": {
-      "R": {
-        "level": 0,
-        "quote": null
-      },
-      "FrP": {
-        "level": 2,
-        "quote": "For å redusere ventetider ønsker Fremskrittspartiet en utrednings- og behandlingsgarant på 30 dager etter dato for henvisning fra primærhelsetjenesten."
-      },
-      "H": {
-        "level": 2,
-        "quote": "Redusere ventetidene i helsetjenesten."
-      },
-      "V": {
-        "level": 0,
-        "quote": null
-      },
-      "KrF": {
-        "level": 2,
-        "quote": "Ventetidene i spesialisthelsetjenesten må ned"
-      },
-      "AP": {
-        "level": 2,
-        "quote": "Sikre korte ventetider i vår felles helsetjeneste."
-      },
-      "MDG": {
-        "level": 0,
-        "quote": null
-      },
-      "SP": {
-        "level": 2,
-        "quote": "Styrke finansieringa av sjukehusa for å redusere ventetider og sikre økt pasientbehandling."
-      },
-      "SV": {
-        "level": 2,
-        "quote": "Bemanningen ved offentlige sykehus må økes for å redusere ventetidene og sikre raskere behandling."
-      }
+      "R": {},
+      "FrP": {},
+      "H": {},
+      "V": {},
+      "KrF": {},
+      "AP": {},
+      "MDG": {},
+      "SP": {},
+      "SV": {}
     }
   },
   {
     "id": 42,
-    "area": "Tilgang til behandling",
-    "name": "Raskere tilgang til nye behandlinger og medisiner",
-    "description": "Raskere tilgang til nye behandlinger og medisiner",
+    "area": "Barnevern og omsorg",
+    "name": "Mer øremerking for å unngå at de yngste taper i kommunale prioriteringer.",
+    "description": "Mer øremerking for å unngå at de yngste taper i kommunale prioriteringer.",
     "partyStances": {
-      "R": {
-        "level": 2,
-        "quote": "At Systemet for innføring av nye medisiner/legemidler endres slik at saksbehandlingstiden går ned, og faglige og samfunnsmessige kriterier blir førende, for å gjøre flere medisiner tilgjengelige."
-      },
-      "FrP": {
-        "level": 2,
-        "quote": "Sikre rask tilgang til nye og effektive legemidler, godkjenne medisiner fra Sverige og Danmark uten unødvendig forsinkelse og fjerne særnorske krav."
-      },
-      "H": {
-        "level": 2,
-        "quote": "Sørge for at pasienter får raskere tilgang til nye medisiner. Tilgang til flere kliniske studier og tilstrekkelig tilgang til nødvendige medisiner."
-      },
-      "V": {
-        "level": 1,
-        "quote": "Endre bioteknologiloven så den i større grad gjør det mulig å ta nye behandlingsmetoder og teknologier i bruk til pasientenes beste."
-      },
-      "KrF": {
-        "level": 0,
-        "quote": null
-      },
-      "AP": {
-        "level": 0,
-        "quote": null
-      },
-      "MDG": {
-        "level": 0,
-        "quote": null
-      },
-      "SP": {
-        "level": 0,
-        "quote": null
-      },
-      "SV": {
-        "level": 0,
-        "quote": null
-      }
+      "R": {},
+      "FrP": {},
+      "H": {},
+      "V": {},
+      "KrF": {},
+      "AP": {},
+      "MDG": {},
+      "SP": {},
+      "SV": {}
     }
   },
   {
     "id": 43,
-    "area": "Tilgang til behandling",
-    "name": "Satsing på norsk helseberedskap",
-    "description": "Satsing på norsk helseberedskap",
+    "area": "Barnevern og omsorg",
+    "name": "Snu nedgangen i bruk av foreldre- og barnesentre.",
+    "description": "Snu nedgangen i bruk av foreldre- og barnesentre.",
     "partyStances": {
-      "R": {
-        "level": 0,
-        "quote": null
-      },
-      "FrP": {
-        "level": 0,
-        "quote": null
-      },
-      "H": {
-        "level": 1,
-        "quote": "Helseberedskapen må forbedres for å verne om befolkningens liv og helse, og sørge for medisinsk behandling og pleie og omsorg til berørte personer i alle situasjoner. Avklarte ansvarsforhold, tydelige varslings- og rapporteringsrutiner og god samhandling mellom aktørene ved kriser er spesielt viktig."
-      },
-      "V": {
-        "level": 2,
-        "quote": "Styrke både pandemiberedskapen og tiltak mot antibiotikaresistens gjennom en kombinasjon av forskning, innovasjon og internasjonal samhandling. Vi må bygge robuste helsesystemer som tåler fremtidige kriser, og samtidig jobbe langsiktig for å beskytte vår evne til å bekjempe infeksjoner"
-      },
-      "KrF": {
-        "level": 0,
-        "quote": null
-      },
-      "AP": {
-        "level": 2,
-        "quote": "Sikre fullverdig norsk deltakelse i EU-samarbeidet om helseberedskap"
-      },
-      "MDG": {
-        "level": 2,
-        "quote": "Styrke helseberedskapen og samhandlingen, blant annet ved å involvere kommunene bedre i beredskapsråd."
-      },
-      "SP": {
-        "level": 1,
-        "quote": "Fortsette det sterke globale samarbeidet om helseberedskap for å sikre tilgang til vaksiner, medisiner og helseteknologi."
-      },
-      "SV": {
-        "level": 1,
-        "quote": "Øke bemanningen i offentlige sykehus for å styrke helseberedskapen i hele landet."
-      }
+      "R": {},
+      "FrP": {},
+      "H": {},
+      "V": {},
+      "KrF": {},
+      "AP": {},
+      "MDG": {},
+      "SP": {},
+      "SV": {}
     }
   },
   {
     "id": 44,
-    "area": "Økt investeringer i helse",
-    "name": "Øke investeringer innenfor helse",
-    "description": "Øke investeringer innenfor helse",
+    "area": "Kriminalitet og justis",
+    "name": "Prioritere tidlig forebygging fremfor straff og reaktive tiltak.",
+    "description": "Prioritere tidlig forebygging fremfor straff og reaktive tiltak.",
     "partyStances": {
-      "R": {
-        "level": 0,
-        "quote": null
-      },
-      "FrP": {
-        "level": 1,
-        "quote": "Etablere en nasjonal sykehusplan for inverstinger i nye sykehusbygg"
-      },
-      "H": {
-        "level": 2,
-        "quote": "Høyre vil styrke helsevesenet ved å investere i sykehuskapasitet og teknologi."
-      },
-      "V": {
-        "level": 2,
-        "quote": "Øke den samlede ressursbruken til helse og omsorg framover."
-      },
-      "KrF": {
-        "level": 0,
-        "quote": null
-      },
-      "AP": {
-        "level": 2,
-        "quote": "Øke andel av BNP som går til helse for å sikre investeringer som bidrar til effektiv ressursbruk."
-      },
-      "MDG": {
-        "level": 1,
-        "quote": "Sikre at sykehusene får dekket de reelle kostnadene og at helsetjenesten styrkes."
-      },
-      "SP": {
-        "level": 2,
-        "quote": "Auke løyvingane til sjukehusa for å sikre auka pasientbehandling, redusere ventetider og handtere oppgåvevekst."
-      },
-      "SV": {
-        "level": 2,
-        "quote": "Arbeide for å tette investeringsetterslepet og øke grunnfinansieringen av sykehusene i tråd med kostnadsvekst og behov."
-      }
+      "R": {},
+      "FrP": {},
+      "H": {},
+      "V": {},
+      "KrF": {},
+      "AP": {},
+      "MDG": {},
+      "SP": {},
+      "SV": {}
     }
   },
   {
     "id": 45,
-    "area": "Økt investeringer i helse",
-    "name": "Langtidsplan for helsetjenesten",
-    "description": "Langtidsplan for helsetjenesten",
+    "area": "Kriminalitet og justis",
+    "name": "Politiet må prioritere etterforskning av vold/mishandling i nære relasjoner som forebyggende tiltak.",
+    "description": "Politiet må prioritere etterforskning av vold/mishandling i nære relasjoner som forebyggende tiltak.",
     "partyStances": {
-      "R": {
-        "level": 0,
-        "quote": null
-      },
-      "FrP": {
-        "level": 0,
-        "quote": null
-      },
-      "H": {
-        "level": 0,
-        "quote": null
-      },
-      "V": {
-        "level": 0,
-        "quote": null
-      },
-      "KrF": {
-        "level": 0,
-        "quote": null
-      },
-      "AP": {
-        "level": 0,
-        "quote": null
-      },
-      "MDG": {
-        "level": 0,
-        "quote": null
-      },
-      "SP": {
-        "level": 0,
-        "quote": null
-      },
-      "SV": {
-        "level": 0,
-        "quote": null
-      }
+      "R": {},
+      "FrP": {},
+      "H": {},
+      "V": {},
+      "KrF": {},
+      "AP": {},
+      "MDG": {},
+      "SP": {},
+      "SV": {}
     }
   },
   {
     "id": 46,
-   "area": "Folkehelse og forebygging",
-    "name": "Gratis skolemat eller frukt",
-    "description": "Gratis skolemat eller frukt",
+    "area": "Kriminalitet og justis",
+    "name": "Innføre egne straffeprosessuelle regler for barn, inkludert rett til forsvarer tidlig.",
+    "description": "Innføre egne straffeprosessuelle regler for barn, inkludert rett til forsvarer tidlig.",
     "partyStances": {
-      "R": {
-        "level": 2,
-        "quote": "Sikre alle barn et sunt måltid på skolen hver dag."
-      },
-      "FrP": {
-        "level": 0,
-        "quote": null
-      },
-      "H": {
-        "level": 0,
-        "quote": null
-      },
-      "V": {
-        "level": 0,
-        "quote": null
-      },
-      "KrF": {
-        "level": 0,
-        "quote": null
-      },
-      "AP": {
-        "level": 2,
-        "quote": "At alle skoler har tilbud om et daglig gratis skolemåltid"
-      },
-      "MDG": {
-        "level": 2,
-        "quote": "Styrke gratisprinsippet i skolen og bevilge midler til trykte bøker, fysisk læremateriell og praktisk undervisning og innfasing av skolemat."
-      },
-      "SP": {
-        "level": 2,
-        "quote": "Innføre et sunt skolemåltid for elever i grunnskolen. Måltidet skal være statlig finansiert, og uten egenandel"
-      },
-      "SV": {
-        "level": 2,
-        "quote": "Innføre gratis måltid hver dag i grunnskolen og videregående skole"
-      }
+      "R": {},
+      "FrP": {},
+      "H": {},
+      "V": {},
+      "KrF": {},
+      "AP": {},
+      "MDG": {},
+      "SP": {},
+      "SV": {}
+    }
+  },
+  {
+    "id": 47,
+    "area": "Kriminalitet og justis",
+    "name": "Bruke barnevernsinstitusjoner eller fotlenke som alternativ til varetektsfengsel.",
+    "description": "Bruke barnevernsinstitusjoner eller fotlenke som alternativ til varetektsfengsel.",
+    "partyStances": {
+      "R": {},
+      "FrP": {},
+      "H": {},
+      "V": {},
+      "KrF": {},
+      "AP": {},
+      "MDG": {},
+      "SP": {},
+      "SV": {}
+    }
+  },
+  {
+    "id": 48,
+    "area": "Kriminalitet og justis",
+    "name": "Barn skal ikke sone i fengsel sammen med voksne.",
+    "description": "Barn skal ikke sone i fengsel sammen med voksne.",
+    "partyStances": {
+      "R": {},
+      "FrP": {},
+      "H": {},
+      "V": {},
+      "KrF": {},
+      "AP": {},
+      "MDG": {},
+      "SP": {},
+      "SV": {}
+    }
+  },
+  {
+    "id": 49,
+    "area": "Kriminalitet og justis",
+    "name": "Etablere lokale «hurtigspor» for raskere saksbehandling.",
+    "description": "Etablere lokale «hurtigspor» for raskere saksbehandling.",
+    "partyStances": {
+      "R": {},
+      "FrP": {},
+      "H": {},
+      "V": {},
+      "KrF": {},
+      "AP": {},
+      "MDG": {},
+      "SP": {},
+      "SV": {}
+    }
+  },
+  {
+    "id": 50,
+    "area": "Kriminalitet og justis",
+    "name": "Styrke barnefaglig kompetanse i avhør.",
+    "description": "Styrke barnefaglig kompetanse i avhør.",
+    "partyStances": {
+      "R": {},
+      "FrP": {},
+      "H": {},
+      "V": {},
+      "KrF": {},
+      "AP": {},
+      "MDG": {},
+      "SP": {},
+      "SV": {}
+    }
+  },
+  {
+    "id": 51,
+    "area": "Kriminalitet og justis",
+    "name": "Avslutte bruk av forvaring overfor barn.",
+    "description": "Avslutte bruk av forvaring overfor barn.",
+    "partyStances": {
+      "R": {},
+      "FrP": {},
+      "H": {},
+      "V": {},
+      "KrF": {},
+      "AP": {},
+      "MDG": {},
+      "SP": {},
+      "SV": {}
+    }
+  },
+  {
+    "id": 52,
+    "area": "Kriminalitet og justis",
+    "name": "Innføre regler om at barn skal ha forsvarer til stede under avhør.",
+    "description": "Innføre regler om at barn skal ha forsvarer til stede under avhør.",
+    "partyStances": {
+      "R": {},
+      "FrP": {},
+      "H": {},
+      "V": {},
+      "KrF": {},
+      "AP": {},
+      "MDG": {},
+      "SP": {},
+      "SV": {}
+    }
+  },
+  {
+    "id": 53,
+    "area": "Kriminalitet og justis",
+    "name": "Sikre at barn får tilrettelagt informasjon gjennom alle deler av en straffesak, og at avhørsreformen er tilpasset barnets alder og utvikling.",
+    "description": "Sikre at barn får tilrettelagt informasjon gjennom alle deler av en straffesak, og at avhørsreformen er tilpasset barnets alder og utvikling.",
+    "partyStances": {
+      "R": {},
+      "FrP": {},
+      "H": {},
+      "V": {},
+      "KrF": {},
+      "AP": {},
+      "MDG": {},
+      "SP": {},
+      "SV": {}
+    }
+  },
+  {
+    "id": 54,
+    "area": "Kriminalitet og justis",
+    "name": "Sikre lokale forebyggings- og avledningstiltak fremfor å sette barn i fengsel.",
+    "description": "Sikre lokale forebyggings- og avledningstiltak fremfor å sette barn i fengsel.",
+    "partyStances": {
+      "R": {},
+      "FrP": {},
+      "H": {},
+      "V": {},
+      "KrF": {},
+      "AP": {},
+      "MDG": {},
+      "SP": {},
+      "SV": {}
+    }
+  },
+  {
+    "id": 55,
+    "area": "Kriminalitet og justis",
+    "name": "Etterleve kravet om at barn kun fengsles som siste utvei og for kortest mulig tid.",
+    "description": "Etterleve kravet om at barn kun fengsles som siste utvei og for kortest mulig tid.",
+    "partyStances": {
+      "R": {},
+      "FrP": {},
+      "H": {},
+      "V": {},
+      "KrF": {},
+      "AP": {},
+      "MDG": {},
+      "SP": {},
+      "SV": {}
+    }
+  },
+  {
+    "id": 56,
+    "area": "Kriminalitet og justis",
+    "name": "Utrede/etablere et offentlig, mer barnevennlig rettshjelpstilbud.",
+    "description": "Utrede/etablere et offentlig, mer barnevennlig rettshjelpstilbud.",
+    "partyStances": {
+      "R": {},
+      "FrP": {},
+      "H": {},
+      "V": {},
+      "KrF": {},
+      "AP": {},
+      "MDG": {},
+      "SP": {},
+      "SV": {}
+    }
+  },
+  {
+    "id": 57,
+    "area": "Digital oppvekst",
+    "name": "Stille strenge krav til tech-leverandører om beskyttelse mot skadelig innhold og manipulerende design.",
+    "description": "Stille strenge krav til tech-leverandører om beskyttelse mot skadelig innhold og manipulerende design.",
+    "partyStances": {
+      "R": {},
+      "FrP": {},
+      "H": {},
+      "V": {},
+      "KrF": {},
+      "AP": {},
+      "MDG": {},
+      "SP": {},
+      "SV": {}
+    }
+  },
+  {
+    "id": 58,
+    "area": "Digital oppvekst",
+    "name": "Etablere tilsynsordninger med reelle sanksjonsmuligheter.",
+    "description": "Etablere tilsynsordninger med reelle sanksjonsmuligheter.",
+    "partyStances": {
+      "R": {},
+      "FrP": {},
+      "H": {},
+      "V": {},
+      "KrF": {},
+      "AP": {},
+      "MDG": {},
+      "SP": {},
+      "SV": {}
+    }
+  },
+  {
+    "id": 59,
+    "area": "Digital oppvekst",
+    "name": "Forby atferdsbasert markedsføring rettet mot barn.",
+    "description": "Forby atferdsbasert markedsføring rettet mot barn.",
+    "partyStances": {
+      "R": {},
+      "FrP": {},
+      "H": {},
+      "V": {},
+      "KrF": {},
+      "AP": {},
+      "MDG": {},
+      "SP": {},
+      "SV": {}
+    }
+  },
+  {
+    "id": 60,
+    "area": "Digital oppvekst",
+    "name": "Etablere nasjonale løsninger for skoleenheter som filtrerer bort reklame og skadelig innhold.",
+    "description": "Etablere nasjonale løsninger for skoleenheter som filtrerer bort reklame og skadelig innhold.",
+    "partyStances": {
+      "R": {},
+      "FrP": {},
+      "H": {},
+      "V": {},
+      "KrF": {},
+      "AP": {},
+      "MDG": {},
+      "SP": {},
+      "SV": {}
+    }
+  },
+  {
+    "id": 61,
+    "area": "Digital oppvekst",
+    "name": "Støtte 15-års aldersgrense, forutsatt strengere regulering av plattformene.",
+    "description": "Støtte 15-års aldersgrense, forutsatt strengere regulering av plattformene.",
+    "partyStances": {
+      "R": {},
+      "FrP": {},
+      "H": {},
+      "V": {},
+      "KrF": {},
+      "AP": {},
+      "MDG": {},
+      "SP": {},
+      "SV": {}
+    }
+  },
+  {
+    "id": 62,
+    "area": "Digital oppvekst",
+    "name": "Klargjøre/utvikle «skadelighetsbegrepet» (bl.a. gjennom Medietilsynets arbeid) som grunnlag for regulering og håndheving.",
+    "description": "Klargjøre/utvikle «skadelighetsbegrepet» (bl.a. gjennom Medietilsynets arbeid) som grunnlag for regulering og håndheving.",
+    "partyStances": {
+      "R": {},
+      "FrP": {},
+      "H": {},
+      "V": {},
+      "KrF": {},
+      "AP": {},
+      "MDG": {},
+      "SP": {},
+      "SV": {}
+    }
+  },
+  {
+    "id": 63,
+    "area": "Helse og familie",
+    "name": "Sikre nok ressurser/årsverk til å gjennomføre alle de 14 anbefalte konsultasjonene og hjemmebesøk.",
+    "description": "Sikre nok ressurser/årsverk til å gjennomføre alle de 14 anbefalte konsultasjonene og hjemmebesøk.",
+    "partyStances": {
+      "R": {},
+      "FrP": {},
+      "H": {},
+      "V": {},
+      "KrF": {},
+      "AP": {},
+      "MDG": {},
+      "SP": {},
+      "SV": {}
+    }
+  },
+  {
+    "id": 64,
+    "area": "Helse og familie",
+    "name": "Sikre at alle barn 0-5 får helsekontroller og oppfølging på helsestasjonen i tråd med anbefalt program.",
+    "description": "Sikre at alle barn 0-5 får helsekontroller og oppfølging på helsestasjonen i tråd med anbefalt program.",
+    "partyStances": {
+      "R": {},
+      "FrP": {},
+      "H": {},
+      "V": {},
+      "KrF": {},
+      "AP": {},
+      "MDG": {},
+      "SP": {},
+      "SV": {}
+    }
+  },
+  {
+    "id": 65,
+    "area": "Helse og familie",
+    "name": "Øremerke midler til helsestasjon- og skolehelsetjeneste som del av en forebyggende pott.",
+    "description": "Øremerke midler til helsestasjon- og skolehelsetjeneste som del av en forebyggende pott.",
+    "partyStances": {
+      "R": {},
+      "FrP": {},
+      "H": {},
+      "V": {},
+      "KrF": {},
+      "AP": {},
+      "MDG": {},
+      "SP": {},
+      "SV": {}
+    }
+  },
+  {
+    "id": 66,
+    "area": "Helse og familie",
+    "name": "Sørge for større kapasitet og mer fleksible tilbud i helsetjenestene slik at barn på barnevernsinstitusjon får ivaretatt sin rett til helsehjelp.",
+    "description": "Sørge for større kapasitet og mer fleksible tilbud i helsetjenestene slik at barn på barnevernsinstitusjon får ivaretatt sin rett til helsehjelp.",
+    "partyStances": {
+      "R": {},
+      "FrP": {},
+      "H": {},
+      "V": {},
+      "KrF": {},
+      "AP": {},
+      "MDG": {},
+      "SP": {},
+      "SV": {}
+    }
+  },
+  {
+    "id": 67,
+    "area": "Helse og familie",
+    "name": "Automatisk inflasjonsjustering av barnetrygden.",
+    "description": "Automatisk inflasjonsjustering av barnetrygden.",
+    "partyStances": {
+      "R": {},
+      "FrP": {},
+      "H": {},
+      "V": {},
+      "KrF": {},
+      "AP": {},
+      "MDG": {},
+      "SP": {},
+      "SV": {}
+    }
+  },
+  {
+    "id": 68,
+    "area": "Helse og familie",
+    "name": "Sikre at hensynet til barnets beste veier tyngre enn prinsippet om likestilt foreldreskap.",
+    "description": "Sikre at hensynet til barnets beste veier tyngre enn prinsippet om likestilt foreldreskap.",
+    "partyStances": {
+      "R": {},
+      "FrP": {},
+      "H": {},
+      "V": {},
+      "KrF": {},
+      "AP": {},
+      "MDG": {},
+      "SP": {},
+      "SV": {}
+    }
+  },
+  {
+    "id": 69,
+    "area": "Helse og familie",
+    "name": "Sikre konkrete vurderinger fremfor automatikk i «delt daglig myndighet».",
+    "description": "Sikre konkrete vurderinger fremfor automatikk i «delt daglig myndighet».",
+    "partyStances": {
+      "R": {},
+      "FrP": {},
+      "H": {},
+      "V": {},
+      "KrF": {},
+      "AP": {},
+      "MDG": {},
+      "SP": {},
+      "SV": {}
+    }
+  },
+  {
+    "id": 70,
+    "area": "Helse og familie",
+    "name": "Tydeliggjøre innholdet i «daglig myndighet» gjennom veiledning.",
+    "description": "Tydeliggjøre innholdet i «daglig myndighet» gjennom veiledning.",
+    "partyStances": {
+      "R": {},
+      "FrP": {},
+      "H": {},
+      "V": {},
+      "KrF": {},
+      "AP": {},
+      "MDG": {},
+      "SP": {},
+      "SV": {}
+    }
+  },
+  {
+    "id": 71,
+    "area": "Forvaltning og beredskap",
+    "name": "Sikre at «barnets beste» vektlegges i kommunale planer og budsjetter.",
+    "description": "Sikre at «barnets beste» vektlegges i kommunale planer og budsjetter.",
+    "partyStances": {
+      "R": {},
+      "FrP": {},
+      "H": {},
+      "V": {},
+      "KrF": {},
+      "AP": {},
+      "MDG": {},
+      "SP": {},
+      "SV": {}
+    }
+  },
+  {
+    "id": 72,
+    "area": "Forvaltning og beredskap",
+    "name": "Involvere ungdomsråd i kommunale beslutninger der barnets beste berøres.",
+    "description": "Involvere ungdomsråd i kommunale beslutninger der barnets beste berøres.",
+    "partyStances": {
+      "R": {},
+      "FrP": {},
+      "H": {},
+      "V": {},
+      "KrF": {},
+      "AP": {},
+      "MDG": {},
+      "SP": {},
+      "SV": {}
+    }
+  },
+  {
+    "id": 73,
+    "area": "Forvaltning og beredskap",
+    "name": "Lovfeste barns rettigheter og medvirkning i krise- og beredskapslovgivning.",
+    "description": "Lovfeste barns rettigheter og medvirkning i krise- og beredskapslovgivning.",
+    "partyStances": {
+      "R": {},
+      "FrP": {},
+      "H": {},
+      "V": {},
+      "KrF": {},
+      "AP": {},
+      "MDG": {},
+      "SP": {},
+      "SV": {}
+    }
+  },
+  {
+    "id": 74,
+    "area": "Forvaltning og beredskap",
+    "name": "Systematisere barnerettighetsvurderinger (CRIA) i beredskapsarbeid/kriser.",
+    "description": "Systematisere barnerettighetsvurderinger (CRIA) i beredskapsarbeid/kriser.",
+    "partyStances": {
+      "R": {},
+      "FrP": {},
+      "H": {},
+      "V": {},
+      "KrF": {},
+      "AP": {},
+      "MDG": {},
+      "SP": {},
+      "SV": {}
+    }
+  },
+  {
+    "id": 75,
+    "area": "Forvaltning og beredskap",
+    "name": "Sikre en forebyggende pott på minst 2,8 mrd kroner, inkludert 1 mrd øremerket helsestasjon- og skolehelsetjeneste og friske midler til øvrig forebygging.",
+    "description": "Sikre en forebyggende pott på minst 2,8 mrd kroner, inkludert 1 mrd øremerket helsestasjon- og skolehelsetjeneste og friske midler til øvrig forebygging.",
+    "partyStances": {
+      "R": {},
+      "FrP": {},
+      "H": {},
+      "V": {},
+      "KrF": {},
+      "AP": {},
+      "MDG": {},
+      "SP": {},
+      "SV": {}
+    }
+  },
+  {
+    "id": 76,
+    "area": "Forvaltning og beredskap",
+    "name": "Styrke sporbarhet og utvikle bedre mekanismer/indikatorer i finansierings- og tilskuddsordninger.",
+    "description": "Styrke sporbarhet og utvikle bedre mekanismer/indikatorer i finansierings- og tilskuddsordninger.",
+    "partyStances": {
+      "R": {},
+      "FrP": {},
+      "H": {},
+      "V": {},
+      "KrF": {},
+      "AP": {},
+      "MDG": {},
+      "SP": {},
+      "SV": {}
+    }
+  },
+  {
+    "id": 77,
+    "area": "Forvaltning og beredskap",
+    "name": "Stille tydeligere krav til «barnets beste»-vurderinger og konsekvens-/effektevalueringer.",
+    "description": "Stille tydeligere krav til «barnets beste»-vurderinger og konsekvens-/effektevalueringer.",
+    "partyStances": {
+      "R": {},
+      "FrP": {},
+      "H": {},
+      "V": {},
+      "KrF": {},
+      "AP": {},
+      "MDG": {},
+      "SP": {},
+      "SV": {}
+    }
+  },
+  {
+    "id": 78,
+    "area": "Barneombudets rammer og politisk gjennomslag",
+    "name": "Styrke Barneombudets budsjett med minst 3 mill. kroner (etter inflasjonsjustering) for å ivareta oppdraget.",
+    "description": "Styrke Barneombudets budsjett med minst 3 mill. kroner (etter inflasjonsjustering) for å ivareta oppdraget.",
+    "partyStances": {
+      "R": {},
+      "FrP": {},
+      "H": {},
+      "V": {},
+      "KrF": {},
+      "AP": {},
+      "MDG": {},
+      "SP": {},
+      "SV": {}
+    }
+  },
+  {
+    "id": 79,
+    "area": "Barneombudets rammer og politisk gjennomslag",
+    "name": "Styrke barns posisjon i politiske prosesser og sikre gjennomslag i lover, budsjett og styringsdokumenter.",
+    "description": "Styrke barns posisjon i politiske prosesser og sikre gjennomslag i lover, budsjett og styringsdokumenter.",
+    "partyStances": {
+      "R": {},
+      "FrP": {},
+      "H": {},
+      "V": {},
+      "KrF": {},
+      "AP": {},
+      "MDG": {},
+      "SP": {},
+      "SV": {}
+    }
+  },
+  {
+    "id": 80,
+    "area": "Barneombudets rammer og politisk gjennomslag",
+    "name": "Sikre at politiske prioriteringer følges av ressurser slik at rettigheter blir reelle.",
+    "description": "Sikre at politiske prioriteringer følges av ressurser slik at rettigheter blir reelle.",
+    "partyStances": {
+      "R": {},
+      "FrP": {},
+      "H": {},
+      "V": {},
+      "KrF": {},
+      "AP": {},
+      "MDG": {},
+      "SP": {},
+      "SV": {}
     }
   }
 ]
