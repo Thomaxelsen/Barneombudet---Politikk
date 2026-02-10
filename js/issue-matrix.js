@@ -386,11 +386,24 @@ function generateMatrix(areaFilter, viewMode) {
     }
     console.log("Filtrerte saker:", filteredIssues.length);
 
-    const areaOrder = [
-        "Arbeidsliv", "Diagnostikk og tidlig oppdagelse", "Folkehelse og forebygging",
-        "Forskning og innovasjon", "Frivillig sektor", "Kreftomsorg", "Rettigheter",
-        "Tilgang til behandling", "Økt investeringer i helse"
+    const preferredAreaOrder = [
+        "Barnevern og omsorg",
+        "Skole og barnehage",
+        "Helse og familie",
+        "Kriminalitet og justis",
+        "Digital oppvekst",
+        "Forvaltning og beredskap",
+        "Tverrgående rettigheter og medvirkning",
+        "Barneombudets rammer og politisk gjennomslag"
     ];
+
+    const areaSet = new Set(filteredIssues.map(issue => issue.area).filter(Boolean));
+    const sortedAreaOrder = [
+        ...preferredAreaOrder.filter(area => areaSet.has(area)),
+        ...[...areaSet].filter(area => !preferredAreaOrder.includes(area)).sort((a, b) => a.localeCompare(b))
+    ];
+
+    const areaOrder = [...sortedAreaOrder];
     const issuesByArea = {};
     areaOrder.forEach(area => issuesByArea[area] = []);
     filteredIssues.forEach(issue => {
